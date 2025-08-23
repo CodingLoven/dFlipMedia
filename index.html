@@ -4,303 +4,514 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>dFlip Website</title>
-  <link rel="stylesheet" href="style.css">
 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"rel="stylesheet">
+
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
 
-  
-   <nav>
-    <div class="nav-logo">
-      <a href="#">
-        <img class="dFlip_logo" src="./Assets/dflip logo.png" alt="dFlipmedia logo" >
-      </a>
-    </div>
-    
-   
-  <ul class="nav-links">
-          <li><a href="./contact form.html">Contact</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./index.html">Home</a></li>
+        <div class="nav-logo">
+          <a href="#">
+            <img src="./Assets/dflip logo.png" alt="dFlipmedia logo" >
+          </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon"><span class="material-symbols-outlined" id="menubtn">
+          menu_open
+        </span></label>
       
-      </ul>
+        <ul class="menu-items">
+          <li>
+            <a href="./contact form.html">Our Services</a>
+          </li>
+          <li>
+            <a href="./about.html">About dFlip</a>
+          </li>
+          <li>
+            <a href="#">Meet The Team</a>
+          </li>
+          <li>
+            <a href="./services.html">Blog</a>
+          </li>
+          <li>
+            <a href="./index.html">Contact</a>
+          </li>
+          <li>
+            <a href="#"> Join dFlip</a>
+          </li>
+        </ul>
 
-          <div class="nav-mobile">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-            
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="sec1">
+      <div class="hero-container">
+        <div class="hero">
+          <h6>
+            WE ARE A GLOBAL POWERHOUSE IN PR AND MARKETING
+          </h6>
+
+          <h1>
+            The powerhouse businesses come to for strategies that win trust and spark growth.
+          </h1>
+          <p>
+            Let's Flip you to the other side of growth
+          </p>
+          <a href="">
+            <span class="span1">Learn More</span> 
+            <br>
+            <span class="span2">Learn More</span>
+          </a>
+        </div> 
+
+        <div class="mission-cont">
+          <div class="b-mission">
+            <p>
+              We exist to make your brand impossible to ignore. From PR and communication to social media, eCommerce, and customer management, we connect you to the right audience, the right way, at the right time. Our mission is simple: turn your goals into results and your vision into influence.
+            </p>
           </div>
-                    
-</nav> 
+        </div>
+                
+      </div>   
+    </section>
 
-  <section class="hero">
-    <div class="content">
-      <h1 class="animated-text">The Right Paths <br> to <span class="growth">Growth!</span></h1>
-      <p>Let's Flip you to the other side of growth</p>
-   
-    </div>
+    <section class="sec2" aria-label="Your challenges, solved">
+      <div class="challenges-header">
+        <h2>
+          <span class="whatwedo">WHAT WE DO</span> <br>
+          The dFlip Advantage
+        </h2>
 
-      <div class="stats">
-        <p>dFlip Media is a global powerhouse in PR and marketing. 
-          We craft innovative, data-driven strategies that build trust, 
-          captivate audiences, and propel your brand to new heights.</p> <br>
+        <div class="challenges__controls">
+          <button type="button" class="challenges__btn challenges__btn--prev" aria-label="Previous" aria-controls="challenges-track">‹</button>
 
-          <a href="./contact form.html"><div class="circle">
-            <div class="circle-text">
-                <span>G</span> 
-                <span>E</span>
-                <span>T</span>
-                <span style="color: #ff9800">></span>
-                <span style="color: #ff9800">></span>
-                <span>S</span>
-                <span>T</span>
-                <span>A</span>
-                <span>R</span>
-                <span>T</span>
-                <span>E</span>
-                <span>D</span>
-                <span style="color: #ff9800">></span>
-                <span>N</span>
-                <span>O</span>
-                <span>W</span>
-                <span style="color: #ff9800">></span>
-                <span style="color: #ff9800">></span>
-                <!-- <span>A</span> -->
-                <!-- <span>R</span>
-                <span>T</span>
-                <span>E</span>
-                <span>D</span> -->
-            
-          
-        </div></a>
+          <button type="button" class="challenges__btn challenges__btn--next" aria-label="Next" aria-controls="challenges-track">›</button>
+        </div>
+
+      </div>
+
+      <div class="challenges__viewport" id="challenges-viewport" tabindex="0">
         
+        <ul class="challenges__track" id="challenges-track" role="list"data-slider="challenges">
 
-      </div>
-    
-      
+          <li class="challenges-slide">
+            <a class="challenge-card" href="#">
+              <figure class="challenge-card-figure">
+                <img src="Assets/A office Lady writing.jpg" alt="">
+                <figcaption class="challenge-card-caption">
+                  <h3>Digital Storefront Solutions</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
-  </section>
+          <li class="challenges-slide">
+            <a class="challenge-card" href="#">
+              <figure class="challenge-card-figure">
+                <img src="Assets/A office Lady writing.jpg" alt="Monochrome face texture representing customers and audience">
+                <figcaption class="challenge-card-caption">
+                  <h3>Engaging Social Presence</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
+          <li class="challenges-slide">
+            <a class="challenge-card" href="#">
+              <figure class="challenge-card-figure">
+                <img src="Assets/A office Lady writing.jpg" alt="Copper cable motion representing product launch velocity">
+                <figcaption class="challenge-card-caption">
+                  <h3>Launching a new offering</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
-  <div class="about_div">
-    <div class="heading1">
-    <h1>We do the thinking <br>while your business <br> <span>experience the Growth</span></h1>
-  </div> 
-  <div class="paragraph"> 
-    <p>We provide experts innovative strategies, with creative <br>
-      data driven ideas that leads to exponential business growth
-    </p>
-  </div>
-  </div>
-
-
-
-
-
-
-
-<!-- OFFER SECTION -->
-
-<div class="offer_section_div">
-  <div class="drop_shipping_offer"><h1>Crazy 30 Days <br>Drop Shipping Offer</h1> </div>
-  <div class="slider-container">
-    <div class="slider" id="slider">
-      <div class="box_offer">
-        <h2>Market Research</h2> <br>
-            <h3>Duration: 30 days</h3>
-            <p>10 products a day </p>
-              <p>3 days a week with competitors' links</p>
-            <p>1 deep dive meeting a week</p> <br> 
-            <h4>$150</h4>
-            <a href="./contact form.html" target="_parent"><button class="btn_container2">
-              Get Started
-
-            </button></a>     
-      </div>
-      <div class="box_offer">
-        <h2>Customer Experience</h2> <br>
-           <h3>Duration: 30 days</h3> 
-           <p>Answers all customer queries</p> 
-           <p>Follow up with suppliers</p> 
-            <p>2 check-in calls a week</p> <br>
-            <h4>$100</h4>
-            <a href="./contact form.html" target="_parent"> <button class="btn_container2">
-              Get Started
-
-            </button></a>
-      </div>
-      <div class="box_offer">
-        <h2>Store Development and Management</h2> <br>
+          <li class="challenges-slide">
+            <a class="challenge-card" href="#">
+              <figure class="challenge-card-figure">
+                <img src="Assets/A office Lady writing.jpg" alt="Ink in water representing expansion">
+                <figcaption class="challenge-card-caption">
+                  <h3>Enter new markets</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
           
-            <h3>Duration: 30 days</h3>
-            <p>Development of store</p>
-            <p>Management store</p>
-            <p>2 check-in calls a week</p> <br>
-            <h4>$200</h4>
-            <a href="./contact form.html" target="_parent"><button class="btn_container2">
-              Get Started
+          <li class="challenges-slide">
+            <a class="challenge-card" href="#">
+              <figure class="challenge-card-figure">
+                <img src="Assets/A office Lady writing.jpg" alt="Gradient abstract waves representing perception">
+                <figcaption class="challenge-card-caption">
+                  <h3>Change brand perception</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
-            </button></a>
-          
-      </div>
-      <div class="box_offer">
-        <h2>The Bundle Offer</h2> <br>
-            <h3>Duration: 30 days</h3>
-            <p>Access to all the three offers</p> <br>
-            <h4>$350</h4>
-            <a href="./contact form.html" target="_parent"><button class="btn_container2">
-              Get Started
+          <li class="challenges-slide">
+            <a class="challenge-card" href="#">
+              <figure class="challenge-card-figure">
+                <img src="Assets/A office Lady writing.jpg" alt="Data grid representing demand generation">
+                <figcaption class="challenge-card-caption">
+                  <h3>Generate qualified demand</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
-            </button></a>     
-      </div>  
-    </div> 
-  </div> 
-  
-  <div>
-    <img class="crazy_offer_img" src="./Assets/Untitled-2.png" alt="">
-    
-  
-  </div>
-  
-    
-  <div class="btn_cont">
-    <button class="control-btn1" id="prevBtn" disabled>Previous</button>
-        <button class="control-btn2" id="nextBtn">Next</button>
-      </div>
-</div>
+          <li class="challenges-slide">
+            <a class="challenge-card" href="#">
+              <figure class="challenge-card-figure">
+                <img src="Assets/A office Lady writing.jpg" alt="Neon circuitry representing digital transformation">
+                <figcaption class="challenge-card-caption">
+                  <h3>Accelerate digital transformation</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
-<!-- for small screen 425px -->
+          <li class="challenges-slide">
+            <a class="challenge-card" href="#">
+              <figure class="challenge-card-figure">
+                <img src="Assets/A office Lady writing.jpg" alt="Colorful motion blur representing performance">
+                <figcaption class="challenge-card-caption">
+                  <h3>Improve marketing performance</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
 
-<div class="small_screen">
-<div class="container_small_offer">
-  <h1 class="title">Crazy 30 Days <span>Drop Shipping Offer</span></h1>
-
-  <div class="offer-card">
-      <h2>Market Research</h2>
-      <ul>
-          <li>Duration: 30 days</li>
-          <li>✔ 10 products a day</li> 
-          <li>✔ 3 days a week with competitors’ links</li>
-          <li>✔ 1 deep dive meeting a week</li>
-      </ul>
-      <h3 style="text-align: center; color: #ff9800;">$150</h3>
-  </div>
-
-  <div class="offer-card">
-      <h2>Customer Experience</h2>
-      <ul>
-          <li>Duration: 30 days</li>
-          <li>✔ Answer all customer queries</li>
-          <li>✔ Follow up with the suppliers</li>
-          <li>✔ 2 check-in calls a week</li>
-          
-      </ul>
-      <h3 style="text-align: center; color: #ff9800;">$100</h3>
-  </div>
-
-  <div class="offer-card">
-      <h2>Store Development and Management</h2>
-      <ul>
-          <li>Duration: 30 days</li>
-          <li>✔ Development of store</li>
-          <li>✔ Management store</li>
-          <li>✔ 2 check-in calls a week</li>
-         
-      </ul>
-      <h3 style="text-align: center; color: #ff9800;">$200</h3>
-  </div>
-
-  <div class="offer-card">
-      <h2>The Bundle Offer</h2>
-      <ul>
-          <li>Duration: 30 days</li>
-          <li>✔ Combine all 3 services</li>
-          
-      </ul>
-      <h3 style="text-align: center; color: #ff9800;">$350</h3>
-  </div>
-  <div class="btn_offer_div">
-    <button class="btn_offer">
-      <a href="./contact form.html">Get Started</a>
-    </button>
-  </div>
-</div>
-
-
-</div>
-
-<!-- For Tablet Screen Size 768px -->
-
-<div class="small_screen768">
-  <!-- <div class="container"> -->
-    <h1 class="title">Crazy 30 Days <span>Drop Shipping Offer</span></h1>
-  
-    <div class="offer-card_div1">
-      <div class="offer-card">
-        <h2>Market Research</h2>
-        <ul>
-            <li>Duration 30 days</li>
-            <li>✔ 10 products a day</li> 
-            <li>✔ 3 days a week with competitors’ links</li>
-            <li>✔ 1 deep dive meeting a week</li>
         </ul>
-        <h3 style="text-align: center; color: #ff9800;">$150</h3>
+      </div>
+
+      <div class="challenges__pagination" aria-hidden="true">
+        <button type="button" class="challenges__dot" data-index="0" aria-label="Go to slide 1"></button>
+        <button type="button" class="challenges__dot" data-index="1" aria-label="Go to slide 2"></button>
+        <button type="button" class="challenges__dot" data-index="2" aria-label="Go to slide 3"></button>
+        <button type="button" class="challenges__dot" data-index="3" aria-label="Go to slide 4"></button>
+        <button type="button" class="challenges__dot" data-index="4" aria-label="Go to slide 5"></button>
+        <button type="button" class="challenges__dot" data-index="5" aria-label="Go to slide 6"></button>
+        <button type="button" class="challenges__dot" data-index="6" aria-label="Go to slide 7"></button>
+        <button type="button" class="challenges__dot" data-index="7" aria-label="Go to slide 8"></button>
+      </div>
+    </section>
+
+    <div class="clip"></div>
+
+    <section class="sec3">
+      <div class="cont3">
+
+        <div class="the-how">
+          <h6>
+            HOW WE DO IT
+          </h6>
+          <h2>
+            Bringing Your Ideas To Life
+          </h2>
+          <p>
+            Our process is built on clarity and collaboration. We listen, design strategies around your goals, and execute with precision. From planning to delivery, every step is tailored to ensure your brand connects, grows, and leaves a lasting impact.
+          </p>
+           <a class="general-btn" href="">
+            <span class="span1">Learn More</span> 
+            <br>
+            <span class="span2">Learn More</span>
+          </a>
+        </div>
+
+        <div class="team-container">
+          <div class="team-content-holder">
+            <div class="team-img-holder">
+              <img src="img/ere.png" alt="">
+            </div>
+
+            <!-- <div class="pingpong">
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+            </div> -->
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <div class="pingpong">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
     </div>
-  
-    <div class="offer-card">
-        <h2>Customer Experience</h2>
-        <ul>
-            <li>Duration 30 days</li>
-            <li>✔ Answer all customer queries</li>
-            <li>✔ Follow up with the suppliers</li>
-            <li>✔ 2 check-in calls a week</li>
+    
+    <section class="sec4">
+
+      <div class="cont4">
+        <div>
+          <h6>
+            BRANDS WE EMPOWER
+          </h6>
+          <h2>
+            Shaping Success Across Sectors
+          </h2>
+        </div>
+
+        <div class="sector4">
+
+          <div class="sector2">
+            <div class="sector">
+              <h3>
+                Startups & Entrepreneurs
+              </h3>
+            </div>
             
-        </ul>
-        <h3 style="text-align: center; color: #ff9800;">$100</h3>
+            <div class="sector">
+              <h3>
+                E-Commerce & Retail Brands
+              </h3>
+            </div>
+          </div>
+
+          <div class="sector2">
+            <div class="sector">
+              <h3>
+                Corporate & Professional Services
+              </h3>
+            </div>
+            
+            <div class="sector">
+              <h3>
+                Lifestyle & Fashion Labels
+              </h3>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="sector4">
+
+          <div class="sector2">
+            <div class="sector">
+              <h3>
+                Tech & Digital Platforms
+              </h3>
+            </div>
+            
+            <div class="sector">
+              <h3>
+                NGOs & Social Entreprises
+              </h3>
+            </div>
+          </div>
+
+          <div class="sector2">
+            <div class="sector">
+              <h3>
+                Hospitality & Events
+              </h3>
+            </div>
+            
+            <div class="sector">
+              <h3>
+                Media & Entertainment
+              </h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="about_div">
+      <div class="heading1">
+      <h1>We do the thinking <br>while your business <br> <span>experience the Growth</span></h1>
+    </div> 
+    <div class="paragraph"> 
+      <p>We provide experts innovative strategies, with creative <br>
+        data driven ideas that leads to exponential business growth
+      </p>
+    </div>
     </div>
 
+    <!-- OFFER SECTION -->
+
+    <div class="offer_section_div">
+      <div class="drop_shipping_offer"><h1>Crazy 30 Days <br>Drop Shipping Offer</h1> </div>
+      <div class="slider-container">
+        <div class="slider" id="slider">
+          <div class="box_offer">
+            <h2>Market Research</h2> <br>
+                <h3>Duration: 30 days</h3>
+                <p>10 products a day </p>
+                <p>3 days a week with competitors' links</p>
+                <p>1 deep dive meeting a week</p> <br> 
+                <h4>$150</h4>
+                <a href="./contact form.html" target="_parent"><button class="btn_container2">
+                  Get Started</button>
+                </a>     
+          </div>
+          <div class="box_offer">
+            <h2>Customer Experience</h2> <br>
+              <h3>Duration: 30 days</h3> 
+              <p>Answers all customer queries</p> 
+              <p>Follow up with suppliers</p> 
+              <p>2 check-in calls a week</p> <br>
+              <h4>$100</h4>
+              <a href="./contact form.html" target="_parent"> <button class="btn_container2">
+                  Get Started</button>
+              </a>
+          </div>
+          <div class="box_offer">
+            <h2>Store Development and Management</h2> <br>
+              
+                <h3>Duration: 30 days</h3>
+                <p>Development of store</p>
+                <p>Management store</p>
+                <p>2 check-in calls a week</p> <br>
+                <h4>$200</h4>
+                <a href="./contact form.html" target="_parent"><button class="btn_container2">
+                  Get Started
+
+                </button></a>
+              
+          </div>
+          <div class="box_offer">
+            <h2>The Bundle Offer</h2> <br>
+                <h3>Duration: 30 days</h3>
+                <p>Access to all the three offers</p> <br>
+                <h4>$350</h4>
+                <a href="./contact form.html" target="_parent"><button class="btn_container2">
+                  Get Started
+
+                </button></a>     
+          </div>  
+        </div> 
+      </div> 
+      
+      <div>
+        <img class="crazy_offer_img" src="./Assets/Untitled-2.png" alt="">
+        
+      
+      </div>
+      
+        
+      <div class="btn_cont">
+        <button class="control-btn1" id="prevBtn" disabled>Previous</button>
+            <button class="control-btn2" id="nextBtn">Next</button>
+          </div>
     </div>
-    
-  <div class="offer-card_div2">
-    <div class="offer-card">
-      <h2>Store Development and Management</h2>
-      <ul>
-          <li>✔ Duration 30 days</li>
-          <li>✔ Development of store</li>
-          <li>✔ Management store</li>
-          <li>✔ 2 check-in calls a week</li>
-         
-      </ul>
-      <h3 style="text-align: center; color: #ff9800;">$200</h3>
-  </div>
 
-  <div class="offer-card">
-      <h2>The Bundle Offer</h2>
-      <ul>
-          <li>✔ Duration 30 days</li>
-          <li>✔ Combine all 3 services</li>
-          
-      </ul>
-      <h3 style="text-align: center; color: #ff9800;">$350</h3>
-  </div>
-</div>
-<div class="btn_offer_div">
-  <button class="btn_offer">
-    <a href="./contact form.html">Get Started</a>
-  </button>
-</div>
-  </div>
-    
- 
-  
-  </div>
+    <!-- for small screen 425px -->
 
-  <div class="Laptop_Screen1024px">
+    <div class="small_screen">
+    <div class="container_small_offer">
+      <h1 class="title">Crazy 30 Days <span>Drop Shipping Offer</span></h1>
+
+      <div class="offer-card">
+          <h2>Market Research</h2>
+          <ul>
+              <li>Duration: 30 days</li>
+              <li>✔ 10 products a day</li> 
+              <li>✔ 3 days a week with competitors’ links</li>
+              <li>✔ 1 deep dive meeting a week</li>
+          </ul>
+          <h3 style="text-align: center; color: #ff9800;">$150</h3>
+      </div>
+
+      <div class="offer-card">
+          <h2>Customer Experience</h2>
+          <ul>
+              <li>Duration: 30 days</li>
+              <li>✔ Answer all customer queries</li>
+              <li>✔ Follow up with the suppliers</li>
+              <li>✔ 2 check-in calls a week</li>
+              
+          </ul>
+          <h3 style="text-align: center; color: #ff9800;">$100</h3>
+      </div>
+
+      <div class="offer-card">
+          <h2>Store Development and Management</h2>
+          <ul>
+              <li>Duration: 30 days</li>
+              <li>✔ Development of store</li>
+              <li>✔ Management store</li>
+              <li>✔ 2 check-in calls a week</li>
+            
+          </ul>
+          <h3 style="text-align: center; color: #ff9800;">$200</h3>
+      </div>
+
+      <div class="offer-card">
+          <h2>The Bundle Offer</h2>
+          <ul>
+              <li>Duration: 30 days</li>
+              <li>✔ Combine all 3 services</li>
+              
+          </ul>
+          <h3 style="text-align: center; color: #ff9800;">$350</h3>
+      </div>
+      <div class="btn_offer_div">
+        <button class="btn_offer">
+          <a href="./contact form.html">Get Started</a>
+        </button>
+      </div>
+    </div>
+
+
+    </div>
+
+    <!-- For Tablet Screen Size 768px -->
+
+    <div class="small_screen768">
     <!-- <div class="container"> -->
       <h1 class="title">Crazy 30 Days <span>Drop Shipping Offer</span></h1>
     
@@ -327,7 +538,7 @@
           </ul>
           <h3 style="text-align: center; color: #ff9800;">$100</h3>
       </div>
-  
+
       </div>
       
     <div class="offer-card_div2">
@@ -338,11 +549,11 @@
             <li>✔ Development of store</li>
             <li>✔ Management store</li>
             <li>✔ 2 check-in calls a week</li>
-           
+          
         </ul>
         <h3 style="text-align: center; color: #ff9800;">$200</h3>
     </div>
-  
+
     <div class="offer-card">
         <h2>The Bundle Offer</h2>
         <ul>
@@ -358,71 +569,132 @@
       <a href="./contact form.html">Get Started</a>
     </button>
   </div>
-    </div>
+
+    <div class="Laptop_Screen1024px">
+      <!-- <div class="container"> -->
+        <h1 class="title">Crazy 30 Days <span>Drop Shipping Offer</span></h1>
       
-   
+        <div class="offer-card_div1">
+          <div class="offer-card">
+            <h2>Market Research</h2>
+            <ul>
+                <li>Duration 30 days</li>
+                <li>✔ 10 products a day</li> 
+                <li>✔ 3 days a week with competitors’ links</li>
+                <li>✔ 1 deep dive meeting a week</li>
+            </ul>
+            <h3 style="text-align: center; color: #ff9800;">$150</h3>
+        </div>
+      
+        <div class="offer-card">
+            <h2>Customer Experience</h2>
+            <ul>
+                <li>Duration 30 days</li>
+                <li>✔ Answer all customer queries</li>
+                <li>✔ Follow up with the suppliers</li>
+                <li>✔ 2 check-in calls a week</li>
+                
+            </ul>
+            <h3 style="text-align: center; color: #ff9800;">$100</h3>
+        </div>
     
-    </div>
-
-  
-<!-- TESTIMONIAL SECTION -->
-
-  <div class="testimonials">
-    <div class="testimonial_h1">
-    <h1>What our Clients are saying</h1>
-  </div>
-    <div class="testimonial-cards">
-      <!-- Testimonial 1 -->
-      <div class="testimonial-card">
-        <img src="./Assets/Corrie Campbell.webp" alt="Corrie Campbell">
-        <h3>Corrie Campbell</h3>
-        <p><strong>Founder, PrimeAve</strong></p>
-        <p class="content">
-          "Working with dFlip Media has been a game-changer for my dropshipping business.
-          <span class="hidden-text">
-          Their customer relations strategies helped me build stronger connections with my buyers, leading to increased loyalty and repeat sales. 
-          The market research they conducted gave me deep insights into my target audience and competitors, helping me refine my 
-          product offerings and marketing campaigns. Since partnering with dFlip, 
-          my revenue has grown by over 40%, and my brand now stands out in a highly competitive market. 
-          I couldn't have asked for a better team to take my business to the next level!"
-        </span>
-        <button class="read-more-btn">Read More</button> 
-        </p>
+        </div>
+        
+      <div class="offer-card_div2">
+        <div class="offer-card">
+          <h2>Store Development and Management</h2>
+          <ul>
+              <li>✔ Duration 30 days</li>
+              <li>✔ Development of store</li>
+              <li>✔ Management store</li>
+              <li>✔ 2 check-in calls a week</li>
+            
+          </ul>
+          <h3 style="text-align: center; color: #ff9800;">$200</h3>
       </div>
-      <!-- Testimonial 2 -->
-      <div class="testimonial-card">
-        <img src="./Assets/Ibrahim.webp" alt="Ibrahim">
-        <h3>Ibrahim</h3>
-        <p><strong>Founder, StarPoint Data Hub</strong></p>
-        <p class="content2">
-          "I used to run my telecommunication business on someone else's platform, 
-          which limited my growth and control over my operations. 
-          <span class="hidden-text2">
-          That's when I decided to work with dFlip Media, and it turned out to be the best decision for my business. 
-          The team at dFlip didn't just provide guidance; they walked me through every step of building my own platform, StarPoint Data Hub. 
-          From crafting a solid business strategy to creating a user-friendly and professional platform, they ensured every detail was handled with precision."
-        </span>
-        <button class="read-more-btn2">Read More</button> 
-        </p>
-      </div>
-      <!-- Testimonial 3 -->
-      <div class="testimonial-card">
-        <img src="./Assets/Wasiu.webp" alt="Wasiu">
-        <h3>Wasiu</h3>
-        <p><strong>Founder</strong></p>
-        <p class="content3">
-          "dFlip PR Services' consultancy services completely transformed my business. 
-          <span class="hidden-text3">
-          Their expertise in brand positioning was nothing short of extraordinary. 
-          They didn’t just help me find my place in the crypto market—they made my brand the go-to choice for top developers in the crypto industry. 
-          The strategies they implemented brought clarity to my messaging and amplified my visibility. 
-          My monthly income skyrocketed by 100x within months! The team’s dedication, innovative thinking, and attention to detail were truly remarkable."
-        </span>
-        <button class="read-more-btn3">Read More</button> 
-        </p>
+    
+      <div class="offer-card">
+          <h2>The Bundle Offer</h2>
+          <ul>
+              <li>✔ Duration 30 days</li>
+              <li>✔ Combine all 3 services</li>
+              
+          </ul>
+          <h3 style="text-align: center; color: #ff9800;">$350</h3>
       </div>
     </div>
-  </div>
+    <div class="btn_offer_div">
+      <button class="btn_offer">
+        <a href="./contact form.html">Get Started</a>
+      </button>
+    </div>
+      </div>
+        
+    
+      
+    </div>
+    
+    <!-- TESTIMONIAL SECTION -->
+
+    <div class="testimonials">
+      <div class="testimonial_h1">
+      <h1>What our Clients are saying</h1>
+    </div>
+      <div class="testimonial-cards">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <img src="./Assets/Corrie Campbell.webp" alt="Corrie Campbell">
+          <h3>Corrie Campbell</h3>
+          <p><strong>Founder, PrimeAve</strong></p>
+          <p class="content">
+            "Working with dFlip Media has been a game-changer for my dropshipping business.
+            <span class="hidden-text">
+            Their customer relations strategies helped me build stronger connections with my buyers, leading to increased loyalty and repeat sales. 
+            The market research they conducted gave me deep insights into my target audience and competitors, helping me refine my 
+            product offerings and marketing campaigns. Since partnering with dFlip, 
+            my revenue has grown by over 40%, and my brand now stands out in a highly competitive market. 
+            I couldn't have asked for a better team to take my business to the next level!"
+          </span>
+          <button class="read-more-btn">Read More</button> 
+          </p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <img src="./Assets/Ibrahim.webp" alt="Ibrahim">
+          <h3>Ibrahim</h3>
+          <p><strong>Founder, StarPoint Data Hub</strong></p>
+          <p class="content2">
+            "I used to run my telecommunication business on someone else's platform, 
+            which limited my growth and control over my operations. 
+            <span class="hidden-text2">
+            That's when I decided to work with dFlip Media, and it turned out to be the best decision for my business. 
+            The team at dFlip didn't just provide guidance; they walked me through every step of building my own platform, StarPoint Data Hub. 
+            From crafting a solid business strategy to creating a user-friendly and professional platform, they ensured every detail was handled with precision."
+          </span>
+          <button class="read-more-btn2">Read More</button> 
+          </p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <img src="./Assets/Wasiu.webp" alt="Wasiu">
+          <h3>Wasiu</h3>
+          <p><strong>Founder</strong></p>
+          <p class="content3">
+            "dFlip PR Services' consultancy services completely transformed my business. 
+            <span class="hidden-text3">
+            Their expertise in brand positioning was nothing short of extraordinary. 
+            They didn’t just help me find my place in the crypto market—they made my brand the go-to choice for top developers in the crypto industry. 
+            The strategies they implemented brought clarity to my messaging and amplified my visibility. 
+            My monthly income skyrocketed by 100x within months! The team’s dedication, innovative thinking, and attention to detail were truly remarkable."
+          </span>
+          <button class="read-more-btn3">Read More</button> 
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
   <footer class="footer">
     <div class="newsletter">
       <h3>Subscribe to our Newsletter</h3>
@@ -466,7 +738,73 @@
   
   </footer>
 
- 
+ <!-- Israel JS starts here -->
+
+ <script>
+      const viewport = document.getElementById("challenges-viewport");
+      const track = document.getElementById("challenges-track");
+      const slides = Array.from(track.querySelectorAll(".challenges-slide"));
+      const prevBtn = document.querySelector(".challenges__btn--prev");
+      const nextBtn = document.querySelector(".challenges__btn--next");
+      const dots = Array.from(document.querySelectorAll(".challenges__dot"));
+
+      let currentIndex = 0;
+
+      function clamp(n, min, max) {
+        return Math.max(min, Math.min(max, n));
+      }
+
+      function goToSlide(index) {
+        currentIndex = clamp(index, 0, slides.length - 1);
+        const left = slides[currentIndex].offsetLeft;
+        viewport.scrollTo({ left, behavior: "smooth" });
+        updateUI();
+      }
+
+      function updateUI() {
+        dots.forEach((d, i) => d.classList.toggle("active", i === currentIndex));
+        if (prevBtn) prevBtn.disabled = currentIndex === 0;
+        if (nextBtn) nextBtn.disabled = currentIndex === slides.length - 1;
+      }
+
+      function syncToNearest() {
+        const x = viewport.scrollLeft;
+        let nearest = 0;
+        let best = Infinity;
+        for (let i = 0; i < slides.length; i++) {
+          const dist = Math.abs(slides[i].offsetLeft - x);
+          if (dist < best) {
+            best = dist;
+            nearest = i;
+          }
+        }
+        if (nearest !== currentIndex) {
+          currentIndex = nearest;
+          updateUI();
+        }
+      }
+
+      if (prevBtn) prevBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
+      if (nextBtn) nextBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
+
+      dots.forEach((dot, i) => dot.addEventListener("click", () => goToSlide(i)));
+
+      viewport.addEventListener("scroll", syncToNearest);
+
+      viewport.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") { e.preventDefault(); goToSlide(currentIndex + 1); }
+        if (e.key === "ArrowLeft")  { e.preventDefault(); goToSlide(currentIndex - 1); }
+      });
+
+      window.addEventListener("resize", () => goToSlide(currentIndex));
+
+      updateUI();
+
+
+  </script>
+
+<!-- Israel js Ends here -->
+
 
   <script>
     const slider = document.getElementById('slider');
@@ -497,9 +835,6 @@
       }
     });
     </script>
-
-
-
 
     <script>
       document.querySelector('.read-more-btn').addEventListener('click', function () {
