@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>dFlip Website</title>
+  <meta name="description" content="dFlip is a dynamic media and PR agency dedicated to transforming brands through innovative strategies and impactful storytelling. We specialize in elevating brand presence, driving engagement, and fostering meaningful connections with audiences. Our team of experts combines creativity, data-driven insights, and industry expertise to deliver tailored solutions that meet the unique needs of each client. From media relations and content creation to digital marketing and event management, dFlip is committed to helping businesses thrive in a competitive landscape. Partner with us to unlock your brand's full potential and make a lasting impression in the market.">
+  <!-- <link rel="icon" type="image/png" href="img/dflip.PNG" sizes="32x32"> -->
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,1151 +20,698 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <!-- <header>
-    <nav>
-      <div class="nav-wrapper">
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav-wrapper">
 
-        <div class="nav-logo">
-          <a href="#">
-            <img src="./Assets/dflip logo.png" alt="dFlipmedia logo" >
+          <a class="nav-logo" href="#">
+            <img src="./img/dflip.PNG" alt="dFlipmedia logo" />
+          </a>
+
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon" aria-label="Open menu">
+            <span class="material-symbols-outlined">menu_open</span>
+          </label>
+
+          <ul class="menu-items">
+            <li>
+              <a href="#">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#">About dFlip</a>
+            </li>
+
+            <li>
+              <a href="#">Meet The Team</a>
+            </li>
+
+            <li>
+              <a href="#">Join dFlip</a>
+            </li>
+
+            <li>
+              <a href="#">Blog</a>
+            </li>
+
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-cta hide-mobile" href="./contact.html">
+            Lets Start Talking 
           </a>
         </div>
 
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon"><span class="material-symbols-outlined" id="menubtn">
-          menu_open
-        </span></label>
-      
-        <ul class="menu-items">
-          <li>
-            <a href="./contact form.html">Our Services</a>
-          </li>
-          <li>
-            <a href="./about.html">About dFlip</a>
-          </li>
-          <li>
-            <a href="#">Meet The Team</a>
-          </li>
-          <li>
-            <a href="./services.html">Blog</a>
-          </li>
-          <li>
-            <a href="./index.html">Contact</a>
-          </li>
-          <li>
-            <a href="#"> Join dFlip</a>
-          </li>
-        </ul>
-
-      </div>
-    </nav>
-  </header> -->
-
-  <header class="site-header">
-    <nav class="nav">
-      <div class="nav-wrapper">
-
-        <a class="nav-logo" href="#">
-          <img src="./Assets/dflip logo.png" alt="dFlipmedia logo" />
-        </a>
-
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon" aria-label="Open menu">
-          <span class="material-symbols-outlined">menu_open</span>
-        </label>
-
-        <ul class="menu-items">
-          <li>
-            <a href="#">Our Services</a>
-          </li>
-
-          <li>
-            <a href="#">Services</a>
-          </li>
-
-          <li>
-            <a href="#">Services</a>
-          </li>
-
-          <li>
-            <a href="#">Services</a>
-          </li>
-
-          <li class="has-caret">
-            <a href="#">Portfolio</a>
-          </li>
-
-          <li class="has-caret">
-            <a href="./about.html">About Us</a>
-          </li>
-
-          <li class="hide-desktop">
-            <a class="btn btn-cta" href="./contact.html">Get Started</a>
-          </li>
-        </ul>
-
-        <a class="btn btn-cta hide-mobile" href="./contact.html">
-          Lets Start Talking 
-        </a>
-      </div>
-
-    </nav>
-  </header>
+      </nav>
+    </header>
 
 
-  <main>
+    <main>
 
-    <section class="sec1">
-      <div class="hero-container">
-        <div class="hero">
-          <h6>
-            WE ARE A GLOBAL POWERHOUSE IN PR AND MARKETING
-          </h6>
+      <section class="sec1">
+        <div class="hero-container">
+          <div class="hero">
+            <h6>
+              WE ARE A GLOBAL POWERHOUSE IN PR AND MARKETING
+            </h6>
 
-          <h1>
-            The powerhouse businesses come to for strategies that win trust and spark growth.
-          </h1>
-          <a href="">
-            <span class="span1">Learn More</span> 
-            <br>
-            <span class="span2">Learn More</span>
-          </a>
-        </div> 
-
-        <div class="sub-hero">
-
-          <div class="flip-holder">
-            <img src="img/dflip.PNG" alt="">
-          </div>
-
-          <div class="brand-declaration-holder">
-            <h4>
-              Building Influence That Lasts
-            </h4>
-            <p>
-              We make your brand unforgettable — connecting you to the right audience with PR, digital, and growth strategies that turn goals into results.
-            </p>
-            <p class="phrase-word">
-              Let's Flip you to the other side of growth
-            </p>
-          </div>
-        </div>
-                
-      </div>   
-    </section>
-
-    <section class="sec2" aria-label="Your challenges, solved">
-      <div class="challenges-header">
-        <h2>
-          <span class="whatwedo">WHAT WE DO</span> <br>
-          dFlip Advantage
-        </h2>
-
-        <div class="challenges__controls">
-          <button type="button" class="challenges__btn challenges__btn--prev" aria-label="Previous" aria-controls="challenges-track">‹</button>
-
-          <button type="button" class="challenges__btn challenges__btn--next" aria-label="Next" aria-controls="challenges-track">›</button>
-        </div>
-
-      </div>
-
-      <div class="challenges__viewport" id="challenges-viewport" tabindex="0">
-        
-        <ul class="challenges__track" id="challenges-track" role="list"data-slider="challenges">
-
-          <li class="challenges-slide">
-            <a class="challenge-card" href="#">
-              <figure class="challenge-card-figure">
-                <img src="img/Brand Promotion.png" alt="">
-                <figcaption class="challenge-card-caption">
-                </figcaption>
-              </figure>
+            <h1>
+              The powerhouse businesses come to for strategies that win trust and spark growth.
+            </h1>
+            <a href="">
+              <span class="span1">Learn More</span> 
+              <br>
+              <span class="span2">Learn More</span>
             </a>
-          </li>
+          </div> 
 
-          <li class="challenges-slide">
-            <a class="challenge-card" href="#">
-              <figure class="challenge-card-figure">
-                <img src="img/CCM.png" alt="Monochrome face texture representing customers and audience">
-                <figcaption class="challenge-card-caption">
-                </figcaption>
-              </figure>
-            </a>
-          </li>
+          <div class="sub-hero">
 
-          <li class="challenges-slide">
-            <a class="challenge-card" href="#">
-              <figure class="challenge-card-figure">
-                <img src="img/PR Service.png" alt="Copper cable motion representing product launch velocity">
-                <figcaption class="challenge-card-caption">
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li class="challenges-slide">
-            <a class="challenge-card" href="#">
-              <figure class="challenge-card-figure">
-                <img src="img/e-com.png" alt="Ink in water representing expansion">
-                <figcaption class="challenge-card-caption">
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          
-          <li class="challenges-slide">
-            <a class="challenge-card" href="#">
-              <figure class="challenge-card-figure">
-                <img src="img/CSS.png" alt="Gradient abstract waves representing perception">
-                <figcaption class="challenge-card-caption">
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li class="challenges-slide">
-            <a class="challenge-card" href="#">
-              <figure class="challenge-card-figure">
-                <img src="img/DAC.png" alt="Data grid representing demand generation">
-                <figcaption class="challenge-card-caption">
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li class="challenges-slide">
-            <a class="challenge-card" href="#">
-              <figure class="challenge-card-figure">
-                <img src="/img/SMM.png" alt="Neon circuitry representing digital transformation">
-                <figcaption class="challenge-card-caption">
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li class="challenges-slide">
-            <a class="challenge-card" href="#">
-              <figure class="challenge-card-figure">
-                <img src="img/CRM.png" alt="Colorful motion blur representing performance">
-                <figcaption class="challenge-card-caption">
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
-      <div class="challenges__pagination" aria-hidden="true">
-        <button type="button" class="challenges__dot" data-index="0" aria-label="Go to slide 1"></button>
-        <button type="button" class="challenges__dot" data-index="1" aria-label="Go to slide 2"></button>
-        <button type="button" class="challenges__dot" data-index="2" aria-label="Go to slide 3"></button>
-        <button type="button" class="challenges__dot" data-index="3" aria-label="Go to slide 4"></button>
-        <button type="button" class="challenges__dot" data-index="4" aria-label="Go to slide 5"></button>
-        <button type="button" class="challenges__dot" data-index="5" aria-label="Go to slide 6"></button>
-        <button type="button" class="challenges__dot" data-index="6" aria-label="Go to slide 7"></button>
-        <button type="button" class="challenges__dot" data-index="7" aria-label="Go to slide 8"></button>
-      </div>
-    </section>
-
-    <div class="clip"></div>
-
-    <section class="sec3">
-      <div class="cont3">
-
-        <div class="the-how">
-          <h6>
-            HOW WE DO IT
-          </h6>
-          <h2>
-            Bringing Your Ideas To Life
-          </h2>
-          <p>
-            Our process is built on clarity and collaboration. We listen, design strategies around your goals, and execute with precision. From planning to delivery, every step is tailored to ensure your brand connects, grows, and leaves a lasting impact.
-          </p>
-           <a class="general-btn" href="">
-            <span class="span1">Learn More</span> 
-            <br>
-            <span class="span2">Learn More</span>
-          </a>
-        </div>
-
-        <div class="team-container">
-          <div class="team-content-holder">
-            <div class="team-img-holder">
-              <img src="img/ere.png" alt="">
+            <div class="flip-holder">
+              <img src="img/dflip.PNG" alt="">
             </div>
 
-            <!-- <div class="pingpong">
-              <div class="ball"></div>
-              <div class="ball"></div>
-              <div class="ball"></div>
-              <div class="ball"></div>
-              <div class="ball"></div>
-              <div class="ball"></div>
-              <div class="ball"></div>
-              <div class="ball"></div>
-              <div class="ball"></div>
-            </div> -->
-          </div>
-        </div>
-        
-      </div>
-
-    </section>
-    
-    <section class="sec4">
-
-      <div class="cont4">
-        
-        <div class="cont4-content">
-          <h6>
-            BRANDS WE EMPOWER
-          </h6>
-          <h2>
-            Shaping Success Across Sectors
-          </h2>
-        </div>
-
-        <div class="services">
-          <article class="service">
-            <h3 class="service__title">E-Commerce & Retail</h3>
-            <p class="service__desc">
-              We help online and retail brands scale by creating visibility, driving engagement, and building strong customer relationships. From digital storefronts to targeted campaigns, we design strategies that increase sales and strengthen brand loyalty.
-            </p>
-          </article>
-
-          <article class="service">
-            <h3 class="service__title">Real Estate & Property</h3>
-            <p class="service__desc">
-             We position property brands to connect with the right buyers and investors through effective PR, digital marketing, and communication strategies that inspire confidence and accelerate growth.
-            </p>
-          </article>
-
-          <article class="service">
-            <h3 class="service__title">Sports & Fitness</h3>
-            <p class="service__desc">
-              We amplify that by crafting campaigns that build fan loyalty, attract sponsors, and expand reach — turning enthusiasm into measurable growth and long-term success.
-            </p>
-          </article>
-
-          <article class="service">
-            <h3 class="service__title">Media & Entertainment</h3>
-            <p class="service__desc">
-              We empower media and entertainment brands to stay relevant in a fast-paced world. From audience engagement to brand storytelling, we help you capture attention, build influence, and keep your audience coming back for more.
-            </p>
-          </article>
-
-          <article class="service">
-            <h3 class="service__title">Hospitality & Lifestyle</h3>
-            <p class="service__desc">
-              We drive growth by enhancing visibility, crafting strong digital narratives, and building lasting customer relationships that turn first-time guests into loyal advocates.
-            </p>
-          </article>
-        </div>
-
-      </div>
-
-    </section>
-
-    <div class="pingpong">
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-    </div>
-
-    <section class="sec5">
-      <div class="cont5">
-
-        <div class="sets-apart">
-          <h2>What Sets Us Apart</h2>
-
-          <div class="pr-box" id="open">
-            <span class="material-symbols-outlined">campaign</span>
-
-            <div class="campaign" id="is-open">
-              <h4>Bringing Fresh, Original Ideas to Every Table</h4>
-              <p>Every campaign is powered by fresh concepts built around your brand's unique identity, ensuring you always stand out in a crowded market.</p>
+            <div class="brand-declaration-holder">
+              <h4>
+                Building Influence That Lasts
+              </h4>
+              <p>
+                We make your brand unforgettable — connecting you to the right audience with PR, digital, and growth strategies that turn goals into results.
+              </p>
+              <p class="phrase-word">
+                Let's Flip you to the other side of growth
+              </p>
             </div>
           </div>
+                  
+        </div>   
+      </section>
 
-          <div class="pr-box">
-            <span class="material-symbols-outlined">strategy</span>
-            <h4>Strategy Grounded in Real Impact</h4>
+      <section class="sec2" aria-label="Your challenges, solved">
+        <div class="challenges-header">
+          <h2>
+            <span class="whatwedo">WHAT WE DO</span> <br>
+            dFlip Advantage
+          </h2>
+
+          <div class="challenges__controls">
+            <button type="button" class="challenges__btn challenges__btn--prev" aria-label="Previous" aria-controls="challenges-track">‹</button>
+
+            <button type="button" class="challenges__btn challenges__btn--next" aria-label="Next" aria-controls="challenges-track">›</button>
           </div>
 
-          <div class="pr-box">
-            <span class="material-symbols-outlined">partner_heart</span>
-            <h4>End-to-End Support Without Gaps</h4>
-          </div>
-
-          <div class="pr-box">
-            <span class="material-symbols-outlined">transition_dissolve </span>
-            <h4>Transparent Process</h4>
-          </div>
-
         </div>
 
-        <div class="team-table">
-          <img src="img/trew.png" alt="">
-        </div>
-
-      </div>
-    </section>
-
-    <section class="sec7">
-      <hr>
-      <div class="cont7">
-        <h2>Our Partners and Clients</h2>
-        <div class="partners-logos">
-          <img src="img/PMA.png" alt="Partner logo">
-          <img src="img/FVB.png" alt="Partner logo">
-          <img src="img/Snatched.png" alt="Partner logo">
-          <img src="img/URB.png" alt="Partner logo">
-          <img src="img/A&W.png" alt="Partner logo">
-        </div>
-      </div>
-      <hr>
-    </section>
-
-
-    <section class="sec6" aria-labelledby="dflip-hero-title">
-      <div class="dflip-hero__watermark" aria-hidden="true">WHY?</div>
-
-      <div class="dflip-hero__inner">
-        <div class="dflip-logo_holder">
-          <div class="dflip-brand">
-            <img class="dflip-brand__logo" src="img/dflip.PNG" alt="dFlip logo" />
-          </div>
-
-          <div class="dflip-divider" role="presentation"></div>
-
-          <p class="dflip-subline">
-            media & PR
-          </p>
-        </div>
-
-        <div class="modeling-divholder">
-          <img
-            class="dflip-model"
-            src="img/Whydflip1.png"
-            alt="Thoughtful professional looking to the side"
-          />
-        </div>
-      </div>
-
-      <!-- Card slider dock (centered near the model’s hands) -->
-      <div class="dflip-cards" data-cards>
-        <button class="cards-nav cards-nav--prev" aria-label="Previous" data-prev>
-          ‹
-        </button>
-
-        <ul class="cards-track" data-track>
-          <li class="card">
-            <h3 class="card__title">Affordable Plans</h3>
-            <p class="card__body">Smart solutions that fit your business size and goals.</p>
-            <a class="card__cta" href="#packages">Get Started</a>
-          </li>
-
-          <li class="card">
-            <h3 class="card__title">Fresh Approach</h3>
-            <p class="card__body">Modern PR tailored for today's fast-moving world.</p>
-            <a class="card__cta" href="#clients">Discover More</a>
-          </li>
-
-          <li class="card">
-            <h3 class="card__title">Dedicated Support</h3>
-            <p class="card__body">We grow with you. step by step</p>
-            <a class="card__cta" href="#verticals">Work with Us</a>
-          </li>
-
-          <li class="card">
-            <h3 class="card__title">Creative Edge</h3>
-            <p class="card__body">Stories and strategies that make you stand out</p>
-            <a class="card__cta" href="#team">See How</a>
-          </li>
-
-          <li class="card">
-            <h3 class="card__title">Scalable Growth</h3>
-            <p class="card__body">PR built to expand as your business does</p>
-            <a class="card__cta" href="#team">Grow With US</a>
-          </li>
+        <div class="challenges__viewport" id="challenges-viewport" tabindex="0">
           
-          <li class="card">
-            <h3 class="card__title">Building Trust</h3>
-            <p class="card__body">Helping you earn credibility with your audience</p>
-            <a class="card__cta" href="#team">Talk to Us</a>
-          </li>
-        </ul>
+          <ul class="challenges__track" id="challenges-track" role="list"data-slider="challenges">
 
-        <button class="cards-nav cards-nav--next" aria-label="Next" data-next>
-          ›
-        </button>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="about_div">
-      <div class="heading1">
-      <h1>We do the thinking <br>while your business <br> <span>experience the Growth</span></h1>
-    </div> 
-    <div class="paragraph"> 
-      <p>We provide experts innovative strategies, with creative <br>
-        data driven ideas that leads to exponential business growth
-      </p>
-    </div>
-    </div>
-
-    <!-- OFFER SECTION -->
-
-    <div class="offer_section_div">
-      <div class="drop_shipping_offer"><h1>Crazy 30 Days <br>Drop Shipping Offer</h1> </div>
-      <div class="slider-container">
-        <div class="slider" id="slider">
-          <div class="box_offer">
-            <h2>Market Research</h2> <br>
-                <h3>Duration: 30 days</h3>
-                <p>10 products a day </p>
-                <p>3 days a week with competitors' links</p>
-                <p>1 deep dive meeting a week</p> <br> 
-                <h4>$150</h4>
-                <a href="./contact form.html" target="_parent"><button class="btn_container2">
-                  Get Started</button>
-                </a>     
-          </div>
-          <div class="box_offer">
-            <h2>Customer Experience</h2> <br>
-              <h3>Duration: 30 days</h3> 
-              <p>Answers all customer queries</p> 
-              <p>Follow up with suppliers</p> 
-              <p>2 check-in calls a week</p> <br>
-              <h4>$100</h4>
-              <a href="./contact form.html" target="_parent"> <button class="btn_container2">
-                  Get Started</button>
+            <li class="challenges-slide">
+              <a class="challenge-card" href="#">
+                <figure class="challenge-card-figure">
+                  <img src="img/Brand Promotion.png" alt="">
+                </figure>
               </a>
-          </div>
-          <div class="box_offer">
-            <h2>Store Development and Management</h2> <br>
-              
-                <h3>Duration: 30 days</h3>
-                <p>Development of store</p>
-                <p>Management store</p>
-                <p>2 check-in calls a week</p> <br>
-                <h4>$200</h4>
-                <a href="./contact form.html" target="_parent"><button class="btn_container2">
-                  Get Started
+            </li>
 
-                </button></a>
-              
-          </div>
-          <div class="box_offer">
-            <h2>The Bundle Offer</h2> <br>
-                <h3>Duration: 30 days</h3>
-                <p>Access to all the three offers</p> <br>
-                <h4>$350</h4>
-                <a href="./contact form.html" target="_parent"><button class="btn_container2">
-                  Get Started
+            <li class="challenges-slide">
+              <a class="challenge-card" href="#">
+                <figure class="challenge-card-figure">
+                  <img src="img/CCM.png" alt="Monochrome face texture representing customers and audience">
+                </figure>
+              </a>
+            </li>
 
-                </button></a>     
-          </div>  
-        </div> 
-      </div> 
-      
-      <div>
-        <img class="crazy_offer_img" src="./Assets/Untitled-2.png" alt="">
-        
-      
-      </div>
-      
-        
-      <div class="btn_cont">
-        <button class="control-btn1" id="prevBtn" disabled>Previous</button>
-            <button class="control-btn2" id="nextBtn">Next</button>
-          </div>
-    </div>
+            <li class="challenges-slide">
+              <a class="challenge-card" href="#">
+                <figure class="challenge-card-figure">
+                  <img src="img/PR Service.png" alt="Copper cable motion representing product launch velocity">
+                </figure>
+              </a>
+            </li>
 
-    <!-- for small screen 425px -->
-
-    <div class="small_screen">
-    <div class="container_small_offer">
-      <h1 class="title">Crazy 30 Days <span>Drop Shipping Offer</span></h1>
-
-      <div class="offer-card">
-          <h2>Market Research</h2>
-          <ul>
-              <li>Duration: 30 days</li>
-              <li>✔ 10 products a day</li> 
-              <li>✔ 3 days a week with competitors’ links</li>
-              <li>✔ 1 deep dive meeting a week</li>
-          </ul>
-          <h3 style="text-align: center; color: #ff9800;">$150</h3>
-      </div>
-
-      <div class="offer-card">
-          <h2>Customer Experience</h2>
-          <ul>
-              <li>Duration: 30 days</li>
-              <li>✔ Answer all customer queries</li>
-              <li>✔ Follow up with the suppliers</li>
-              <li>✔ 2 check-in calls a week</li>
-              
-          </ul>
-          <h3 style="text-align: center; color: #ff9800;">$100</h3>
-      </div>
-
-      <div class="offer-card">
-          <h2>Store Development and Management</h2>
-          <ul>
-              <li>Duration: 30 days</li>
-              <li>✔ Development of store</li>
-              <li>✔ Management store</li>
-              <li>✔ 2 check-in calls a week</li>
+            <li class="challenges-slide">
+              <a class="challenge-card" href="#">
+                <figure class="challenge-card-figure">
+                  <img src="img/e-com.png" alt="Ink in water representing expansion">
+                </figure>
+              </a>
+            </li>
             
+            <li class="challenges-slide">
+              <a class="challenge-card" href="#">
+                <figure class="challenge-card-figure">
+                  <img src="img/CSS.png" alt="Gradient abstract waves representing perception">
+                </figure>
+              </a>
+            </li>
+
+            <li class="challenges-slide">
+              <a class="challenge-card" href="#">
+                <figure class="challenge-card-figure">
+                  <img src="img/DAC.png" alt="Data grid representing demand generation">
+                </figure>
+              </a>
+            </li>
+
+            <li class="challenges-slide">
+              <a class="challenge-card" href="#">
+                <figure class="challenge-card-figure">
+                  <img src="/img/SMM.png" alt="Neon circuitry representing digital transformation">
+              </a>
+            </li>
+
+            <li class="challenges-slide">
+              <a class="challenge-card" href="#">
+                <figure class="challenge-card-figure">
+                  <img src="img/CRM.png" alt="Colorful motion blur representing performance">
+              </a>
+            </li>
+
           </ul>
-          <h3 style="text-align: center; color: #ff9800;">$200</h3>
-      </div>
+        </div>
 
-      <div class="offer-card">
-          <h2>The Bundle Offer</h2>
-          <ul>
-              <li>Duration: 30 days</li>
-              <li>✔ Combine all 3 services</li>
-              
-          </ul>
-          <h3 style="text-align: center; color: #ff9800;">$350</h3>
-      </div>
-      <div class="btn_offer_div">
-        <button class="btn_offer">
-          <a href="./contact form.html">Get Started</a>
-        </button>
-      </div>
-    </div>
+        <div class="challenges__pagination" aria-hidden="true">
+          <button type="button" class="challenges__dot" data-index="0" aria-label="Go to slide 1"></button>
+          <button type="button" class="challenges__dot" data-index="1" aria-label="Go to slide 2"></button>
+          <button type="button" class="challenges__dot" data-index="2" aria-label="Go to slide 3"></button>
+          <button type="button" class="challenges__dot" data-index="3" aria-label="Go to slide 4"></button>
+          <button type="button" class="challenges__dot" data-index="4" aria-label="Go to slide 5"></button>
+          <button type="button" class="challenges__dot" data-index="5" aria-label="Go to slide 6"></button>
+          <button type="button" class="challenges__dot" data-index="6" aria-label="Go to slide 7"></button>
+          <button type="button" class="challenges__dot" data-index="7" aria-label="Go to slide 8"></button>
+        </div>
+      </section>
 
+      <div class="clip"></div>
 
-    </div>
+      <section class="sec3">
+        <div class="cont3">
 
-    <!-- For Tablet Screen Size 768px -->
+          <div class="the-how">
+            <h6>
+              HOW WE DO IT
+            </h6>
+            <h2>
+              Bringing Your Ideas To Life
+            </h2>
+            <p>
+              Our process is built on clarity and collaboration. We listen, design strategies around your goals, and execute with precision. From planning to delivery, every step is tailored to ensure your brand connects, grows, and leaves a lasting impact.
+            </p>
+            <a class="general-btn" href="">
+              <span class="span1">Learn More</span> 
+              <br>
+              <span class="span2">Learn More</span>
+            </a>
+          </div>
 
-    <div class="small_screen768">
-    <!-- <div class="container"> -->
-      <h1 class="title">Crazy 30 Days <span>Drop Shipping Offer</span></h1>
-    
-      <div class="offer-card_div1">
-        <div class="offer-card">
-          <h2>Market Research</h2>
-          <ul>
-              <li>Duration 30 days</li>
-              <li>✔ 10 products a day</li> 
-              <li>✔ 3 days a week with competitors’ links</li>
-              <li>✔ 1 deep dive meeting a week</li>
-          </ul>
-          <h3 style="text-align: center; color: #ff9800;">$150</h3>
-      </div>
-    
-      <div class="offer-card">
-          <h2>Customer Experience</h2>
-          <ul>
-              <li>Duration 30 days</li>
-              <li>✔ Answer all customer queries</li>
-              <li>✔ Follow up with the suppliers</li>
-              <li>✔ 2 check-in calls a week</li>
-              
-          </ul>
-          <h3 style="text-align: center; color: #ff9800;">$100</h3>
-      </div>
-
-      </div>
-      
-    <div class="offer-card_div2">
-      <div class="offer-card">
-        <h2>Store Development and Management</h2>
-        <ul>
-            <li>✔ Duration 30 days</li>
-            <li>✔ Development of store</li>
-            <li>✔ Management store</li>
-            <li>✔ 2 check-in calls a week</li>
+          <div class="team-container">
+            <div class="team-content-holder">
+              <div class="team-img-holder">
+                <img src="img/ere.png" alt="">
+              </div>
+            </div>
+          </div>
           
-        </ul>
-        <h3 style="text-align: center; color: #ff9800;">$200</h3>
-      </div>
+        </div>
 
-      <div class="offer-card">
-        <h2>The Bundle Offer</h2>
-        <ul>
-            <li>✔ Duration 30 days</li>
-            <li>✔ Combine all 3 services</li>
+      </section>
+      
+      <section class="sec4">
+
+        <div class="cont4">
+          
+          <div class="cont4-content">
+            <h6>
+              BRANDS WE EMPOWER
+            </h6>
+            <h2>
+              Shaping Success Across Sectors
+            </h2>
+          </div>
+
+          <div class="services">
+            <article class="service">
+              <h3 class="service__title">E-Commerce & Retail</h3>
+              <p class="service__desc">
+                We help online and retail brands scale by creating visibility, driving engagement, and building strong customer relationships. From digital storefronts to targeted campaigns, we design strategies that increase sales and strengthen brand loyalty.
+              </p>
+            </article>
+
+            <article class="service">
+              <h3 class="service__title">Real Estate & Property</h3>
+              <p class="service__desc">
+              We position property brands to connect with the right buyers and investors through effective PR, digital marketing, and communication strategies that inspire confidence and accelerate growth.
+              </p>
+            </article>
+
+            <article class="service">
+              <h3 class="service__title">Sports & Fitness</h3>
+              <p class="service__desc">
+                We amplify that by crafting campaigns that build fan loyalty, attract sponsors, and expand reach — turning enthusiasm into measurable growth and long-term success.
+              </p>
+            </article>
+
+            <article class="service">
+              <h3 class="service__title">Media & Entertainment</h3>
+              <p class="service__desc">
+                We empower media and entertainment brands to stay relevant in a fast-paced world. From audience engagement to brand storytelling, we help you capture attention, build influence, and keep your audience coming back for more.
+              </p>
+            </article>
+
+            <article class="service">
+              <h3 class="service__title">Hospitality & Lifestyle</h3>
+              <p class="service__desc">
+                We drive growth by enhancing visibility, crafting strong digital narratives, and building lasting customer relationships that turn first-time guests into loyal advocates.
+              </p>
+            </article>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="sec5">
+        <div class="cont5">
+
+          <div class="sets-apart">
+            <h2>What Sets Us Apart</h2>
+
+            <div class="pr-box" id="open">
+              <span class="material-symbols-outlined">campaign</span>
+
+              <div class="campaign" id="is-open">
+                <h4>Bringing Fresh, Original Ideas to Every Table</h4>
+                <p>Every campaign is powered by fresh concepts built around your brand's unique identity, ensuring you always stand out in a crowded market.</p>
+              </div>
+            </div>
+
+            <div class="pr-box">
+              <span class="material-symbols-outlined">strategy</span>
+              <h4>Strategy Grounded in Real Impact</h4>
+            </div>
+
+            <div class="pr-box">
+              <span class="material-symbols-outlined">partner_heart</span>
+              <h4>End-to-End Support Without Gaps</h4>
+            </div>
+
+            <div class="pr-box">
+              <span class="material-symbols-outlined">transition_dissolve </span>
+              <h4>Transparent Process</h4>
+            </div>
+
+          </div>
+
+          <div class="team-table">
+            <img src="img/trew.png" alt="">
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sec7">
+        <hr>
+        <div class="cont7">
+          <h2>Our Partners and Clients</h2>
+
+          <div class="logos-slider">
+            <div class="partners-logos">
+              <img src="img/PMA.png" alt="Partner logo">
+              <img src="img/FVB.png" alt="Partner logo">
+              <img src="img/Snatched.png" alt="Partner logo">
+              <img src="img/URB.png" alt="Partner logo">
+              <img src="img/A&W.png" alt="Partner logo">
+              <img src="img/img3.png" alt="Partner logo">
+              <img src="img/img4.png" alt="Partner logo">
+              <img src="img/img5.png" alt="Partner logo">
+
+              <img src="img/PMA.png" alt="Partner logo">
+              <img src="img/FVB.png" alt="Partner logo">
+              <img src="img/Snatched.png" alt="Partner logo">
+              <img src="img/URB.png" alt="Partner logo">
+              <img src="img/A&W.png" alt="Partner logo">
+              <img src="img/img3.png" alt="Partner logo">
+              <img src="img/img4.png" alt="Partner logo">
+              <img src="img/img5.png" alt="Partner logo">
+            </div>
+          </div>
+        </div>
+        <hr>
+      </section>
+      
+      <section class="sec6" aria-labelledby="dflip-hero-title">
+        <div class="dflip-hero__watermark" aria-hidden="true">WHY?</div>
+
+        <div class="dflip-hero__inner">
+          <div class="dflip-logo_holder">
+            <div class="dflip-brand">
+              <img class="dflip-brand__logo" src="img/dflip.PNG" alt="dFlip logo" />
+            </div>
+
+            <div class="dflip-divider" role="presentation"></div>
+
+            <p class="dflip-subline">
+              Media & PR
+            </p>
+          </div>
+
+          <div class="modeling-divholder">
+            <img
+              class="dflip-model"
+              src="img/Whydflip1.png"
+              alt="Thoughtful professional looking to the side"
+            />
+          </div>
+        </div>
+
+        <div class="dflip-cards" data-cards>
+          <button class="cards-nav cards-nav--prev" aria-label="Previous" data-prev>
+            ‹
+          </button>
+
+          <ul class="cards-track" data-track>
+            <li class="card">
+              <h3 class="card__title">Affordable Plans</h3>
+              <p class="card__body">Smart solutions that fit your business size and goals.</p>
+              <a class="card__cta" href="#packages">Get Started</a>
+            </li>
+
+            <li class="card">
+              <h3 class="card__title">Fresh Approach</h3>
+              <p class="card__body">Modern PR tailored for today's fast-moving world.</p>
+              <a class="card__cta" href="#clients">Discover More</a>
+            </li>
+
+            <li class="card">
+              <h3 class="card__title">Dedicated Support</h3>
+              <p class="card__body">We grow with you. step by step</p>
+              <a class="card__cta" href="#verticals">Work with Us</a>
+            </li>
+
+            <li class="card">
+              <h3 class="card__title">Creative Edge</h3>
+              <p class="card__body">Stories and strategies that make you stand out</p>
+              <a class="card__cta" href="#team">See How</a>
+            </li>
+
+            <li class="card">
+              <h3 class="card__title">Scalable Growth</h3>
+              <p class="card__body">PR built to expand as your business does</p>
+              <a class="card__cta" href="#team">Grow With US</a>
+            </li>
             
-        </ul>
-        <h3 style="text-align: center; color: #ff9800;">$350</h3>
-      </div>
-    </div>
-    <div class="btn_offer_div">
-      <button class="btn_offer">
-        <a href="./contact form.html">Get Started</a>
-      </button>
-    </div>
-
-    <div class="Laptop_Screen1024px">
-      <!-- <div class="container"> -->
-        <h1 class="title">Crazy 30 Days <span>Drop Shipping Offer</span></h1>
-      
-        <div class="offer-card_div1">
-          <div class="offer-card">
-            <h2>Market Research</h2>
-            <ul>
-                <li>Duration 30 days</li>
-                <li>✔ 10 products a day</li> 
-                <li>✔ 3 days a week with competitors’ links</li>
-                <li>✔ 1 deep dive meeting a week</li>
-            </ul>
-            <h3 style="text-align: center; color: #ff9800;">$150</h3>
-        </div>
-      
-        <div class="offer-card">
-            <h2>Customer Experience</h2>
-            <ul>
-                <li>Duration 30 days</li>
-                <li>✔ Answer all customer queries</li>
-                <li>✔ Follow up with the suppliers</li>
-                <li>✔ 2 check-in calls a week</li>
-                
-            </ul>
-            <h3 style="text-align: center; color: #ff9800;">$100</h3>
-        </div>
-    
-        </div>
-        
-      <div class="offer-card_div2">
-        <div class="offer-card">
-          <h2>Store Development and Management</h2>
-          <ul>
-              <li>✔ Duration 30 days</li>
-              <li>✔ Development of store</li>
-              <li>✔ Management store</li>
-              <li>✔ 2 check-in calls a week</li>
-            
+            <li class="card">
+              <h3 class="card__title">Building Trust</h3>
+              <p class="card__body">Helping you earn credibility with your audience</p>
+              <a class="card__cta" href="#team">Talk to Us</a>
+            </li>
           </ul>
-          <h3 style="text-align: center; color: #ff9800;">$200</h3>
-      </div>
-    
-      <div class="offer-card">
-          <h2>The Bundle Offer</h2>
-          <ul>
-              <li>✔ Duration 30 days</li>
-              <li>✔ Combine all 3 services</li>
-              
-          </ul>
-          <h3 style="text-align: center; color: #ff9800;">$350</h3>
-      </div>
-    </div>
-    <div class="btn_offer_div">
-      <button class="btn_offer">
-        <a href="./contact form.html">Get Started</a>
-      </button>
-    </div>
-      </div>
-        
-    
-      
-    </div>
-    
-    <!-- TESTIMONIAL SECTION -->
 
-    <div class="testimonials">
-      <div class="testimonial_h1">
-      <h1>What our Clients are saying</h1>
-    </div>
-      <div class="testimonial-cards">
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card">
-          <img src="./Assets/Corrie Campbell.webp" alt="Corrie Campbell">
-          <h3>Corrie Campbell</h3>
-          <p><strong>Founder, PrimeAve</strong></p>
-          <p class="content">
-            "Working with dFlip Media has been a game-changer for my dropshipping business.
-            <span class="hidden-text">
-            Their customer relations strategies helped me build stronger connections with my buyers, leading to increased loyalty and repeat sales. 
-            The market research they conducted gave me deep insights into my target audience and competitors, helping me refine my 
-            product offerings and marketing campaigns. Since partnering with dFlip, 
-            my revenue has grown by over 40%, and my brand now stands out in a highly competitive market. 
-            I couldn't have asked for a better team to take my business to the next level!"
-          </span>
-          <button class="read-more-btn">Read More</button> 
-          </p>
+          <button class="cards-nav cards-nav--next" aria-label="Next" data-next>
+            ›
+          </button>
         </div>
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card">
-          <img src="./Assets/Ibrahim.webp" alt="Ibrahim">
-          <h3>Ibrahim</h3>
-          <p><strong>Founder, StarPoint Data Hub</strong></p>
-          <p class="content2">
-            "I used to run my telecommunication business on someone else's platform, 
-            which limited my growth and control over my operations. 
-            <span class="hidden-text2">
-            That's when I decided to work with dFlip Media, and it turned out to be the best decision for my business. 
-            The team at dFlip didn't just provide guidance; they walked me through every step of building my own platform, StarPoint Data Hub. 
-            From crafting a solid business strategy to creating a user-friendly and professional platform, they ensured every detail was handled with precision."
-          </span>
-          <button class="read-more-btn2">Read More</button> 
-          </p>
-        </div>
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card">
-          <img src="./Assets/Wasiu.webp" alt="Wasiu">
-          <h3>Wasiu</h3>
-          <p><strong>Founder</strong></p>
-          <p class="content3">
-            "dFlip PR Services' consultancy services completely transformed my business. 
-            <span class="hidden-text3">
-            Their expertise in brand positioning was nothing short of extraordinary. 
-            They didn’t just help me find my place in the crypto market—they made my brand the go-to choice for top developers in the crypto industry. 
-            The strategies they implemented brought clarity to my messaging and amplified my visibility. 
-            My monthly income skyrocketed by 100x within months! The team’s dedication, innovative thinking, and attention to detail were truly remarkable."
-          </span>
-          <button class="read-more-btn3">Read More</button> 
-          </p>
-        </div>
-      </div>
-    </div>
+      </section>
 
-  </main>
+      <section class="sec8" aria-label="Client testimonials">
+        <div class="sec8-wrap">
+          <h2 class="sec8-heading-alt">Our Clients’ Feedback</h2>
+          <div class="sec8-card">
 
-  <footer class="footer">
-    <div class="newsletter">
-      <h3>Subscribe to our Newsletter</h3>
-      <p>Fuel your business growth with our expert growth + insider insights.</p>
-      <form>
-        <input type="email" placeholder="Enter your email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-    <div class="links-container">
-      <div>
-        <h4>Quicklinks</h4>
-        <ul>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./contact form.html">Contact</a></li>
-        </ul>
+            <div class="sec8-media-viewport">
+              <div class="sec8-media-track">
+
+                <div class="sec8-media-slide">
+                  <video class="sec8-video" preload="metadata" playsinline
+                        src="assets/video/testimonial-1.mp4" poster=""></video>
+                  <button class="sec8-play" aria-label="Play video"><span class="sec8-play-icon"></span></button>
+                </div>
+
+                <div class="sec8-media-slide">
+                  <video class="sec8-video" preload="metadata" playsinline
+                        src="assets/video/testimonial-2.mp4"></video>
+                  <button class="sec8-play" aria-label="Play video"><span class="sec8-play-icon"></span></button>
+                </div>
+
+                <div class="sec8-media-slide">
+                  <video class="sec8-video" preload="metadata" playsinline
+                        src="assets/video/testimonial-3.mp4"></video>
+                  <button class="sec8-play" aria-label="Play video"><span class="sec8-play-icon"></span></button>
+                </div>
+
+                <div class="sec8-media-slide">
+                  <video class="sec8-video" preload="metadata" playsinline
+                        src="assets/video/testimonial-4.mp4"></video>
+                  <button class="sec8-play" aria-label="Play video"><span class="sec8-play-icon"></span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec8-right">
+
+              <header class="sec8-head">
+                <h3>Our clients feedback</h3>
+                <div class="sec8-stars" aria-label="5 star rating">★★★★★</div>
+              </header>
+
+
+              <div class="sec8-review-viewport">
+                <button class="sec8-nav sec8-prev" aria-label="Previous">‹</button>
+
+                <div class="sec8-review-track" aria-live="polite">
+
+                  <article class="sec8-review-slide">
+                    <blockquote class="sec8-quote-block">
+                      Exceptional materials. The most durable glass ever in a smartphone.
+                      A beautiful new gold finish, achieved with an atomic-level process.                   
+                    </blockquote>
+                    <div class="sec8-person">
+                      <img class="sec8-avatar" src="https://dummyimage.com/48x48/ccd/fff&text=R" alt="">
+                      <div>
+                        <div class="sec8-name">Richard Davidson</div>
+                        <div class="sec8-role">Project Manager at Fila Sport</div>
+                      </div>
+                    </div>
+                  </article>
+
+
+                  <article class="sec8-review-slide">
+                    <blockquote class="sec8-quote-block">
+                      Setup was seamless and support is lightning-fast. Our team shipped a week early.
+                    </blockquote>
+                    <div class="sec8-person">
+                      <img class="sec8-avatar" src="https://dummyimage.com/48x48/dde/333&text=A" alt="">
+                      <div>
+                        <div class="sec8-name">Amara Johnson</div>
+                        <div class="sec8-role">Head of Product, Nova Labs</div>
+                      </div>
+                    </div>
+                  </article>
+
+
+                  <article class="sec8-review-slide">
+                    <blockquote class="sec8-quote-block">
+                      The UI feels premium and performance is rock-solid. Our NPS jumped 18 points.
+                    </blockquote>
+                    <div class="sec8-person">
+                      <img class="sec8-avatar" src="https://dummyimage.com/48x48/cdf/333&text=J" alt="">
+                      <div>
+                        <div class="sec8-name">Jamal Okoye</div>
+                        <div class="sec8-role">CTO, Brightline</div>
+                      </div>
+                    </div>
+                  </article>
+
+
+                  <article class="sec8-review-slide">
+                    <blockquote class="sec8-quote-block">
+                      From onboarding to insights, everything just works. It saves time and looks great.
+                    </blockquote>
+                    <div class="sec8-person">
+                      <img class="sec8-avatar" src="https://dummyimage.com/48x48/eed/333&text=S" alt="">
+                      <div>
+                        <div class="sec8-name">Sara Lee</div>
+                        <div class="sec8-role">Marketing Director, Keen</div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <button class="sec8-nav sec8-next" aria-label="Next">›</button>
+              </div>
+
+
+              <div class="sec8-dots">
+                <button class="sec8-dot is-active" aria-label="Go to 1"></button>
+                <button class="sec8-dot" aria-label="Go to 2"></button>
+                <button class="sec8-dot" aria-label="Go to 3"></button>
+                <button class="sec8-dot" aria-label="Go to 4"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="sec9" aria-label="Meet Our Team">
+        <div class="sec9-wrap">
+
+          <h2 class="sec9-title">Meet Our Team</h2>
+
+          <div class="sec9-ribbon">
+            <span class="sec9-ribbon-text">
+              The Visionaries • The Builders • The Strategists
+            </span>
+          </div>
+
+          <div class="sec9-stack">
+            <article class="sec9-card tilt-left" id="wasi">
+              <img src="img/Jorge.jpg"
+                  alt="Emily Roberts" class="sec9-photo">
+              <div class="sec9-label">
+                <div class="sec9-name">Salam Roqeebat Omowumi</div>
+                <div class="sec9-role">Finance Manager, Sales Rep.</div>
+              </div>
+            </article>
+
+            <article class="sec9-card tilt-flat sec9-card--highlight" id="wasi">
+              <img src="img/Thaniel ID CEO.JPG"
+                  alt="John Anderson" class="sec9-photo">
+              <div class="sec9-label sec9-label--accent">
+                <div class="sec9-name">Thaniel ID</div>
+                <div class="sec9-role">Founder &amp; CEO</div>
+                <span class="sec9-badge" aria-hidden="true"></span>
+              </div>
+            </article>
+
+            <article class="sec9-card tilt-right">
+              <img src="img/Abdulsamad COO.png"
+                  alt="Alina Woods" class="sec9-photo">
+              <div class="sec9-label">
+                <div class="sec9-name">AbdulAzeez A.</div>
+                <div class="sec9-role">C.O.O., Operations and Creative Manager</div>
+              </div>
+            </article>
+
+            <article class="sec9-card tilt-more">
+              <img src="img/Tolulope S. Olaniyan.jpg"
+                  alt="Mitchell Bell" class="sec9-photo">
+              <div class="sec9-label sec9-label--outline">
+                <div class="sec9-name">Ezugwu Favour Chizoba</div>
+                <div class="sec9-role" id="darkee">Business Development Manager</div>
+              </div>
+            </article>
+          </div>
+
+          <a href="#" class="team-btn"> Meet the Team</a>
+        </div>
+      </section>
+
+      <section class="sec10" aria-label="Our Process">
+        <div class="sec10-wrap">
+          <div class="sec10-header">
+            <h2>How We Work</h2>
+            <p>Our process ensures clarity, collaboration, and measurable growth — turning your ideas into lasting influence.</p>
+          </div>
+
+          <div class="sec10-timeline">
+
+            <div class="sec10-step">
+              <div class="sec10-icon">🔍</div>
+              <h3>Discovery</h3>
+              <p>We dive deep to understand your brand, audience, and goals — building a strong foundation for every move.</p>
+            </div>
+
+            <div class="sec10-step">
+              <div class="sec10-icon">🧭</div>
+              <h3>Strategy</h3>
+              <p>We craft a custom strategy that connects your vision with real market opportunities and measurable results.</p>
+            </div>
+
+            <div class="sec10-step">
+              <div class="sec10-icon">⚙️</div>
+              <h3>Execution</h3>
+              <p>We bring the plan to life through seamless execution across PR, digital, and creative channels.</p>
+            </div>
+
+            <div class="sec10-step">
+              <div class="sec10-icon">🚀</div>
+              <h3>Growth</h3>
+              <p>We monitor, optimize, and scale — turning insights into ongoing growth and sustained influence.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="sec11" aria-label="Contact Call To Action">
+        <div class="sec11-wrap">
+          <div class="sec11-content">
+            <h2>Ready to Flip Your Brand’s Growth Story?</h2>
+            <p>Let’s collaborate to build influence, drive engagement, and elevate your brand with strategy that works.</p>
+            <a href="./contact form.html" class="sec11-btn">Let’s Talk</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">
+
+        <div class="newsletter">
+          <h3>Subscribe to our Newsletter</h3>
+          <p>Fuel your business growth with expert strategies and insider insights from dFlip Media.</p>
+          <form>
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="links-container">
+
+          <div class="footer-links">
+            <h4>Quicklinks</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact form.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>+234 8097060188</li>
+              <li><a href="mailto:dflipmedia@gmail.com">dflipmedia@gmail.com</a></li>
+              <li>No. 8, Excellence & Friends<br>Street, Dawaki, Abuja (FCT) Nigeria</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/dflipmedia/" target="_blank">
+            <img class="LinkedIn_logo" src="./Assets/pngwing.com (7).png" alt="dFlip Media LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61569941146590" target="_blank">
+            <img class="Facebook_logo" src="./Assets/pngwing.com (6).png" alt="dFlip Media Facebook">
+          </a>
+        </div>
+
+        <div class="copyright">
+          &copy; 2025 • dFlip Media. All rights reserved.
+        </div>
       </div>
-      <div>
-        <h4>Contact us</h4>
-        <ul>
-          <li>+234 8097060188</li>
-  
-          <li><a href="mailto:dflipmedia@gmail.com">dflipmedia@gmail.com</a></li>
-          <li>No. 8, Excellence & Friends <br>Street, Dawaki, Abuja (FCT) Nigeria</li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-   
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/company/dflipmedia/" target="_blank"><img class="LinkedIn_logo" src="./Assets/pngwing.com (7).png" alt="dFlip Media Linkedln account"></a>
-      <a href="https://www.instagram.com/dflip_media/profilecard/?igsh=cnZjeDlnN3QwMGhz" target="_blank"><img class="Instagram_logo" src="./Assets/pngwing.com (5).png" alt="dFlip Media Instagram account"></a>
-      <a href="https://www.facebook.com/profile.php?id=61569941146590" target="_blank"><img class="Facebook_logo" src="./Assets/pngwing.com (6).png" alt="dFlip Media Facbook account"></a>
-      <a href="https://x.com/dFlipmedia?t=witiRaTMABiveSTdl4ePug&s=09" target="_blank"><img class="X_logo" src="./Assets/pngwing.com (5).png" alt="dFlip Media X(formerly Twitter) account"></a>
-    </div>
-    <div class="copyright">
-      &copy; Copyright 2024 • dflipmedia. All rights reserved.
-    </div>
+    </footer>
     
-  
-  </footer>
 
- <!-- Israel JS starts here -->
-
-
-
- 
-
- <script>
-    const viewport = document.getElementById("challenges-viewport");
-    const track = document.getElementById("challenges-track");
-    const slides = Array.from(track.querySelectorAll(".challenges-slide"));
-    const prevBtn = document.querySelector(".challenges__btn--prev");
-    const nextBtn = document.querySelector(".challenges__btn--next");
-    const dots = Array.from(document.querySelectorAll(".challenges__dot"));
-
-    let currentIndex = 0;
-
-    function clamp(n, min, max) {
-      return Math.max(min, Math.min(max, n));
-    }
-
-    function goToSlide(index) {
-      currentIndex = clamp(index, 0, slides.length - 1);
-      const left = slides[currentIndex].offsetLeft;
-      viewport.scrollTo({ left, behavior: "smooth" });
-      updateUI();
-    }
-
-    function updateUI() {
-      dots.forEach((d, i) => d.classList.toggle("active", i === currentIndex));
-      if (prevBtn) prevBtn.disabled = currentIndex === 0;
-      if (nextBtn) nextBtn.disabled = currentIndex === slides.length - 1;
-    }
-
-    function syncToNearest() {
-      const x = viewport.scrollLeft;
-      let nearest = 0;
-      let best = Infinity;
-      for (let i = 0; i < slides.length; i++) {
-        const dist = Math.abs(slides[i].offsetLeft - x);
-        if (dist < best) {
-          best = dist;
-          nearest = i;
-        }
-      }
-      if (nearest !== currentIndex) {
-        currentIndex = nearest;
-        updateUI();
-      }
-    }
-
-    if (prevBtn) prevBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
-    if (nextBtn) nextBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
-
-    dots.forEach((dot, i) => dot.addEventListener("click", () => goToSlide(i)));
-
-    viewport.addEventListener("scroll", syncToNearest);
-
-    viewport.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowRight") { e.preventDefault(); goToSlide(currentIndex + 1); }
-      if (e.key === "ArrowLeft")  { e.preventDefault(); goToSlide(currentIndex - 1); }
-    });
-
-    window.addEventListener("resize", () => goToSlide(currentIndex));
-
-    updateUI();
-
-
-    const counters = document.querySelectorAll('.counter');
-
-    function animateCounter(counter) {
-      const target = +counter.getAttribute('data-target');
-      const duration = 2000; // total time in ms (2s feels smooth)
-      const start = performance.now();
-
-      function update(now) {
-        const elapsed = now - start;
-        const progress = Math.min(elapsed / duration, 1); // 0 → 1
-        const value = Math.floor(progress * target);
-        counter.textContent = value;
-
-        if (progress < 1) {
-          requestAnimationFrame(update);
-        } else {
-          counter.textContent = target; // ensure exact finish
-        }
-      }
-
-      requestAnimationFrame(update);
-    }
-
-    // trigger only when in view
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target); // run once
-        }
-      });
-    }, { threshold: 0.5 });
-
-    counters.forEach(counter => observer.observe(counter));
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // js code for the whydflip section
-    // Minimal, dependency-free carousel with arrows + drag support
-    (function () {
-      const root = document.querySelector('[data-cards]');
-      if (!root) return;
-
-      const track = root.querySelector('[data-track]');
-      const prev = root.querySelector('[data-prev]');
-      const next = root.querySelector('[data-next]');
-
-      const getCardWidth = () => {
-        const first = track.querySelector('.card');
-        if (!first) return 300;
-        const style = window.getComputedStyle(first);
-        const width = first.getBoundingClientRect().width;
-        const gap = parseFloat(window.getComputedStyle(track).columnGap || 0);
-        return width + gap;
-        // (we add gap because grid-auto-flow: column)
-      };
-
-      const scrollByCard = (dir = 1) => {
-        track.scrollBy({ left: getCardWidth() * dir, behavior: 'smooth' });
-      };
-
-      prev.addEventListener('click', () => scrollByCard(-1));
-      next.addEventListener('click', () => scrollByCard(1));
-
-      // Enable/disable arrows based on position
-      const updateNavState = () => {
-        const max = track.scrollWidth - track.clientWidth - 2; // small buffer
-        prev.disabled = track.scrollLeft <= 0;
-        next.disabled = track.scrollLeft >= max;
-      };
-
-      track.addEventListener('scroll', updateNavState);
-      window.addEventListener('resize', updateNavState);
-      updateNavState();
-
-      // Pointer drag (mouse + touch)
-      let isDown = false, startX = 0, startScroll = 0;
-      const start = (clientX) => {
-        isDown = true; startX = clientX; startScroll = track.scrollLeft;
-        track.classList.add('is-dragging');
-      };
-      const move = (clientX) => {
-        if (!isDown) return;
-        const dx = clientX - startX;
-        track.scrollLeft = startScroll - dx;
-      };
-      const end = () => { isDown = false; track.classList.remove('is-dragging'); };
-
-      track.addEventListener('mousedown', e => start(e.clientX));
-      track.addEventListener('mousemove', e => move(e.clientX));
-      track.addEventListener('mouseup', end);
-      track.addEventListener('mouseleave', end);
-
-      track.addEventListener('touchstart', e => start(e.touches[0].clientX), {passive:true});
-      track.addEventListener('touchmove', e => move(e.touches[0].clientX), {passive:true});
-      track.addEventListener('touchend', end);
-    })();
-  </script>
-
-<!-- Israel js Ends here -->
-
-
-  <script>
-    const slider = document.getElementById('slider');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-
-    let currentIndex = 0;
-
-    function updateSlider() {
-      slider.style.transform = `translateX(-${currentIndex * 300}px)`;
-      prevBtn.disabled = currentIndex === 0;
-      nextBtn.disabled = currentIndex === 3;
-    }
-
-    prevBtn.addEventListener('click', () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updateSlider();
-      }
-    });
-
-
-
-    nextBtn.addEventListener('click', () => {
-      if (currentIndex < 3) {
-        currentIndex++;
-        updateSlider();
-      }
-    });
-    </script>
-
-    <script>
-      document.querySelector('.read-more-btn').addEventListener('click', function () {
-        const hiddenText = document.querySelector('.hidden-text');
-        const isHidden = hiddenText.style.display === 'none' || hiddenText.style.display === '';
-  
-        if (isHidden) {
-          hiddenText.style.display = 'inline';
-          this.textContent = 'Read Less';
-        } else {
-          hiddenText.style.display = 'none';
-          this.textContent = 'Read More';
-        }
-      });
-
-      document.querySelector('.read-more-btn2').addEventListener('click', function () {
-        const hiddenText = document.querySelector('.hidden-text2');
-        const isHidden = hiddenText.style.display === 'none' || hiddenText.style.display === '';
-  
-        if (isHidden) {
-          hiddenText.style.display = 'inline';
-          this.textContent = 'Read Less';
-        } else {
-          hiddenText.style.display = 'none';
-          this.textContent = 'Read More';
-        }
-      });
-
-      document.querySelector('.read-more-btn3').addEventListener('click', function () {
-        const hiddenText = document.querySelector('.hidden-text3');
-        const isHidden = hiddenText.style.display === 'none' || hiddenText.style.display === '';
-  
-        if (isHidden) {
-          hiddenText.style.display = 'inline';
-          this.textContent = 'Read Less';
-        } else {
-          hiddenText.style.display = 'none';
-          this.textContent = 'Read More';
-        }
-      });
-    </script>
-
-    <script>
-      const navSlide = () => {
-  const navMobile = document.querySelector('.nav-mobile')
-  const navBar = document.querySelector('.nav-links')
-  const navLinks = document.querySelectorAll('.nav-links li')
-
-  navMobile.addEventListener ('click',() => {
-    navBar.classList.toggle('nav-active')
-  });
-}
-navSlide();
-    </script>
-
-
-  
-
-
-
-
-<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-<script src="./script.js"></script>
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>
 
