@@ -4636,7 +4636,7 @@ body {
     background: var(--background2) url('/img/Bcggg.png') right/contain no-repeat;
     color: var(--text2);
     padding: 48px 20px 80px;
-    overflow: visible;
+    overflow: hidden;
     margin-bottom:-10px;
   }
 

@@ -15,27 +15,22 @@
   const videos  = () => Array.from(root.querySelectorAll('.sec8-video'));
   const plays   = () => Array.from(root.querySelectorAll('.sec8-play'));
 
-  //Autoplay config
-  const AUTOPLAY_INTERVAL = 2000; // ms between slides
-  const INVIEW_THRESHOLD  = 1;  // autoplay when 50% of section is visible
-  const HOVER_PAUSE       = true; // pause when mouse over the section
-  const FOCUS_PAUSE       = true; // pause when section or its children focused
+  const AUTOPLAY_INTERVAL = 2000;
+  const INVIEW_THRESHOLD  = 0.5;
 
   let index = 0;
   let autoplayTimer = null;
   let inView = false;
   let videoPlaying = false;
+  let startX = 0, currentX = 0, isDragging = false;
 
   function apply() {
     const t = `translateX(-${index * 100}%)`;
     mediaTrack.style.transform  = t;
     reviewTrack.style.transform = t;
-
     dots.forEach((d, i) => d.classList.toggle('is-active', i === index));
 
-    // Pause non-active videos & manage overlays
-    const vs = videos();
-    const ps = plays();
+    const vs = videos(), ps = plays();
     vs.forEach((v, i) => {
       if (i !== index && !v.paused) v.pause();
       if (i !== index) v.removeAttribute('controls');
@@ -55,21 +50,25 @@
     if (autoplayTimer || !inView || videoPlaying || count <= 1) return;
     autoplayTimer = setInterval(() => go(1), AUTOPLAY_INTERVAL);
   }
+
   function stopAutoplay() {
     if (autoplayTimer) {
       clearInterval(autoplayTimer);
       autoplayTimer = null;
     }
   }
+
   function resetAutoplay() {
     stopAutoplay();
     startAutoplay();
   }
 
+  // Navigation controls
   prevBtn?.addEventListener('click', () => { go(-1); resetAutoplay(); });
   nextBtn?.addEventListener('click', () => { go(1);  resetAutoplay(); });
   dots.forEach((d, i) => d.addEventListener('click', () => { index = i; apply(); resetAutoplay(); }));
 
+  // Play button click
   root.addEventListener('click', e => {
     const btn = e.target.closest('.sec8-play');
     if (!btn) return;
@@ -79,56 +78,70 @@
     v.play();
   });
 
+  // Video play/pause logic
   videos().forEach((v, i) => {
     v.addEventListener('play', () => {
       videoPlaying = true;
       stopAutoplay();
-      const btn = v.parentElement.querySelector('.sec8-play');
-      btn.style.display = 'none';
       v.setAttribute('controls', '');
+      v.parentElement.querySelector('.sec8-play').style.display = 'none';
     });
 
-    const showBtn = () => {
+    const restore = () => {
       videoPlaying = false;
       const btn = v.parentElement.querySelector('.sec8-play');
       if (i === index) btn.style.display = 'grid';
       v.removeAttribute('controls');
-      startAutoplay(); //
+      startAutoplay();
     };
 
-    v.addEventListener('pause', showBtn);
-    v.addEventListener('ended', showBtn);
+    v.addEventListener('pause', restore);
+    v.addEventListener('ended', restore);
   });
 
-  // Pause/resume on hover/focus
-  if (HOVER_PAUSE) {
-    root.addEventListener('mouseenter', stopAutoplay);
-    root.addEventListener('mouseleave', startAutoplay);
+  // Touch/drag controls for mobile
+  function handleTouchStart(e) {
+    startX = e.touches ? e.touches[0].clientX : e.clientX;
+    isDragging = true;
+    stopAutoplay();
   }
-  if (FOCUS_PAUSE) {
-    root.addEventListener('focusin',  stopAutoplay);
-    root.addEventListener('focusout', startAutoplay);
+
+  function handleTouchMove(e) {
+    if (!isDragging) return;
+    currentX = e.touches ? e.touches[0].clientX : e.clientX;
   }
+
+  function handleTouchEnd() {
+    if (!isDragging) return;
+    const diff = startX - currentX;
+    if (Math.abs(diff) > 50) go(diff > 0 ? 1 : -1);
+    isDragging = false;
+    resetAutoplay();
+  }
+
+  root.addEventListener('touchstart', handleTouchStart, { passive: true });
+  root.addEventListener('touchmove', handleTouchMove, { passive: true });
+  root.addEventListener('touchend', handleTouchEnd);
+  root.addEventListener('mousedown', handleTouchStart);
+  root.addEventListener('mousemove', handleTouchMove);
+  root.addEventListener('mouseup', handleTouchEnd);
+  root.addEventListener('mouseleave', () => isDragging = false);
+
+  // In-view observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      inView = entry.isIntersecting && entry.intersectionRatio >= INVIEW_THRESHOLD;
+      if (inView) startAutoplay(); else stopAutoplay();
+    });
+  }, { threshold: INVIEW_THRESHOLD });
+  observer.observe(root);
 
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) stopAutoplay();
     else startAutoplay();
   });
 
-  // Keep transform correct on resize
-  window.addEventListener('resize', () => apply());
-
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        inView = entry.isIntersecting && entry.intersectionRatio >= INVIEW_THRESHOLD;
-        if (inView) startAutoplay();
-        else stopAutoplay();
-      });
-    },
-    { threshold: INVIEW_THRESHOLD }
-  );
-  observer.observe(root);
+  window.addEventListener('resize', apply);
 
   apply();
   startAutoplay();
