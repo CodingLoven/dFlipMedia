@@ -15,7 +15,7 @@
   const videos  = () => Array.from(root.querySelectorAll('.sec8-video'));
   const plays   = () => Array.from(root.querySelectorAll('.sec8-play'));
 
-  // ===== Autoplay config =====
+  //Autoplay config
   const AUTOPLAY_INTERVAL = 2000; // ms between slides
   const INVIEW_THRESHOLD  = 1;  // autoplay when 50% of section is visible
   const HOVER_PAUSE       = true; // pause when mouse over the section
@@ -24,7 +24,7 @@
   let index = 0;
   let autoplayTimer = null;
   let inView = false;
-  let videoPlaying = false; // true if any slide's video is currently playing
+  let videoPlaying = false;
 
   function apply() {
     const t = `translateX(-${index * 100}%)`;
@@ -51,7 +51,6 @@
     apply();
   }
 
-  // ===== Autoplay =====
   function startAutoplay() {
     if (autoplayTimer || !inView || videoPlaying || count <= 1) return;
     autoplayTimer = setInterval(() => go(1), AUTOPLAY_INTERVAL);
@@ -67,12 +66,10 @@
     startAutoplay();
   }
 
-  // ===== Controls =====
   prevBtn?.addEventListener('click', () => { go(-1); resetAutoplay(); });
   nextBtn?.addEventListener('click', () => { go(1);  resetAutoplay(); });
   dots.forEach((d, i) => d.addEventListener('click', () => { index = i; apply(); resetAutoplay(); }));
 
-  // Smart play overlay
   root.addEventListener('click', e => {
     const btn = e.target.closest('.sec8-play');
     if (!btn) return;
@@ -82,7 +79,6 @@
     v.play();
   });
 
-  // Pause autoplay while a video is playing; restore overlay on pause/end
   videos().forEach((v, i) => {
     v.addEventListener('play', () => {
       videoPlaying = true;
@@ -97,7 +93,7 @@
       const btn = v.parentElement.querySelector('.sec8-play');
       if (i === index) btn.style.display = 'grid';
       v.removeAttribute('controls');
-      startAutoplay(); // resume if section is in view
+      startAutoplay(); //
     };
 
     v.addEventListener('pause', showBtn);
@@ -114,7 +110,6 @@
     root.addEventListener('focusout', startAutoplay);
   }
 
-  // Visibility: pause when tab hidden, resume when visible & in view
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) stopAutoplay();
     else startAutoplay();
@@ -123,7 +118,6 @@
   // Keep transform correct on resize
   window.addEventListener('resize', () => apply());
 
-  // In-view observer: autoplay only when the section is onscreen
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -136,15 +130,15 @@
   );
   observer.observe(root);
 
-  // Init
   apply();
   startAutoplay();
 })();
 
-
-
-
 // Testimonial Functionality ends here
+
+
+
+
 
 // Advantage Slider FUNCTIONALITY Starts here
 
