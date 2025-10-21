@@ -4,19 +4,19 @@
   const root = document.querySelector('.sec8');
   if (!root) return;
 
-  const mediaTrack  = root.querySelector('.sec8-media-track');
+  const mediaTrack = root.querySelector('.sec8-media-track');
   const reviewTrack = root.querySelector('.sec8-review-track');
-  const count       = root.querySelectorAll('.sec8-review-slide').length;
+  const count = root.querySelectorAll('.sec8-review-slide').length;
 
   const prevBtn = root.querySelector('.sec8-prev');
   const nextBtn = root.querySelector('.sec8-next');
-  const dots    = Array.from(root.querySelectorAll('.sec8-dot'));
+  const dots = Array.from(root.querySelectorAll('.sec8-dot'));
 
-  const videos  = () => Array.from(root.querySelectorAll('.sec8-video'));
-  const plays   = () => Array.from(root.querySelectorAll('.sec8-play'));
+  const videos = () => Array.from(root.querySelectorAll('.sec8-video'));
+  const plays = () => Array.from(root.querySelectorAll('.sec8-play'));
 
   const AUTOPLAY_INTERVAL = 2000;
-  const INVIEW_THRESHOLD  = 0.5;
+  const INVIEW_THRESHOLD = 0.5;
 
   let index = 0;
   let autoplayTimer = null;
@@ -26,18 +26,28 @@
 
   function apply() {
     const t = `translateX(-${index * 100}%)`;
-    mediaTrack.style.transform  = t;
+    mediaTrack.style.transform = t;
     reviewTrack.style.transform = t;
+
     dots.forEach((d, i) => d.classList.toggle('is-active', i === index));
 
-    const vs = videos(), ps = plays();
+    const vs = videos();
+    const ps = plays();
+
     vs.forEach((v, i) => {
       if (i !== index && !v.paused) v.pause();
       if (i !== index) v.removeAttribute('controls');
     });
+
     ps.forEach((btn, i) => {
       const v = vs[i];
-      btn.style.display = (i === index && v.paused) ? 'grid' : (i === index ? 'none' : 'grid');
+      if (i === index) {
+        btn.style.opacity = v.paused ? '1' : '0';
+        btn.style.pointerEvents = v.paused ? 'auto' : 'none';
+      } else {
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+      }
     });
   }
 
@@ -63,9 +73,8 @@
     startAutoplay();
   }
 
-  // Navigation controls
   prevBtn?.addEventListener('click', () => { go(-1); resetAutoplay(); });
-  nextBtn?.addEventListener('click', () => { go(1);  resetAutoplay(); });
+  nextBtn?.addEventListener('click', () => { go(1); resetAutoplay(); });
   dots.forEach((d, i) => d.addEventListener('click', () => { index = i; apply(); resetAutoplay(); }));
 
   // Play button click
@@ -73,24 +82,30 @@
     const btn = e.target.closest('.sec8-play');
     if (!btn) return;
     const v = btn.parentElement.querySelector('.sec8-video');
-    btn.style.display = 'none';
+    btn.style.opacity = '0';
+    btn.style.pointerEvents = 'none';
     v.setAttribute('controls', '');
     v.play();
   });
 
-  // Video play/pause logic
+  // Pause autoplay while video plays; resume after
   videos().forEach((v, i) => {
     v.addEventListener('play', () => {
       videoPlaying = true;
       stopAutoplay();
       v.setAttribute('controls', '');
-      v.parentElement.querySelector('.sec8-play').style.display = 'none';
+      const btn = v.parentElement.querySelector('.sec8-play');
+      btn.style.opacity = '0';
+      btn.style.pointerEvents = 'none';
     });
 
     const restore = () => {
       videoPlaying = false;
       const btn = v.parentElement.querySelector('.sec8-play');
-      if (i === index) btn.style.display = 'grid';
+      if (i === index) {
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+      }
       v.removeAttribute('controls');
       startAutoplay();
     };
@@ -99,7 +114,7 @@
     v.addEventListener('ended', restore);
   });
 
-  // Touch/drag controls for mobile
+  // Touch swipe for mobile
   function handleTouchStart(e) {
     startX = e.touches ? e.touches[0].clientX : e.clientX;
     isDragging = true;
@@ -146,6 +161,7 @@
   apply();
   startAutoplay();
 })();
+
 
 // Testimonial Functionality ends here
 
