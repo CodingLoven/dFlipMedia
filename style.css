@@ -3858,6 +3858,12 @@ body {
     --general-padding: 20px 16px;
   }
 
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden ;
+  }
+
 
   /* Navigation starts here */
 
@@ -3875,7 +3881,6 @@ body {
     left: 0;
     width: 100%;
     z-index: 10;
-    padding: 0 10px
   }
 
   .nav .nav-wrapper {
@@ -3883,7 +3888,7 @@ body {
     margin: 0;
     background: var(--background3);
     border-radius: 0;
-    padding: 22px 0 0 0;
+    padding: 22px 10px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -3945,7 +3950,7 @@ body {
   }
 
   .menu-items a {
-    padding: 14px 0px;
+    padding: 14px 5px;
     text-align: center;
     color: var(--headings);
     text-decoration: none;
@@ -4001,17 +4006,18 @@ body {
 
   #menu-toggle:checked + label .icon-close {
     display: inline-block;
-    margin-right: 20px
+    margin-right: 0px
   }
 
   #menu-toggle:checked ~ .menu-items {
     position: fixed;
     inset: 0;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background: var(--background3);
     padding-top: 70px;
     overflow-y: auto;
+    margin: 0;
     z-index: -1;
     transition: all 0.4s ease;
   }
@@ -4020,7 +4026,6 @@ body {
     content: "";
     position: fixed;
     inset: 0;
-    /* background: rgba(0, 0, 0, 0.05); */
     z-index: -1;
   }
 
@@ -4031,7 +4036,7 @@ body {
 
   body:has(#menu-toggle:checked) {
     overflow: hidden;
-    padding-top: 80px;
+    /* padding-top: 80px; */
   }
 
 
@@ -4040,13 +4045,6 @@ body {
 
 
   /* Main section starts here */
-
- /* section,
- .sec1 {
-   padding: 80px 20px;
-   background-position: center;
-   background-size: cover;
- } */
 
   section,
   .sec1 {
@@ -4062,7 +4060,6 @@ body {
     image-rendering: crisp-edges;
   }
 
-  /* hero */
   .hero-container {
     padding: 90px 0 40px;
     flex-direction: column;
@@ -4082,6 +4079,7 @@ body {
     font-size: var(--heading-font-size-mobile);
     line-height: 1.2;
     padding:0;
+    margin: 10px 0 23px;
   }
 
   .hero h6 {
@@ -4098,10 +4096,9 @@ body {
     font-size: 16px;
   }
 
-  /* sub-hero */
   .sub-hero {
     flex-direction: column;
-    margin: 30px 0px 0 10px;
+    margin: 45px 0px 0 10px;
     border-radius: 40px;
     border: 2px solid var(--accent);
     background: var(--background3);
@@ -4232,7 +4229,7 @@ body {
     align-items: center;
     gap: 10px;
     width: 100%;
-    margin: 10px 0 -30px 0;
+    margin: 0px 0 -30px 30px;
   }
 
   .challenges__btn {
@@ -4518,7 +4515,7 @@ body {
 
   .services {
     width: 100%;
-    margin: -5px 0 15px;
+    margin: -15px 0 15px;
     padding: 0;
     border-radius: 8px;
   
@@ -4550,7 +4547,7 @@ body {
     line-height: 1.5;
     color: var(--text2);
     border-left: none;
-    border-top: 1px solid rgba(255, 152, 0, 0.4);
+    border-top: 2px solid var(--accent);
   }
 
 
@@ -4772,7 +4769,7 @@ body {
   }
 
   .dflip-divider {
-    width: min(180px, 100%);
+    width: min(200px, 100%);
     height: 6px;
     border-radius: 999px;
     background: linear-gradient(90deg, var(--cta), var(--accent));
@@ -5050,7 +5047,7 @@ body {
     }
 
     to {
-      transform: translateX(-420%);
+      transform: translateX(-400%);
     }
   }
 
@@ -5155,11 +5152,16 @@ body {
     box-sizing: border-box;
   }
 
-  .sec8-head {
+  .sec8-head h3{
     display: none;
     flex-direction: column;
     gap: 6px;
     margin-bottom: 4px;
+  }
+
+  .sec8-head{
+    background: transparent;
+    margin-bottom: 5px;
   }
 
   .sec8-heading-alt {
@@ -5174,11 +5176,12 @@ body {
 
   .sec8-stars {
     color: var(--accent);
+    background: transparent;
     letter-spacing: 1px;
     font-size: 15px;
     margin-top: 2px;
     position: relative;
-    z-index: 2;
+    /* z-index: 99; */
     display: block;
   }
 
@@ -5206,13 +5209,13 @@ body {
 
   .sec8-quote-block {
     position: relative;
-    margin: -5px 0 92px;
+    margin: -5px 0 42px;
     font-size: 16px;
     line-height: 1.5;
     color: var(--headings);
     font-weight: 700;
     padding-left: 30px;
-    max-width: 70%;
+    max-width: 68%;
     box-sizing: border-box;
   }
 
@@ -5231,7 +5234,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 32px;
+    margin-top: 12px;
     margin-bottom: 0;
   }
 
@@ -5255,7 +5258,7 @@ body {
 
   .sec8-nav {
     position: absolute;
-    top: 55%;
+    top: 05%;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
@@ -5264,7 +5267,7 @@ body {
     background: var(--background2);
     color: var(--headings);
     box-shadow: 0 8px 22px rgba(16, 24, 40, .10);
-    display: grid;
+    display: none;
     place-items: center;
     font-size: 20px;
     cursor: pointer;
@@ -5277,12 +5280,11 @@ body {
 
   .sec8-next { 
     right: 8px; 
-    margin-right: 120px;
   }
 
-  .downd {
+  /* .downd {
     margin-top: 30px;
-  }
+  } */
 
   .sec8-dots {
     display: flex;
@@ -5314,13 +5316,7 @@ body {
   .sec8-dot.is-active {
     background: var(--cta);
     transform: scale(1.2);
-    border-color: var(--accent);
-  }
- 
-
-  .sec8-dot.is-active {
-    background: var(--cta);
-    border-color: var(--accent);
+    border-color: var(--cta);
   }
 
   .sec8 * {
