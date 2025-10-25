@@ -427,7 +427,6 @@ const observer = new IntersectionObserver(
 );
 observer.observe(root);
 
-// Initial
 updateNavState();})();
 
 // Why dFlip section ends here

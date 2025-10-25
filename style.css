@@ -4199,6 +4199,7 @@ body {
   .challenges-header {
     display: inline-flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: stretch;
     text-align: left;
     width: 100%;
@@ -4223,12 +4224,22 @@ body {
   }
 
   .challenges__controls {
-    display: inline-flex;
+    /* display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     width: 100%;
-    margin: 0px 0 -30px 30px;
+    margin: 0px 0 -30px -30px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 35px;
+    padding-right: 12px;
+    box-sizing: border-box;
   }
 
   .challenges__btn {
@@ -4517,7 +4528,6 @@ body {
     margin: -15px 0 15px;
     padding: 0;
     border-radius: 8px;
-  
     overflow: hidden;
   }
 
@@ -5070,7 +5080,7 @@ body {
 
   .sec8-card {
     background: var(--background2);
-    border-radius: 14px;
+    border-radius: 2px;
     box-shadow: 0 8px 20px rgba(16, 24, 40, .06);
     overflow: hidden;
     display: grid;
@@ -5085,8 +5095,8 @@ body {
     min-height: 180px;
     background: #0b1220;
     overflow: hidden;
-    width: 80%;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 2px;
   }
 
   .sec8-media-track {
@@ -5094,6 +5104,7 @@ body {
     display: flex;
     transition: transform .35s ease;
     will-change: transform;
+    border-radius: 50px;
   }
 
   .sec8-media-slide {
@@ -5113,7 +5124,7 @@ body {
 
   .sec8-play {
     position: absolute;
-    left: 48%;
+    left: 38%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 52px;
@@ -5164,9 +5175,10 @@ body {
 
   .sec8-heading-alt {
     display: block;
-    font-size: var(--heading-font-size-mobile);
+    font-size: 24px;
     font-weight: 900;
     text-align: left;
+    text-wrap: nowrap;
     color: var(--headings);
     margin: 0 0 20px;
     line-height: 1.05;
@@ -5176,10 +5188,9 @@ body {
     color: var(--accent);
     background: transparent;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 2px;
     position: relative;
-    /* z-index: 99; */
     display: block;
   }
 
@@ -5285,7 +5296,8 @@ body {
     gap: clamp(8px, 0.6vw, 8px);
     margin-top: 8px;
     justify-content: center;
-    width: 75%;
+    align-items: center;
+    width: 55%;
     box-sizing: border-box;
     padding-inline: 2vw;
   }
@@ -5324,7 +5336,7 @@ body {
   .sec9 {
     background: var(--background3);
     color: var(--text2);
-    padding: 32px 18px;
+    padding: 32px 10px;
     box-sizing: border-box;
   }
 
@@ -5336,7 +5348,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding: 36px 20px;
+    padding: 36px 0px;
     overflow: visible;
     border-radius: 14px;
     box-shadow: 0 12px 30px rgba(16, 24, 40, 0.06);
@@ -5455,7 +5467,7 @@ body {
 
   .sec9-label {
     position: absolute;
-    left: 52px;
+    left:32px;
     bottom: 12px;
     background: var(--background2);
     color: var(--text2);
@@ -5499,7 +5511,7 @@ body {
 
   .sec9-badge {
     position: absolute;
-    right: 70px;
+    right: 50px;
     top: 12px;
     width: 26px;
     height: 26px;
