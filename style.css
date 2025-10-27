@@ -64,7 +64,7 @@ body {
     /* position: ; */
     top: 0;
     z-index: 50;
-    padding: 18px 16px;
+    padding: 18px 0px;
   }
 
   .nav .nav-wrapper {
@@ -243,17 +243,19 @@ body {
     overflow: hidden;
     padding: var(--general-padding);
     background: var(--background2);
-    background-image: url(/img/cloud\ white.jpg);
+    background-image: url(/img/Bedccggg.png);
     background-size: cover;
     background-position: center;
+    height: 120vh;
     background-repeat: no-repeat;
+    margin-top: -120px;
   }
 
   .hero-container {
     display: flex;
     flex-direction: column;
     color: var(--text2);
-    padding: 100px 0 68px;
+    padding: 200px 0 68px;
   }
 
   .hero-container::before {
@@ -2016,7 +2018,7 @@ body {
     text-align: center;
     color: var(--headings);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     border-radius: 0;
     transition: background-color 0.2s ease;
@@ -2034,6 +2036,27 @@ body {
   #menu-toggle:checked~.menu-items {
     max-height: 400px;
   }
+
+  .icon-menu,
+  .icon-close {
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  #menu-toggle:checked + label .icon-menu {
+    display: none;
+  }
+
+  #menu-toggle:checked + label .icon-close {
+    display: inline-block;
+    margin-right: 0px
+  }
+
 
   .btn-cta {
     padding: 9px 16px;
@@ -2058,6 +2081,8 @@ body {
 
 
 
+
+
 /* Main section starts here */
 
  section,
@@ -2067,9 +2092,37 @@ body {
    background-size: cover;
  }
 
+ .sec1 {
+   overflow: hidden;
+   background: var(--background2);
+   background-image: url(/img/Bedccggg.png);
+   background-size: cover;
+   background-position: center;
+   height: 50vh;
+   background-repeat: no-repeat;
+ }
+
  .hero-container {
    padding: 20px 0 60px;
    align-items: flex-start;
+ }
+
+ .hero-container::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -1000px;
+   right: 0;
+   bottom: 0;
+   height: 75vh;
+   background: radial-gradient(circle, rgba(255, 255, 255, 15) 10%, transparent 140%);
+   pointer-events: none;
+   z-index: 1;
+ }
+
+ .hero-container>* {
+   position: relative;
+   z-index: 1;
  }
 
  .hero {
@@ -2194,7 +2247,8 @@ body {
    color: var(--cta);
    line-height: 1;
    margin: 0;
-   padding: 0;
+   padding: 5px 0;
+   text-decoration: none;
  }
 
 
@@ -3851,7 +3905,8 @@ body {
 
 
 
-/* MOBILE VIEW */
+/* MOBILE VIEW STARTS HERE */
+
 @media (max-width: 767px) {
 
   :root {
@@ -4035,7 +4090,6 @@ body {
 
   body:has(#menu-toggle:checked) {
     overflow: hidden;
-    /* padding-top: 80px; */
   }
 
 
@@ -4057,6 +4111,17 @@ body {
     background-attachment: scroll;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
+    overflow: hidden;
+    background: var(--background2);
+    background-image: url(/img/mobile2.png);
+    background-size: cover;
+    background-position: top;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(/img/mobile2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
   }
 
   .hero-container {
@@ -4068,6 +4133,11 @@ body {
     width: 100%;
     gap: 20px;
   }
+
+ .hero-container>* {
+   position: relative;
+   z-index: 1;
+ }
 
   .hero {
     width: 100%;
@@ -4131,7 +4201,7 @@ body {
 
   .brand-declaration-holder p {
     font-size: 14px;
-    padding: 0 10px;
+    padding: 10px;
     margin: 0;
     line-height: 1.4;
   }
@@ -4140,9 +4210,9 @@ body {
     font-size: 16px;
     color: var(--cta);
     font-weight: 700;
-    margin-top: 0x;
-    padding: 12px 0 0 0 !important; 
+    padding: 12px 0; 
     line-height: 1.2; 
+    text-decoration: underline;
   }
 
   .hero a {
@@ -4181,11 +4251,12 @@ body {
   }
 
   .hero a:hover .span1 {
-    transform: translateY(170%);
+    /* transform: translateY(170%); */
   }
 
   .hero a:hover .span2 {
     transform: translateY(70%);
+    display: none;
   }
 
 
@@ -4224,12 +4295,6 @@ body {
   }
 
   .challenges__controls {
-    /* display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    margin: 0px 0 -30px -30px; */
     display: none;
     justify-content: flex-end;
     align-items: center;
@@ -4448,11 +4513,12 @@ body {
   }
 
   .general-btn:hover .span1 {
-    transform: translateY(170%);
+    /* transform: translateY(170%); */
   }
 
   .general-btn:hover .span2 {
     transform: translateY(70%);
+    display: none;
   }
 
   .team-container {
@@ -4778,7 +4844,7 @@ body {
   }
 
   .dflip-divider {
-    width: min(200px, 100%);
+    width: min(45vw, 100%);
     height: 6px;
     border-radius: 999px;
     background: linear-gradient(90deg, var(--cta), var(--accent));
@@ -5124,7 +5190,9 @@ body {
 
   .sec8-play {
     position: absolute;
-    left: 38%;
+    /* use viewport-based left so it's centered across the whole mobile viewport
+       even if the containing block is narrower or offset */
+    left: 44vw;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 52px;
@@ -5134,7 +5202,7 @@ body {
     color: var(--headings);
     display: grid;
     place-items: center;
-    z-index: 3;
+    z-index: 999;
     box-shadow: 0 8px 20px rgba(0,0,0,.18);
     border: 0;
     cursor: pointer;
