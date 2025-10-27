@@ -1,0 +1,370 @@
+:root {
+  --background2: #fff;
+  --background3: #ebe4f4;
+  --accent: #ff9800;
+  --headings: #333;
+  --cta: #4a148c;
+  --text1: #fff;
+  --text2: #333;
+  --general-padding: 20px 80px;
+  --border: 5px 200px 200px 50px;
+  --heading-font-size-desktop: 48px;
+  --heading-font-size-tablet: 38px;
+  --heading-font-size-mobile: 28px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+
+/* sec1 starts here */
+
+.sec1.about-hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: url("/img/about\ hero.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sec1.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.about-container {
+  position: relative;
+  z-index: 2;
+  color: var(--text1);
+  padding: 0 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.about-title {
+  font-size: var(--heading-font-size-desktop);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--text1);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  color: var(--text1);
+}
+
+.breadcrumb-link {
+  color: var(--text1);
+  text-decoration: none;
+  opacity: 0.9;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--accent);
+}
+
+.breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb-current {
+  color: var(--text1);
+  opacity: 0.9;
+}
+
+.sec1.about-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--background2);
+  clip-path: ellipse(80% 100% at 50% 100%);
+  z-index: 2;
+}
+
+
+/* sec2 starts here */
+
+ .sec2.about-intro {
+   background: var(--background2);
+   /* padding: var(--general-padding); */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .about-container {
+   max-width: 1280px;
+   width: 100%;
+   margin: 0 auto;
+ }
+
+ .about-flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 80px;
+ }
+
+ /* ====== SINGLE IMAGE SECTION ====== */
+ .about-images {
+   flex: 1 1 55%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .about-image {
+   position: relative;
+   border-radius: 0 0 200px 50px;
+   overflow: hidden;
+   width: 100%;
+   max-width: 620px;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+ }
+
+ .about-image img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   display: block;
+   border-radius: inherit;
+ }
+
+ /* ====== CONTENT SECTION ====== */
+ .about-content {
+   flex: 1 1 50%;
+   text-align: left;
+ }
+
+ .about-heading {
+   margin-bottom: 30px;
+ }
+
+ .section-label {
+   display: inline-block;
+   font-size: 15px;
+   color: var(--cta);
+   font-weight: 600;
+   margin-bottom: 12px;
+   position: relative;
+ }
+
+ .section-label::before {
+   content: "▰";
+   color: var(--accent);
+   margin-right: 6px;
+   font-size: 10px;
+   vertical-align: middle;
+ }
+
+ .about-heading h2 {
+   font-size: var(--heading-font-size-desktop);
+   color: var(--headings);
+   line-height: 1.1;
+   margin: 0 0 16px;
+ }
+
+ .about-heading p {
+   font-size: 17px;
+   line-height: 1.6;
+   color: var(--text2);
+   margin: 0;
+   max-width: 90%;
+ }
+
+ /* ====== FEATURES ====== */
+ .about-features {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 12px 32px;
+   margin-top: 36px;
+   list-style: none;
+   padding: 0;
+ }
+
+ .about-features li {
+   font-size: 16px;
+   font-weight: 600;
+   color: var(--headings);
+   position: relative;
+   padding-left: 28px;
+   line-height: 1.6;
+ }
+
+ .about-features li::before {
+   content: "✔";
+   color: var(--cta);
+   font-weight: 700;
+   font-size: 15px;
+   position: absolute;
+   left: 0;
+   top: 0;
+ }
+
+ /* sec3 starts here */
+
+
+ .sec3.why-us {
+   background: var(--background3);
+   padding: var(--general-padding);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .why-container {
+   max-width: 1280px;
+   width: 100%;
+   margin: 0 auto;
+ }
+
+ .why-flex {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   gap: 80px;
+ }
+
+ /* ====== LEFT CONTENT ====== */
+ .why-content {
+   flex: 1 1 50%;
+ }
+
+ .why-header {
+   margin-bottom: 30px;
+ }
+
+ .section-label {
+   display: inline-block;
+   font-size: 15px;
+   color: var(--cta);
+   font-weight: 600;
+   margin-bottom: 12px;
+   position: relative;
+ }
+
+ .section-label::before {
+   content: "▰";
+   color: var(--accent);
+   margin-right: 6px;
+   font-size: 10px;
+   vertical-align: middle;
+ }
+
+ .why-header h2 {
+   font-size: var(--heading-font-size-desktop);
+   color: var(--headings);
+   line-height: 1.1;
+   margin: 0;
+ }
+
+ /* ====== ACCORDION ====== */
+ .why-accordion {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+
+ .accordion-item {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 10px 0;
+ }
+
+ .accordion-header {
+   background: none;
+   border: none;
+   width: 100%;
+   text-align: left;
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--headings);
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   transition: color 0.3s ease;
+ }
+
+ .accordion-header:hover {
+   color: var(--cta);
+ }
+
+ .accordion-icon {
+   font-size: 22px;
+   color: var(--cta);
+   font-weight: bold;
+   margin-left: 10px;
+ }
+
+ .accordion-body {
+   max-height: 0;
+   overflow: hidden;
+   opacity: 0;
+   transition: all 0.4s ease;
+ }
+
+ .accordion-body p {
+   font-size: 16px;
+   line-height: 1.6;
+   color: var(--text2);
+   margin: 10px 0 0;
+ }
+
+ .accordion-item.active .accordion-body {
+   max-height: 200px;
+   opacity: 1;
+ }
+
+ /* ====== RIGHT IMAGE ====== */
+ .why-images {
+   flex: 1 1 45%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .why-image {
+   width: 100%;
+   max-width: 420px;
+   border-radius: 30px;
+   overflow: hidden;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+ }
+
+ .why-image img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   border-radius: inherit;
+   display: block;
+ }

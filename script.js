@@ -430,3 +430,27 @@ observer.observe(root);
 updateNavState();})();
 
 // Why dFlip section ends here
+
+
+// scroll animation for sections
+
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".reveal");
+
+  const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    const revealPoint = 120;
+
+    reveals.forEach((el) => {
+      const elementTop = el.getBoundingClientRect().top;
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add("active");
+      } else {
+        el.classList.remove("active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+});
