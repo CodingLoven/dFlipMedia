@@ -398,10 +398,11 @@ body {
 
   .phrase-word {
     margin: 0;
-    padding: 0;
+    padding: 12px 0;
     line-height: 1;
     color: var(--cta);
     font-weight: 600;
+    text-decoration: underline;
   }
 
   /* section 2 starts here */
