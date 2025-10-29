@@ -1,325 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About dFlip</title>
-  <link rel="stylesheet" href="styles/about.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About dFlip</title>
+    <link rel="stylesheet" href="styles/about.css">
+  </head>
 
 
-</head>
-<body>
-  
-  
-  <main>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav-wrapper">
 
-   <section class="sec1 about-hero" aria-label="About Us Section">
-      <div class="container about-container">
-        <!-- Background + overlay handled via CSS -->
-        <header class="about-header">
-          <h1 class="about-title">About Us</h1>
-          <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-            <a href="index.html" class="breadcrumb-link">Home</a>
-            <span class="breadcrumb-separator">/</span>
-            <span class="breadcrumb-current">About Us</span>
-          </nav>
-        </header>
-      </div>
-    </section>
+          <a class="nav-logo" href="#">
+            <img src="./img/dflip.PNG" alt="dFlipmedia logo" />
+          </a>
 
-    <section class="sec2 about-intro" aria-label="About dFlip Marketing Agency">
-      <div class="container about-container">
-        <div class="about-flex">
-          
-          <div class="about-images">
-            <figure class="about-image about-image-main">
-              <img src="img/infographics.jpg" alt="Team presenting marketing strategy">
-            </figure>
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon menu-btn" aria-label="Toggle menu">
+            <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+
+            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </label>
+
+          <ul class="menu-items">
+            <li>
+              <a href="#">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#">About dFlip</a>
+            </li>
+
+            <li>
+              <a href="#">Meet The Team</a>
+            </li>
+
+            <li>
+              <a href="#">Join dFlip</a>
+            </li>
+
+            <li>
+              <a href="#">Blog</a>
+            </li>
+
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-cta hide-mobile" href="./contact.html">
+            Lets Start Talking 
+          </a>
+        </div>
+
+      </nav>
+    </header>
+    
+    <main>
+
+      <section class="sec1 about-hero reveal" aria-label="About Us Section">
+        <div class="container about-container">
+          <!-- Background + overlay handled via CSS -->
+          <header class="about-header">
+            <h1 class="about-title">About Us</h1>
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+              <a href="index.html" class="breadcrumb-link">Home</a>
+              <span class="breadcrumb-separator">/</span>
+              <span class="breadcrumb-current">About Us</span>
+            </nav>
+          </header>
+        </div>
+      </section>
+
+      <section class="sec2 about-intro reveal" aria-label="About dFlip Marketing Agency">
+        <div class="container about-container">
+          <div class="about-flex">
+            
+            <div class="about-images">
+              <figure class="about-image about-image-main">
+                <img src="img/infographicssss.png" alt="Team presenting marketing strategy">
+              </figure>
+            </div>
+
+            <div class="about-content">
+              <header class="about-heading">
+                <span class="section-label">Why We Exist</span>
+                <h2>We craft personalized strategies that drive your growth.</h2>
+                <p>
+                 At dFlip Media, we are dedicated to flipping you over to the other side for exponential growth using creative data-driven solutions that guarantees sustainable results. 
+                </p>
+              </header>
+
+              <p class="core">Our Core:</p>
+              <ul class="about-features">
+                <li>Proven Results</li>
+                <li>Expertise And Experience</li>
+                <li>Transparent Reporting</li>
+                <li>Customized Strategies</li>
+                <li>Dedicated Support</li>
+                <li>Continuous Improvement</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="sec3 why-us reveal" aria-label="Why Choose Us">
+        <div class="container why-container">
+
+          <div class="why-flex">
+            
+            <div class="why-content">
+              <header class="why-header">
+                <span class="section-label">Why Us?</span>
+                <h2>What Makes Us the Right Fit</h2>
+              </header>
+
+              <div class="why-accordion">
+
+                <article class="accordion-item active">
+                  <button class="accordion-header" aria-expanded="true">
+                    <span>1. We Understand Brands</span>
+                    <span class="accordion-icon">−</span>
+                  </button>
+                  <div class="accordion-body">
+                    <p>
+                      We take time to understand your story, goals, and audience — so every strategy feels personal and on point. From tone to timing, we align every move with your brand’s true identity and market positioning.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>2. Results That Speak</span>
+                    <span class="accordion-icon">+</span>
+                  </button>
+                  <div class="accordion-body">
+                    <p>
+                      We focus on what matters — visibility, engagement, and growth you can actually measure and feel. Our strategies don’t just make noise; they drive meaningful traction that strengthens your presence and bottom line.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>3. Reliable Partnership</span>
+                    <span class="accordion-icon">+</span>
+                  </button>
+                  <div class="accordion-body">
+                    <p>
+                      We work as an extension of your team, staying consistent, responsive, and committed to your success. You’ll always have a team that listens, collaborates, and delivers — not one that disappears after the first campaign.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>4. Transparent Process</span>
+                    <span class="accordion-icon">+</span>
+                  </button>
+                  <div class="accordion-body">
+                    <p>
+                     You’re always informed. Clear strategies, open communication, no hidden details — just clear communication, honest reporting, and real progress every step of the way. You’ll know what we’re doing, why we’re doing it, and how it benefits your brand.
+                    </p>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+            <div class="why-images">
+              <figure class="why-image">
+                <img src="/img/team presenting.jpg" alt="Team creating a marketing strategy">
+              </figure>
+              <figure class="why-image why2">
+                <img src="/img/team preenting 2.jpg" alt="Team creating a marketing strategy">
+              </figure>
+            </div>
+
           </div>
 
-          <div class="about-content">
-            <header class="about-heading">
-              <span class="section-label">About Us</span>
-              <h2>Everything starts with a marketing agency.</h2>
-              <p>
-                Morem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Elit florai ipsum dolor amet, consectetur sit amet consectetur.
-              </p>
-            </header>
+        </div>
+      </section>
 
-            <ul class="about-features">
-              <li>Proven Results</li>
-              <li>Expertise And Experience</li>
-              <li>Transparent Reporting</li>
-              <li>Customized Strategies</li>
-              <li>Dedicated Support</li>
-              <li>Continuous Improvement</li>
+      <section class="sec4 stats" aria-label="Company Achievements">
+        <div class="container stats-container reveal">
+
+          <div class="stats-wrapper">
+            <div class="stat-box">
+              <h3 class="stat-number">200+</h3>
+              <p class="stat-label">Team Members</p>
+            </div>
+
+            <div class="stat-box">
+              <h3 class="stat-number">250+</h3>
+              <p class="stat-label">Winning Award</p>
+            </div>
+
+            <div class="stat-box">
+              <h3 class="stat-number">50+</h3>
+              <p class="stat-label">Complete Project</p>
+            </div>
+
+            <div class="stat-box">
+              <h3 class="stat-number">300+</h3>
+              <p class="stat-label">Client Reviews</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sec5 strategy reveal" aria-label="Our Strategy">
+        <div class="container strategy-container">
+
+          <!-- Section Header -->
+          <header class="strategy-header">
+            <span class="section-label">You Have a Business</span>
+            <h2>We Have a Strategy</h2>
+            <p>
+              At dFlip Media, strategy isn’t a checklist — it’s a mindset. Every project begins with deep understanding and ends with measurable impact.
+            </p>
+          </header>
+
+          <div class="strategy-grid">
+
+            <article class="strategy-card">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a148c" class="size-6">
+                  <path d="M8.25 10.875a2.625 2.625 0 1 1 5.25 0 2.625 2.625 0 0 1-5.25 0Z" />
+                  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.125 4.5a4.125 4.125 0 1 0 2.338 7.524l2.007 2.006a.75.75 0 1 0 1.06-1.06l-2.006-2.007a4.125 4.125 0 0 0-3.399-6.463Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <h3>Deep Discovery</h3>
+              <p>
+                Before crafting any strategy, we dive into your brand’s world — understanding your values, challenges, audience, and competitors. This clarity forms the foundation for every decision we make and ensures our work aligns with your goals.
+              </p>
+              <!-- <a href="#" class="card-btn" aria-label="Learn more about User Friendly">
+                <span>→</span>
+              </a> -->
+            </article>
+
+            <article class="strategy-card">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff9800" class="size-6"> <path fill-rule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clip-rule="evenodd" />
+                <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                </svg>
+
+              </div>
+              <h3>Audience Insight</h3>
+              <p>
+                We go beyond demographics to understand behaviors, motivations, and digital habits. By knowing what drives your audience, we build strategies that connect emotionally and keep them engaged longer.
+              </p>
+              <!-- <a href="#" class="card-btn" aria-label="Learn more about Super Fast">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+                </svg>
+              </a> -->
+            </article>
+
+            <article class="strategy-card">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a148c" class="size-6">
+                <path d="M18.75 12.75h1.5a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5ZM12 6a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 12 6ZM12 18a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 12 18ZM3.75 6.75h1.5a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5ZM5.25 18.75h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1 0 1.5ZM3 12a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 3 12ZM9 3.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM12.75 12a2.25 2.25 0 1 1 4.5 0 2.25 2.25 0 0 1-4.5 0ZM9 15.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" />
+                </svg>
+
+              </div>
+              <h3>Tailored Strategy</h3>
+              <p>
+                No two brands are the same. We design custom solutions that fit your business goals, market position, and resources. Whether it’s PR, digital, or brand management — everything is built with your unique objectives in mind.
+              </p>
+              <!-- <a href="#" class="card-btn" aria-label="Learn more about User Forum">
+                <span>→</span>
+              </a> -->
+            </article>
+
+            <article class="strategy-card">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff9800" class="size-6">
+                <path d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.261 5.261 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 6.712 6.712 0 0 1-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75Z" />
+                <path fill-rule="evenodd" d="M9.013 19.9a.75.75 0 0 1 .877-.597 11.319 11.319 0 0 0 4.22 0 .75.75 0 1 1 .28 1.473 12.819 12.819 0 0 1-4.78 0 .75.75 0 0 1-.597-.876ZM9.754 22.344a.75.75 0 0 1 .824-.668 13.682 13.682 0 0 0 2.844 0 .75.75 0 1 1 .156 1.492 15.156 15.156 0 0 1-3.156 0 .75.75 0 0 1-.668-.824Z" clip-rule="evenodd" />
+                </svg>
+
+              </div>
+              <h3>Creative Execution</h3>
+              <p>
+                We turn insight into action through strong storytelling, clean visuals, and engaging campaigns. Our creative process ensures every message reflects your brand’s tone while standing out in competitive markets.
+              </p>
+              <!-- <a href="#" class="card-btn" aria-label="Learn more about Insightful Analytics">
+                <span>→</span>
+              </a> -->
+            </article>
+
+            <article class="strategy-card">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a148c" class="size-6">
+                <path fill-rule="evenodd" d="M12 5.25c1.213 0 2.415.046 3.605.135a3.256 3.256 0 0 1 3.01 3.01c.044.583.077 1.17.1 1.759L17.03 8.47a.75.75 0 1 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 0 0-1.06-1.06l-1.752 1.751c-.023-.65-.06-1.296-.108-1.939a4.756 4.756 0 0 0-4.392-4.392 49.422 49.422 0 0 0-7.436 0A4.756 4.756 0 0 0 3.89 8.282c-.017.224-.033.447-.046.672a.75.75 0 1 0 1.497.092c.013-.217.028-.434.044-.651a3.256 3.256 0 0 1 3.01-3.01c1.19-.09 2.392-.135 3.605-.135Zm-6.97 6.22a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.752-1.751c.023.65.06 1.296.108 1.939a4.756 4.756 0 0 0 4.392 4.392 49.413 49.413 0 0 0 7.436 0 4.756 4.756 0 0 0 4.392-4.392c.017-.223.032-.447.046-.672a.75.75 0 0 0-1.497-.092c-.013.217-.028.434-.044.651a3.256 3.256 0 0 1-3.01 3.01 47.953 47.953 0 0 1-7.21 0 3.256 3.256 0 0 1-3.01-3.01 47.759 47.759 0 0 1-.1-1.759L6.97 15.53a.75.75 0 0 0 1.06-1.06l-3-3Z" clip-rule="evenodd" />
+                </svg>
+
+              </div>
+              <h3>Consistent Optimization</h3>
+              <p>
+                We monitor performance, measure impact, and refine our approach based on data. Every campaign evolves to stay effective, relevant, and aligned with real-world results.
+              </p>
+              <!-- <a href="#" class="card-btn" aria-label="Learn more about Highly Rated">
+                <span>→</span>
+              </a> -->
+            </article>
+
+            <article class="strategy-card">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff9800" class="size-6">
+                <path fill-rule="evenodd" d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z" clip-rule="evenodd" />
+                </svg>
+
+              </div>
+              <h3>Long-Term Growth</h3>
+              <p>
+                We think beyond campaigns. Our strategies are designed to strengthen your brand reputation, build trust, and sustain growth that compounds over time.
+              </p>
+              <!-- <a href="#" class="card-btn" aria-label="Learn more about 24/7 Support">
+                <span>→</span>
+              </a> -->
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer reveal">
+      <div class="footer-wrap">
+
+        <div class="newsletter">
+          <h3>Subscribe to our Newsletter</h3>
+          <p>Fuel your business growth with expert strategies and insider insights from dFlip Media.</p>
+          <form>
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="links-container">
+
+          <div class="footer-links">
+            <h4>Quicklinks</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact form.html">Contact</a></li>
             </ul>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <section class="sec3 why-us" aria-label="Why Choose Us">
-      <div class="container why-container">
-
-        <div class="why-flex">
-          
-          <!-- Left Column: Accordion Content -->
-          <div class="why-content">
-            <header class="why-header">
-              <span class="section-label">Why Us</span>
-              <h2>Why you will choose us</h2>
-            </header>
-
-            <div class="why-accordion">
-
-              <article class="accordion-item active">
-                <button class="accordion-header" aria-expanded="true">
-                  <span>1. Create A Strategy</span>
-                  <span class="accordion-icon">−</span>
-                </button>
-                <div class="accordion-body">
-                  <p>
-                    Includes using high-quality keywords to write strategic content that ranks, 
-                    as well as descriptive metadata and meaningful image alt text.
-                  </p>
-                </div>
-              </article>
-
-              <article class="accordion-item">
-                <button class="accordion-header" aria-expanded="false">
-                  <span>2. Building Your Site</span>
-                  <span class="accordion-icon">+</span>
-                </button>
-                <div class="accordion-body">
-                  <p>
-                    We develop responsive, modern websites that align with your brand and goals.
-                  </p>
-                </div>
-              </article>
-
-              <article class="accordion-item">
-                <button class="accordion-header" aria-expanded="false">
-                  <span>3. Website Optimisation</span>
-                  <span class="accordion-icon">+</span>
-                </button>
-                <div class="accordion-body">
-                  <p>
-                    We enhance site speed, structure, and SEO to ensure optimal visibility and user experience.
-                  </p>
-                </div>
-              </article>
-
-              <article class="accordion-item">
-                <button class="accordion-header" aria-expanded="false">
-                  <span>4. Promoting Your Site</span>
-                  <span class="accordion-icon">+</span>
-                </button>
-                <div class="accordion-body">
-                  <p>
-                    Targeted marketing strategies to drive consistent traffic and engagement to your website.
-                  </p>
-                </div>
-              </article>
-
-            </div>
-          </div>
-
-          <div class="why-images">
-            <figure class="why-image">
-              <img src="/img/team presenting.jpg" alt="Team creating a marketing strategy">
-            </figure>
-            <figure class="why-image">
-              <img src="/img/team preenting 2.jpg" alt="Team creating a marketing strategy">
-            </figure>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section class="sec4 stats" aria-label="Company Achievements">
-      <div class="container stats-container">
-
-        <div class="stats-wrapper">
-          <div class="stat-box">
-            <h3 class="stat-number">200+</h3>
-            <p class="stat-label">Team Members</p>
-          </div>
-
-          <div class="stat-box">
-            <h3 class="stat-number">250+</h3>
-            <p class="stat-label">Winning Award</p>
-          </div>
-
-          <div class="stat-box">
-            <h3 class="stat-number">50+</h3>
-            <p class="stat-label">Complete Project</p>
-          </div>
-
-          <div class="stat-box">
-            <h3 class="stat-number">300+</h3>
-            <p class="stat-label">Client Reviews</p>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>+234 8097060188</li>
+              <li><a href="mailto:dflipmedia@gmail.com">dflipmedia@gmail.com</a></li>
+              <li>No. 8, Excellence & Friends<br>Street, Dawaki, Abuja (FCT) Nigeria</li>
+            </ul>
           </div>
         </div>
 
-      </div>
-    </section>
+        <hr>
 
-    <section class="sec5 strategy" aria-label="Our Strategy">
-      <div class="container strategy-container">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/dflipmedia/" target="_blank">
+            <img class="LinkedIn_logo" src="./Assets/pngwing.com (7).png" alt="dFlip Media LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61569941146590" target="_blank">
+            <img class="Facebook_logo" src="./Assets/pngwing.com (6).png" alt="dFlip Media Facebook">
+          </a>
+        </div>
 
-        <!-- Section Header -->
-        <header class="strategy-header">
-          <span class="section-label">You Have Business</span>
-          <h2>We Have Strategy</h2>
-          <p>
-            Grow your business with us. Morem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Florai ipsum dolor amet, consectetur sit amet consectetur.
-          </p>
-        </header>
-
-        <!-- Strategy Grid -->
-        <div class="strategy-grid">
-
-          <!-- Card 1 -->
-          <article class="strategy-card">
-            <div class="card-icon">
-              <img src="icons/user-friendly.svg" alt="User Friendly Icon">
-            </div>
-            <h3>User Friendly</h3>
-            <p>
-              We’ve cultivated a dynamic space where creativity seamlessly intertwines 
-              with strategy and innovation.
-            </p>
-            <a href="#" class="card-btn" aria-label="Learn more about User Friendly">
-              <span>→</span>
-            </a>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="strategy-card">
-            <div class="card-icon">
-              <img src="icons/speed.svg" alt="Super Fast Icon">
-            </div>
-            <h3>Super Fast</h3>
-            <p>
-              We’ve cultivated a dynamic space where creativity seamlessly intertwines 
-              with strategy and innovation.
-            </p>
-            <a href="#" class="card-btn" aria-label="Learn more about Super Fast">
-              <span>→</span>
-            </a>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="strategy-card">
-            <div class="card-icon">
-              <img src="icons/forum.svg" alt="User Forum Icon">
-            </div>
-            <h3>User Forum</h3>
-            <p>
-              We’ve cultivated a dynamic space where creativity seamlessly intertwines 
-              with strategy and innovation.
-            </p>
-            <a href="#" class="card-btn" aria-label="Learn more about User Forum">
-              <span>→</span>
-            </a>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="strategy-card">
-            <div class="card-icon">
-              <img src="icons/analytics.svg" alt="Analytics Icon">
-            </div>
-            <h3>Insightful Analytics</h3>
-            <p>
-              We’ve cultivated a dynamic space where creativity seamlessly intertwines 
-              with strategy and innovation.
-            </p>
-            <a href="#" class="card-btn" aria-label="Learn more about Insightful Analytics">
-              <span>→</span>
-            </a>
-          </article>
-
-          <!-- Card 5 -->
-          <article class="strategy-card">
-            <div class="card-icon">
-              <img src="icons/rating.svg" alt="Highly Rated Icon">
-            </div>
-            <h3>Highly Rated</h3>
-            <p>
-              We’ve cultivated a dynamic space where creativity seamlessly intertwines 
-              with strategy and innovation.
-            </p>
-            <a href="#" class="card-btn" aria-label="Learn more about Highly Rated">
-              <span>→</span>
-            </a>
-          </article>
-
-          <!-- Card 6 -->
-          <article class="strategy-card">
-            <div class="card-icon">
-              <img src="icons/support.svg" alt="24/7 Support Icon">
-            </div>
-            <h3>24/7 Support</h3>
-            <p>
-              We’ve cultivated a dynamic space where creativity seamlessly intertwines 
-              with strategy and innovation.
-            </p>
-            <a href="#" class="card-btn" aria-label="Learn more about 24/7 Support">
-              <span>→</span>
-            </a>
-          </article>
-
+        <div class="copyright">
+          &copy; 2025 • dFlip Media. All rights reserved.
         </div>
       </div>
-    </section>
+    </footer>
+      
 
 
-  </main>
+    <script>
+      
+      // Accordion Interactivity for About Page "Why Choose Us"
+      document.addEventListener("DOMContentLoaded", () => {
+        const accordionItems = document.querySelectorAll(".accordion-item");
 
-  <script>
-    
-// Accordion Interactivity for About Page "Why Choose Us"
-document.addEventListener("DOMContentLoaded", () => {
-  const accordionItems = document.querySelectorAll(".accordion-item");
+        accordionItems.forEach((item) => {
+          const header = item.querySelector(".accordion-header");
+          const icon = item.querySelector(".accordion-icon");
+          const body = item.querySelector(".accordion-body");
 
-  accordionItems.forEach((item) => {
-    const header = item.querySelector(".accordion-header");
-    const icon = item.querySelector(".accordion-icon");
-    const body = item.querySelector(".accordion-body");
+          header.addEventListener("click", () => {
+            const isActive = item.classList.contains("active");
 
-    header.addEventListener("click", () => {
-      const isActive = item.classList.contains("active");
+            // Close all items
+            accordionItems.forEach((otherItem) => {
+              otherItem.classList.remove("active");
+              otherItem.querySelector(".accordion-header").setAttribute("aria-expanded", "false");
+              otherItem.querySelector(".accordion-icon").textContent = "+";
+              otherItem.querySelector(".accordion-body").style.maxHeight = null;
+            });
 
-      // Close all items
-      accordionItems.forEach((otherItem) => {
-        otherItem.classList.remove("active");
-        otherItem.querySelector(".accordion-header").setAttribute("aria-expanded", "false");
-        otherItem.querySelector(".accordion-icon").textContent = "+";
-        otherItem.querySelector(".accordion-body").style.maxHeight = null;
+            // Toggle the clicked item
+            if (!isActive) {
+              item.classList.add("active");
+              header.setAttribute("aria-expanded", "true");
+              icon.textContent = "−";
+              body.style.maxHeight = body.scrollHeight + "px";
+            } else {
+              item.classList.remove("active");
+              header.setAttribute("aria-expanded", "false");
+              icon.textContent = "+";
+              body.style.maxHeight = null;
+            }
+          });
+        });
       });
 
-      // Toggle the clicked item
-      if (!isActive) {
-        item.classList.add("active");
-        header.setAttribute("aria-expanded", "true");
-        icon.textContent = "−";
-        body.style.maxHeight = body.scrollHeight + "px";
-      } else {
-        item.classList.remove("active");
-        header.setAttribute("aria-expanded", "false");
-        icon.textContent = "+";
-        body.style.maxHeight = null;
-      }
-    });
-  });
-});
 
-  </script>
-</body>
+  
+      // scroll animation for sections
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const reveals = document.querySelectorAll(".reveal");
+
+        const revealOnScroll = () => {
+          const windowHeight = window.innerHeight;
+          const revealPoint = 120;
+
+          reveals.forEach((el) => {
+            const elementTop = el.getBoundingClientRect().top;
+            if (elementTop < windowHeight - revealPoint) {
+              el.classList.add("active");
+            } else {
+              el.classList.remove("active");
+            }
+          });
+        };
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+      });
+
+    </script>
+  </body>
+
 </html>
