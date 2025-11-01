@@ -755,6 +755,26 @@ a:focus-visible,
   height: 25px;
 }
 
+.cta-team {
+  margin-top: 40px;
+  max-width: 200px;
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 68px;
+  background: var(--cta);
+  color: var(--text1);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: var(--border);
+  text-decoration: none;
+  transition: background 0.3s ease;
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+
+
+
 
 
 
