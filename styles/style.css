@@ -465,13 +465,6 @@ body {
     margin: 0 auto 30px;
   }
 
-  .whatwedo {
-    font-size: 14px;
-    font-weight: lighter;
-    line-height: 3;
-    color: var(--headings);
-  }
-
   .challenges-header h2 {
     font-size: 48px;
     font-weight: bold;
@@ -2355,13 +2348,6 @@ body {
     margin: 0 auto 30px;
     text-align: left;
     gap: 8px;
-  }
-
-  .whatwedo {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 2.6;
-    color: var(--headings);
   }
 
   .challenges-header h2 {
@@ -4388,13 +4374,6 @@ body {
     width: 100%;
     gap: 66px;
     margin-bottom: 18px;
-  }
-
-  .whatwedo {
-    font-size: 15px;
-    line-height: 2.2;
-    color: var(--headings);
-    font-weight: lighter;
   }
 
   .challenges-header h2 {
