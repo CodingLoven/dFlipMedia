@@ -8,7 +8,8 @@
   </head>
 
 
-  <body>
+  <body class="about-page">
+    
     <header class="site-header">
       <nav class="nav">
         <div class="nav-wrapper">
@@ -369,70 +370,7 @@
       
 
 
-    <script>
-      
-      // Accordion Interactivity for About Page "Why Choose Us"
-      document.addEventListener("DOMContentLoaded", () => {
-        const accordionItems = document.querySelectorAll(".accordion-item");
-
-        accordionItems.forEach((item) => {
-          const header = item.querySelector(".accordion-header");
-          const icon = item.querySelector(".accordion-icon");
-          const body = item.querySelector(".accordion-body");
-
-          header.addEventListener("click", () => {
-            const isActive = item.classList.contains("active");
-
-            // Close all items
-            accordionItems.forEach((otherItem) => {
-              otherItem.classList.remove("active");
-              otherItem.querySelector(".accordion-header").setAttribute("aria-expanded", "false");
-              otherItem.querySelector(".accordion-icon").textContent = "+";
-              otherItem.querySelector(".accordion-body").style.maxHeight = null;
-            });
-
-            // Toggle the clicked item
-            if (!isActive) {
-              item.classList.add("active");
-              header.setAttribute("aria-expanded", "true");
-              icon.textContent = "−";
-              body.style.maxHeight = body.scrollHeight + "px";
-            } else {
-              item.classList.remove("active");
-              header.setAttribute("aria-expanded", "false");
-              icon.textContent = "+";
-              body.style.maxHeight = null;
-            }
-          });
-        });
-      });
-
-
-  
-      // scroll animation for sections
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const reveals = document.querySelectorAll(".reveal");
-
-        const revealOnScroll = () => {
-          const windowHeight = window.innerHeight;
-          const revealPoint = 120;
-
-          reveals.forEach((el) => {
-            const elementTop = el.getBoundingClientRect().top;
-            if (elementTop < windowHeight - revealPoint) {
-              el.classList.add("active");
-            } else {
-              el.classList.remove("active");
-            }
-          });
-        };
-
-        window.addEventListener("scroll", revealOnScroll);
-        revealOnScroll();
-      });
-
-    </script>
+    <script src="script.js"></script>
   </body>
 
 </html>

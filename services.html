@@ -1,226 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dFlip Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/services.css" />
+    <title>dFlip-Services</title>
 </head>
-<body>
-        
-  <nav>
-    <div class="nav-logo">
-      <a href="#">
-        <img class="dFlip_logo" src="./Assets/dflip logo.png" alt="dFlipmedia-logo" >
-      </a>
-    </div>
-   
-  <ul class="nav-links">
-          <li><a href="./contact form.html">Contact</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./index.html">Home</a></li>
-      
-      </ul>
 
-          <div class="nav-mobile">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+  <body class="services-page">
+    
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav-wrapper">
+
+          <a class="nav-logo" href="index.html">
+            <img src="./img/dflip.PNG" alt="dFlipmedia logo" />
+          </a>
+
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon menu-btn" aria-label="Toggle menu">
+            <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+
+            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </label>
+
+          <ul class="menu-items">
+            <li>
+              <a href="#">Our Services</a>
+            </li>
+
+            <li>
+              <a href="about.html">About dFlip</a>
+            </li>
+
+            <li>
+              <a href="#">Meet The Team</a>
+            </li>
+
+            <li>
+              <a href="#">Join dFlip</a>
+            </li>
+
+            <li>
+              <a href="#">Blog</a>
+            </li>
+
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-cta hide-mobile" href="./contact.html">
+            Lets Start Talking 
+          </a>
+        </div>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="sec2 about-hero reveal" aria-label="About Us Section">
+        <div class="container about-container">
+          
+          <header class="about-header">
+            <h1 class="about-title">Our Services</h1>
+            <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+              <a href="index.html" class="breadcrumb-link">Home</a>
+              <span class="breadcrumb-separator">|</span>
+              <span class="breadcrumb-current">Our Services</span>
+            </nav>
+          </header>
+        </div>
+      </section>
+
+      <section class="sec3 services-intro reveal" >
+        <div class="services-container">
+          <div class="services-header">
+            <span class="section-label">
+              <i class="label-icon"></i> What We Do For You
+            </span>
+
+            <div class="services-content">
+              <div class="services-text">
+                <h2>We inspire and Offer Different Services</h2>
+              </div>
+
+              <div class="services-description">
+                <p>
+                  At dFlip Media, we combine creativity, communication, and strategy to help brands grow, connect, and stay relevant. <br>
+                  We make building a strong online presence, managing reputation, or driving customer engagement — happen with precision and purpose.
+                </p>
+              </div>
             </div>
           </div>
-                    
- 
-</nav> 
+        </div>
+      </section>
 
-  <section class="hero">
-    <div class="content">
-      <h1 class="animated-text">The Right Paths <br> to <span class="growth">Growth!</span></h1>
-      <p>Let's Flip you to the other side of growth</p>
-      <!-- <img class="hero_img" src="./Assets/IMG-20241205-WA0011.jpg" alt=""> -->
-      <!-- <a href="mailto:dflipmedia@gmail.com" class="btn">Get In Touch</a> -->
-    </div>
+      <section class="sec1 services-showcase reveal" id="services">
+        <div class="container services-container">
 
+          <aside class="services-detail" aria-live="polite">
+            <article class="service-article" id="service-detail">
+              <figure class="service-figure">
+                <img
+                  src="img/placeholder-480x320.jpg"
+                  alt="Infographic for selected service"
+                  class="service-media"
+                  width="480"
+                  height="320"
+                  loading="lazy"
+                />
+              </figure>
 
-      <div class="stats">
-        <p>dFlip Media is a global powerhouse in PR and marketing. 
-          We craft innovative, data-driven strategies that build trust, 
-          captivate audiences, and propel your brand to new heights.</p> <br><br>
-          <a href="./contact form.html"><div class="circle">
-            <div class="circle-text">
-                <span>G</span> 
-                <span>E</span>
-                <span>T</span>
-                <span style="color: #ff9800">></span>
-                <span style="color: #ff9800">></span>
-                <span>S</span>
-                <span>T</span>
-                <span>A</span>
-                <span>R</span>
-                <span>T</span>
-                <span>E</span>
-                <span>D</span>
-                <span style="color: #ff9800">></span>
-                <span>N</span>
-                <span>O</span>
-                <span>W</span>
-                <span style="color: #ff9800">></span>
-                <span style="color: #ff9800">></span>
-                <!-- <span>A</span> -->
-                <!-- <span>R</span>
-                <span>T</span>
-                <span>E</span>
-                <span>D</span> -->
-            
-          
-        </div></a>
-        
+              <div class="service-copy">
+                <h3 class="service-title">Market Research</h3>
+                <p class="service-text">
+                  Every great strategy begins with insight. We dive deep into market
+                  trends, audience behavior, and competitor activity to uncover what
+                  truly drives your industry — helping you make data-backed decisions
+                  that convert.
+                </p>
 
+                <div class="service-meta">
+                  <img src="img/badge-mini.png" alt="" width="64" height="64" loading="lazy" />
+                  <span class="service-meta-text">Sample KPI snapshot / badge</span>
+                </div> 
+              </div>
+            </article>
+          </aside>
+
+          <div class="services-controller">
+
+            <div class="service-tabs" role="tablist" aria-label="Service Categories">
+
+              <button
+                id="tab-brand-promotion"
+                class="tab-card is-active"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-brand-promotion"
+                data-tab="brand-promotion">
+                <span class="tab-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <circle cx="12" cy="12" r="10" opacity=".2"></circle>
+                    <path d="M7 13h10v2H7zM7 9h8v2H7z"></path>
+                  </svg>
+                </span>
+                <span class="tab-text">
+                  <strong>Brand Promotion &amp; Marketing</strong>
+                  <small class="tab-desc">We help brands grow by connecting strategy with creativity</small>
+                </span>
+              </button>
+
+              <!-- PR Services -->
+              <button
+                id="tab-pr-services"
+                class="tab-card"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-pr-services"
+                data-tab="pr-services">
+                <span class="tab-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <circle cx="12" cy="12" r="10" opacity=".2"></circle>
+                    <path d="M6 8h12v2H6zM6 12h9v2H6zM6 16h6v2H6z"></path>
+                  </svg>
+                </span>
+                <span class="tab-text">
+                  <strong>PR Services</strong>
+                  <small class="tab-desc">We help you stay visible, credible, and connected with the people who matter most.</small>
+                </span>
+              </button>
+            </div>
+
+            <div class="service-panels">
+
+              <div id="panel-brand-promotion" class="pill-panel is-visible" role="tabpanel" aria-labelledby="tab-brand-promotion">
+                <div class="pill-grid" role="group" aria-label="Brand Promotion & Marketing services">
+                  <button class="pill is-active" id="service-market-research" data-service="market-research">Market Research</button>
+                  <button class="pill" id="service-customer-relations" data-service="customer-relations">Customer Relations</button>
+                  <button class="pill" id="service-web-development" data-service="web-development">Web Development</button>
+                  <button class="pill" id="service-email-marketing" data-service="email-marketing">Email Marketing</button>
+                  <button class="pill" id="service-social-media" data-service="social-media">Social Media Management</button>
+                  <button class="pill" id="service-content-creation" data-service="content-creation">Content Creation &amp; Copywriting</button>
+                  <button class="pill" id="service-influencer-marketing" data-service="influencer-marketing">Influencer Marketing</button>
+                  <button class="pill" id="service-digital-marketing" data-service="digital-marketing">Digital Marketing</button>
+                  <button class="pill" id="service-visual-design" data-service="visual-design">Visual &amp; Product Design</button>
+                </div>
+              </div>
+
+              <!-- PR SERVICES PILL PANEL -->
+              <div
+                id="panel-pr-services"
+                class="pill-panel"
+                role="tabpanel"
+                aria-labelledby="tab-pr-services"
+                hidden
+              >
+                <div class="pill-grid" role="group" aria-label="PR Services">
+                  <button class="pill" id="service-crisis-communication" data-service="crisis-communication">Crisis Communication</button>
+                  <button class="pill" id="service-reputation-management" data-service="reputation-management">Reputation Management</button>
+                  <button class="pill" id="service-strategic-communication" data-service="strategic-communication">Strategic Communication</button>
+                  <button class="pill" id="service-internal-communication" data-service="internal-communication">Internal Communication</button>
+                  <button class="pill" id="service-consultancy-training" data-service="consultancy-training">Consultancy &amp; Training Services</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <template id="tmpl-service-market-research">
+          <figure class="service-figure">
+            <img src="img/Market research.jpg" alt="Market research infographic" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Market Research</h3>
+            <p class="service-text">
+              Every great strategy begins with insight. We dive deep into market trends,
+              audience behavior, and competitor activity to uncover what truly drives your
+              industry — helping you make data-backed decisions that convert.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-graph-up-arrow" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+              </svg>
+              <span class="service-meta-text">Sample KPI snapshot / badge</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-customer-relations">
+          <figure class="service-figure">
+            <img src="img/Customer Relations.jpg" alt="Customer relations infographic" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Customer Relations</h3>
+            <p class="service-text">
+              We help brands build trust through meaningful interactions. From customer
+              support strategy to personalized communication, we ensure every touchpoint
+              enhances loyalty and brand experience.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-bar-chart" viewBox="0 0 16 16">
+              <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+              </svg>
+              <span class="service-meta-text">Satisfaction &amp; retention metrics</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-web-development">
+          <figure class="service-figure">
+            <img src="img/web development.jpg" alt="Website development process" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-text">
+              Your website is your digital headquarters. We design and develop fast, responsive,
+              and visually compelling sites that align with your brand goals and deliver seamless
+              user experiences.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-pie-chart-fill" viewBox="0 0 16 16"><path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015"/>
+             </svg>
+
+              <span class="service-meta-text">UX / UI performance stats</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-email-marketing">
+          <figure class="service-figure">
+            <img src="img/Email Marketing.jpg" alt="Email campaign visual" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Email Marketing</h3>
+            <p class="service-text">
+              We create and manage result-driven email campaigns that nurture leads, retain customers, and drive consistent engagement — all while reflecting your brand’s unique voice.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-opencollective" viewBox="0 0 16 16"><path fill-opacity=".4" d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732z"/>
+              <path d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.07 5.07 0 0 1-2.732.781z"/>
+              </svg>
+              <span class="service-meta-text">Open &amp; click-through benchmarks</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-social-media">
+          <figure class="service-figure">
+            <img src="img/Social Media Management.jpg" alt="Social media analytics" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Social Media Management</h3>
+            <p class="service-text">
+              From strategy to execution, we build your presence across platforms that matter.
+              We manage your accounts, craft engaging content, and analyze performance to keep
+              your audience connected and active.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-kanban" viewBox="0 0 16 16"><path d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+              <path d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"/>
+              </svg>
+              <span class="service-meta-text">Follower engagement insights</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-content-creation">
+          <figure class="service-figure">
+            <img src="img/Content Creation & Copywriting.jpg" alt="Content creation workspace" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Content Creation & Copywriting</h3>
+            <p class="service-text">
+              Words and visuals that move people. We create compelling stories, visuals,
+              and messages that communicate your brand purpose clearly — designed to inform,
+              engage, and inspire action.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-pen" viewBox="0 0 16 16"><path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+              </svg>
+              <span class="service-meta-text">Engagement rate improvement</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-influencer-marketing">
+          <figure class="service-figure">
+            <img src="img/Influencer Marketing.jpg" alt="Influencer collaboration" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Influencer Marketing</h3>
+            <p class="service-text">
+              We connect your brand with the right voices. Through carefully selected influencers
+              and creators, we help you reach authentic audiences and build credibility that lasts.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-cart-check" viewBox="0 0 16 16"><path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/><path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+              </svg>
+              <span class="service-meta-text">Creator partnership ROI</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-digital-marketing">
+          <figure class="service-figure">
+            <img src="img/Digital Marketing.jpg" alt="Digital marketing channels" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-text">
+              Our data-driven digital campaigns span SEO, paid ads, and content distribution —
+              ensuring your brand not only gets seen but stays remembered.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-bullseye" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+              <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg>
+              <span class="service-meta-text">Conversion funnel snapshot</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-visual-design">
+          <figure class="service-figure">
+            <img src="img/Visual & Product Design.jpg" alt="Product design visuals" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Visual & Product Design</h3>
+            <p class="service-text">
+              From branding to product presentation, our creative team designs visuals that embody
+              professionalism, consistency, and emotional appeal — because presentation sells as much
+              as product quality.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-projector-fill" viewBox="0 0 16 16"><path d="M2 4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1h6a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm.5 2h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1M14 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-12 1a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5"/>
+              </svg>
+              <span class="service-meta-text">Brand guideline preview</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-crisis-communication">
+          <figure class="service-figure">
+            <img src="img/Crisis Communication.jpg" alt="Crisis communication plan" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Crisis Communication</h3>
+            <p class="service-text">
+              We prepare and protect your reputation in challenging times. With timely,
+              strategic messaging, we help you navigate crises calmly and restore public confidence.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-chat-dots" viewBox="0 0 16 16"><path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+              <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+              </svg>
+              <span class="service-meta-text">Response timeline samples</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-reputation-management">
+          <figure class="service-figure">
+            <img src="img/Reputation Management.jpg" alt="Reputation analytics" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Reputation Management</h3>
+            <p class="service-text">
+              Your brand’s image is its greatest asset. We monitor conversations, manage feedback,
+              and craft narratives that strengthen trust and maintain positive perception across all platforms.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-rulers" viewBox="0 0 16 16"><path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1z"/>
+            </svg>
+              <span class="service-meta-text">Sentiment tracking dashboard</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-strategic-communication">
+          <figure class="service-figure">
+            <img src="img/Strategic Communication.jpg" alt="Strategic communication planning" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Strategic Communication</h3>
+            <p class="service-text">
+              We plan and execute purposeful communication strategies that align with your business goals —
+              ensuring every message moves your brand in the right direction.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
+              </svg>
+              <span class="service-meta-text">Communication matrix view</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-internal-communication">
+          <figure class="service-figure">
+            <img src="img/Internal Communication.jpg" alt="Internal team communication" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Internal Communication</h3>
+            <p class="service-text">
+              We help you foster clarity and unity within your organization. Our internal communication systems
+              ensure teams stay informed, motivated, and aligned with company objectives.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-intersect" viewBox="0 0 16 16"><path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2zm6-8V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2V6a2 2 0 0 1 2-2z"/>
+              </svg>
+              <span class="service-meta-text">Intranet workflow demo</span>
+            </div>
+          </div>
+        </template>
+
+        <template id="tmpl-service-consultancy-training">
+          <figure class="service-figure">
+            <img src="img/Consultancy & Training Services.jpg" alt="Training session graphic" class="service-media" />
+          </figure>
+          <div class="service-copy">
+            <h3 class="service-title">Consultancy & Training Services</h3>
+            <p class="service-text">
+              We guide teams and executives in adopting effective PR, marketing, and communication practices —
+              offering expert insights and hands-on training that improve in-house performance.
+            </p>
+            <div class="service-meta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4A148C" class="bi bi-person-vcard" viewBox="0 0 16 16">
+              <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
+              <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/>
+              </svg>
+              <span class="service-meta-text">Workshop structure preview</span>
+            </div>
+          </div>
+        </template>
+
+      </section>
+
+      <section class="sec4 working-process reveal">
+        <div class="process-container">
+
+          <div class="process-header">
+            <span class="section-label">
+              <i class="icon-arrow"></i> dFlip Way
+            </span>
+            <h2>How we work</h2>
+            <p>
+              We follow a clear and thoughtful process to transform ideas into impactful digital experiences that not only look great but also drive measurable growth.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-card">
+              <h3>1. Share Your Vision</h3>
+              <p>
+                Tell us about your goals, audience, and what success looks like for you. We listen first, then strategize.
+              </p>
+            </div>
+
+            <div class="process-card">
+              <h3>2. Get a Custom Strategy</h3>
+              <p>
+                Our team builds a tailored plan that fits your brand — covering PR, marketing, and communication touchpoints.
+              </p>
+            </div>
+
+            <div class="process-card">
+              <h3>3. We Execute</h3>
+              <p>
+                From creative assets to campaign rollout, we bring your plan to life with precision and consistency.
+              </p>
+            </div>
+
+            <div class="process-card">
+              <h3>4. Track & Grow</h3>
+              <p>
+                We measure, optimize, and refine — ensuring your brand keeps growing and stays ahead.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec5 brand-story reveal">
+
+        <div class="container">
+          <div class="cta-banner">
+            <div class="cta-content">
+              <span class="cta-label">Contact Us</span>
+              <h2 class="cta-heading">Ready To Flip Your <br> Brand?</h2>
+            </div>
+            <a href="#contact" class="cta-button">Let's Get Started →</a>
+          </div>
+
+          <div class="story-flex">
+            <div class="story-images">
+              <div class="story-image large">
+                <img src="img/boutsec.png" alt="Team collaboration">
+              </div>
+              
+            </div>
+
+            <div class="story-content">
+              <h2 class="story-title">
+                Our story — an exciting journey
+              </h2>
+              <p class="story-desc">
+                Our journey began with a simple belief — that creativity should do more than capture attention; it should spark transformation. What started as a small idea between storytellers and strategists has grown into a full-scale creative agency that helps brands flip the digital narrative in their favor.
+              </p>
+
+              <ul class="story-list">
+                <li>Digital design that inspires and converts</li>
+                <li>Campaigns that turn audiences into communities</li>
+                <li>Strategies built for growth and real engagement</li>
+              </ul>
+
+              <a href="#about" class="story-btn">Read About Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer reveal">
+      <div class="footer-wrap">
+
+        <div class="newsletter">
+          <h3>Subscribe to our Newsletter</h3>
+          <p>Fuel your business growth with expert strategies and insider insights from dFlip Media.</p>
+          <form>
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="links-container">
+
+          <div class="footer-links">
+            <h4>Quicklinks</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact form.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>+234 8097060188</li>
+              <li><a href="mailto:dflipmedia@gmail.com">dflipmedia@gmail.com</a></li>
+              <li>No. 8, Excellence & Friends<br>Street, Dawaki, Abuja (FCT) Nigeria</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/dflipmedia/" target="_blank">
+            <img class="LinkedIn_logo" src="./Assets/pngwing.com (7).png" alt="dFlip Media LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61569941146590" target="_blank">
+            <img class="Facebook_logo" src="./Assets/pngwing.com (6).png" alt="dFlip Media Facebook">
+          </a>
+        </div>
+
+        <div class="copyright">
+          &copy; 2025 • dFlip Media. All rights reserved.
+        </div>
       </div>
-    
+    </footer>
       
-  </section>
+
+    <script src="script.js"></script>
+
+  </body>
 
 
- 
-
-<!-- OUR SERVICES SECTION -->
-
-
-  <div class="Our_Services_Section">
-    <h1>Explore Our <span style="color: #ff9800;">Services</span></h1>
-    <div class="box-container2">
-      <div class="box1">
-       <!-- <h3><img class="droppshipping_logo" src="./Assets/dropshipping logo.png" alt="drop shipping logo"></h3> -->
-          <h2>Drop Shipping</h2>
-          <p>Market Research, Customer Relation and Experience, Store Development, and Management, UCG Creators</p>
-      </div>
-      <div class="box2">
-          <h2>Real Estate, Entertainment, Sport and NGOs</h2>
-          <p>Market Research, Customer relations, Web development, Social Media Management, 
-            Email Marketing, Content Creation and copy writing, Reputation Management, 
-            Crisis Communication, Internal Commnuication and Creative design.</p>
-      </div>
-      <div class="box3">
-          <h2>Brand Promotion and Marketing</h2>
-          <p>Digital Marketing, Customer experience, Web development, Email Marketing,
-            Social media management, Content marketing, sales copy writing, influencer Marketing
-            Visual and product design.
-          </p>
-      </div>
-      <div class="box4">
-        <h2>PR services</h2>
-        <p>Crisis Communication, Reputation Management, Strategic communication, Internal Communication
-          consultancy Services and Team training Services.
-        </p>
-    </div>
-    <div class="btn_cont_2">
-      <a href="./contact form.html" target="_parent"><button class="btn_container2">
-    Get Started
-    
-    </button></a> 
-      </div>
-   
-</div>
-
-</div>
-
-<div class="Our_Services_Section1024PX">
-  <h1>Explore Our <span style="color: #ff9800;">Services</span></h1>
-  <div class="box-container2">
-    <div class="box1">
-     <!-- <h3><img class="droppshipping_logo" src="./Assets/dropshipping logo.png" alt="drop shipping logo"></h3> -->
-        <h2>Drop Shipping</h2>
-        <p>Market Research, Customer Relation and Experience, Store Development, and Management, UCG Creators</p>
-    </div>
-    <div class="box2">
-        <h2>Real Estate, Entertainment, Sport and NGOs</h2>
-        <p>Market Research, Customer relations, Web development, Social Media Management, 
-          Email Marketing, Content Creation and copy writing, Reputation Management, 
-          Crisis Communication, Internal Commnuication and Creative design.</p>
-    </div>
-  </div>
-    <div class="box-container_div2">
-      <div class="box3">
-        <h2>Brand Promotion and Marketing</h2>
-        <p>Digital Marketing, Customer experience, Web development, Email Marketing,
-          Social media management, Content marketing, sales copy writing, influencer Marketing
-          Visual and product design.
-        </p>
-    </div>
-    <div class="box4">
-      <h2>PR services</h2>
-      <p>Crisis Communication, Reputation Management, Strategic communication, Internal Communication
-        consultancy Services and Team training Services.
-      </p>
-  </div>
-    </div>
-    
-  <div class="btn_cont_2">
-    <a href="./contact form.html" target="_parent"><button class="btn_container2">
-  Get Started
-  
-  </button></a> 
-    </div>
- 
-
-</div>
-
-
-
-<footer class="footer">
-    <div class="newsletter">
-      <h3>Subscribe to our Newsletter</h3>
-      <p>Fuel your business growth with our expert growth + insider insights.</p>
-      <form>
-        <input type="email" placeholder="Enter your email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-    <div class="links-container">
-      <div>
-        <h4>Quicklinks</h4>
-        <ul>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./contact form.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact us</h4>
-        <ul>
-          <li>+234 8097060188</li>
-  
-          <li><a href="mailto:dflipmedia@gmail.com">dflipmedia@gmail.com</a></li>
-          <li>No. 8, Excellence & Friends <br>Street, Dawaki, Abuja (FCT) Nigeria</li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/company/dflipmedia/" target="_blank"><img class="LinkedIn_logo" src="./Assets/pngwing.com (7).png" alt="dFlip Media Linkedln account"></a>
-      <a href="https://www.instagram.com/dflip_media/profilecard/?igsh=cnZjeDlnN3QwMGhz" target="_blank"><img class="Instagram_logo" src="./Assets/pngwing.com (5).png" alt="dFlip Media Instagram account"></a>
-      <a href="https://www.facebook.com/profile.php?id=61569941146590" target="_blank"><img class="Facebook_logo" src="./Assets/pngwing.com (6).png" alt="dFlip Media Facbook account"></a>
-      <a href="https://x.com/dFlipmedia?t=witiRaTMABiveSTdl4ePug&s=09" target="_blank"><img class="X_logo" src="./Assets/pngwing.com (5).png" alt="dFlip Media X(formerly Twitter) account"></a>
-    </div>
-    <div class="copyright">
-      &copy; Copyright 2024 • dflipmedia. All rights reserved.
-    </div>
-  
-  </footer>
-  <script>
-    const navSlide = () => {
-  const navMobile = document.querySelector('.nav-mobile')
-  const navBar = document.querySelector('.nav-links')
-  const navLinks = document.querySelectorAll('.nav-links li')
-
-  navMobile.addEventListener ('click',() => {
-    navBar.classList.toggle('nav-active')
-  });
-}
-navSlide();
-  </script>
-  <script src="./script.js"></script>
-</body>
 </html>
