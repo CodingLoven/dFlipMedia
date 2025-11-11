@@ -701,7 +701,6 @@ body {
   }
 
 
-
   /* sec5 starts here */
 
   .sec5 {
@@ -1550,6 +1549,77 @@ body {
   }
  
 
+  /* sec6 starts here */
+
+  .sec6 {
+    background: var(--background2);
+    display: block;
+    padding: 40px 50px;
+  }
+
+  .sec6-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0 0px;
+    gap: 60px;
+  }
+
+  .identity-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .identity-header h2 {
+    font-size: var(--heading-font-size-tablet);
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 700;
+    color: var(--headings);
+  }
+
+  .identity-image {
+    width: 55%;
+    max-width:100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .identity-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex: 1 1 55%;
+    border-radius: 40px;
+  }
+
+  .vision {
+    color: var(--text2);
+    margin: 0;
+    flex: 1 1 50%;
+  }
+  
+  .core2 {
+    color: var(--cta);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vision-content {
+    font-size: 17px;
+    max-width: 90%;
+    line-height: 1.6;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+
   /* sec5 starts here */
 
   .sec5 {
@@ -1687,6 +1757,8 @@ body {
     justify-self: center;
   }
 
+
+  
 
 
 
@@ -2463,6 +2535,80 @@ body {
     transform: scale(1.05);
     transition: transform 0.3s ease;
     cursor: default;
+  }
+
+   /* sec6 starts here */
+
+  .sec6 {
+    background: var(--background2);
+    display: block;
+    padding: 40px 25px;
+  }
+
+  .sec6-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0 0px;
+    gap: 60px;
+  }
+
+  .identity-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .identity-header h2 {
+    font-size: var(--heading-font-size-mobile);
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 700;
+    color: var(--headings);
+  }
+
+  .identity-image {
+    width: 70%;
+    max-width:100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .identity-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex: 1 1 55%;
+    border-radius: 40px;
+  }
+
+  .vision {
+    color: var(--text2);
+    margin: 0;
+    flex: 1 1 50%;
+  }
+  
+  .core2 {
+    color: var(--cta);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vision-content {
+    font-size: 17px;
+    max-width: 100%;
+    line-height: 1.6;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .seperate {
+    margin-top: 30px;
   }
 
 
