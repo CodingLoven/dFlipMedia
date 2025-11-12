@@ -799,47 +799,42 @@ body {
     margin-top: 5px;
   }
 
-  .card-btn {
-    width: 38px;
-    height: 38px;
-    background: var(--cta);
-    border-radius: 50%;
-    color: var(--text1);
+  .cta-team {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-
-  .card-btn:hover {
-    background: var(--accent);
-  }
-
-  .card-btn svg {
-    width: 25px;
-    height: 25px;
-  }
-
-  .cta-team {
-    margin-top: 40px;
-    max-width: 200px;
-    display: inline-flex;
-    align-items: center;
-    padding: 14px 68px;
-    background: var(--cta);
+    background-color: var(--cta);
     color: var(--text1);
+    font-weight: 400;
+    padding: 10px 25px;
     font-size: 18px;
-    font-weight: 700;
     border-radius: var(--border);
     text-decoration: none;
-    transition: background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    width: 180px;
     grid-column: 1 / -1;
     justify-self: center;
+    transition: background-color 0.3s ease;
   }
 
+  .cta-team:hover {
+    background-color: var(--cta);
+  }
 
+  .cta-team svg {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    transform: translateX(20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .cta-team:hover svg {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
 
 
@@ -1717,46 +1712,44 @@ body {
     margin-top: 5px;
   }
 
-  .card-btn {
-    width: 38px;
-    height: 38px;
-    background: var(--cta);
-    border-radius: 50%;
-    color: var(--text1);
+  .cta-team {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-
-  .card-btn:hover {
-    background: var(--accent);
-  }
-
-  .card-btn svg {
-    width: 25px;
-    height: 25px;
-  }
-
-  .cta-team {
-    margin-top: 20px;
-    max-width: 180px; 
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 55px; 
-    background: var(--cta);
+    background-color: var(--cta);
     color: var(--text1);
-    font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
+    padding: 12px 30px;
+    font-size: 18px; 
     border-radius: var(--border);
     text-decoration: none;
-    transition: background 0.3s ease;
-    grid-column: 1 / -1;
+    position: relative;
+    overflow: hidden;
+    width: 140px;
+    max-width: 100%;
     justify-self: center;
+    grid-column: 1 / -1;
+    transition: background-color 0.3s ease;
+    margin: 20px 0 0; 
   }
 
+  .cta-team:hover {
+    background-color: var(--cta);
+  }
+
+  .cta-team svg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    transform: translateX(20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .cta-team:hover svg {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
   
 
@@ -2713,56 +2706,45 @@ body {
     margin-top: 5px;
   }
 
-  .card-btn {
-    width: 38px;
-    height: 38px;
-    background: var(--cta);
-    border-radius: 50%;
-    color: var(--text1);
+
+  .cta-team {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-
-  .card-btn:hover {
-    background: var(--accent);
-  }
-
-  .card-btn svg {
-    width: 25px;
-    height: 25px;
-  }
-
-  .cta-team {
-    margin-top: 20px;
-    max-width: 180px;
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 55px;
-    background: var(--cta);
+    background-color: var(--cta);
     color: var(--text1);
-    font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
+    padding: 12px 30px;
+    font-size: 18px; 
     border-radius: var(--border);
     text-decoration: none;
-    transition: background 0.3s ease;
-    grid-column: 1 / -1;
+    position: relative;
+    overflow: hidden;
+    width: 140px;
+    max-width: 100%;
     justify-self: center;
+    grid-column: 1 / -1;
+    transition: background-color 0.3s ease;
+    margin: 20px 0 0; 
   }
 
+  .cta-team:hover {
+    background-color: var(--cta);
+  }
 
+  .cta-team svg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    transform: translateX(20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
 
-
-
-
-
-
-
-
-
+  .cta-team:hover svg {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
 
 
