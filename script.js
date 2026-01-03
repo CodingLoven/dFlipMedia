@@ -636,16 +636,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Scroll reveal effect (RUNS ON ALL PAGES)
  
-  const reveals = document.querySelectorAll(".reveal");
-  const revealOnScroll = () => {
-    const windowHeight = window.innerHeight;
-    const revealPoint = 120;
-    reveals.forEach(el => {
-      const elementTop = el.getBoundingClientRect().top;
-      if (elementTop < windowHeight - revealPoint) el.classList.add("active");
-      else el.classList.remove("active");
-    });
-  };
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll();
+  const reveals = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15
+    }
+  );
+
+  reveals.forEach(el => revealObserver.observe(el));
 });

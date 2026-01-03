@@ -23,6 +23,16 @@ body {
   scroll-behavior: smooth;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 /* desktop view starts here */
@@ -227,17 +237,6 @@ body {
 
 
   /* main sections start here */
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease-out;
-  }
-
-  .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   /* sec2 starts here */
 
@@ -1210,18 +1209,6 @@ body {
 
 
   /* main section starts here */
-
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease-out;
-  }
-
-  .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
 
   /* sec1 starts here */
@@ -2261,17 +2248,6 @@ body {
   /* header ends here */
 
   /* main section starts here */
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease-out;
-  }
-
-  .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
 
   /* sec2 starts here */
