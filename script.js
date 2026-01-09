@@ -487,9 +487,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const navLists = section.querySelectorAll('.services-scroll-list');
       const contentGroups = section.querySelectorAll('.services-scroll-inner');
 
-      /* =========================
-        UTILS
-      ========================= */
+
+      // Utility helpers
 
       function getActiveGroup() {
         return section.querySelector('.services-main-btn.active')?.dataset.main;
@@ -503,9 +502,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return section.querySelector(`.services-scroll-inner[data-group="${group}"]`);
       }
 
-      /* =========================
-        SCROLL SYNC
-      ========================= */
+      // SCROLL SYNC 
 
       function setupScrollSync(group) {
         const navList = getNavList(group);
@@ -548,9 +545,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      /* =========================
-        GROUP SWITCH
-      ========================= */
 
       function switchGroup(group) {
         // toggle nav lists
@@ -569,9 +563,6 @@ document.addEventListener("DOMContentLoaded", () => {
         setupScrollSync(group);
       }
 
-      /* =========================
-        MAIN BUTTON EVENTS
-      ========================= */
 
       mainButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -583,10 +574,6 @@ document.addEventListener("DOMContentLoaded", () => {
           switchGroup(btn.dataset.main);
         });
       });
-
-      /* =========================
-        INIT
-      ========================= */
 
       const initialGroup = getActiveGroup() || 'brand-promotion';
       switchGroup(initialGroup);
