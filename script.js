@@ -478,133 +478,195 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.body.classList.contains("services-page")) {
     console.log("services page scripts running");
 
-    const tabs = document.querySelectorAll(".tab-card");
-    const panels = document.querySelectorAll(".pill-panel");
-    const pills = document.querySelectorAll(".pill");
-    const serviceDetail = document.getElementById("service-detail");
+    // vertical scroll tabbed inner section js
+    (function () {
+      const section = document.querySelector('.services-scroll-section');
+      if (!section) return;
 
-    let activeTab = 0;
-    let activePill = null;
-    let autoCycleInterval = null;
-    let autoCycling = true;
+      const mainButtons = section.querySelectorAll('.services-main-btn');
+      const navLists = section.querySelectorAll('.services-scroll-list');
+      const contentGroups = section.querySelectorAll('.services-scroll-inner');
 
-    /** Activate a Tab **/
-    function activateTab(index, isAuto = false) {
-      tabs.forEach((t, i) => t.classList.toggle("is-active", i === index));
-      panels.forEach((p, i) => p.classList.toggle("is-visible", i === index));
-      activeTab = index;
+      /* =========================
+        UTILS
+      ========================= */
 
-      // Only auto-select the first pill if this was triggered by a user, not by the auto cycle
-      if (!isAuto) {
-        const visiblePanel = panels[index];
-        const firstPill = visiblePanel.querySelector(".pill");
-        if (firstPill) activatePill(firstPill);
+      function getActiveGroup() {
+        return section.querySelector('.services-main-btn.active')?.dataset.main;
       }
-    }
 
-    /** Activate a Pill **/
-    function activatePill(pill) {
-      const serviceKey = pill.dataset.service;
-      const template = document.querySelector(`#tmpl-service-${serviceKey}`);
-      if (!template) return;
-
-      // Instantly activate pill
-      pills.forEach(p => p.classList.remove("is-active", "pill-clicked"));
-      pill.classList.add("is-active", "pill-clicked");
-      activePill = pill;
-
-      // Remove pulse very fast
-      setTimeout(() => pill.classList.remove("pill-clicked"), 80);
-
-      // Defer content change slightly to avoid layout blocking
-      requestAnimationFrame(() => {
-        const content = template.content.cloneNode(true);
-        serviceDetail.innerHTML = "";
-        serviceDetail.appendChild(content);
-
-        // small async for animation reflow
-        setTimeout(() => {
-          serviceDetail.classList.remove("fade-in");
-          void serviceDetail.offsetWidth;
-          serviceDetail.classList.add("fade-in");
-        }, 20);
-      });
-    }
-
-    /** Handle URL Hash for Deep Linking **/
-    function handleDeepLink() {
-      const hash = window.location.hash.replace("#", "");
-      if (!hash) return;
-      const pill = document.querySelector(`[data-service="${hash}"]`);
-      if (pill) {
-        const parentPanel = pill.closest(".pill-panel");
-        const tabIndex = [...panels].indexOf(parentPanel);
-        if (tabIndex >= 0) activateTab(tabIndex);
-        activatePill(pill);
-        stopAutoCycle();
-        pill.scrollIntoView({ behavior: "smooth", block: "center" });
+      function getNavList(group) {
+        return section.querySelector(`.services-scroll-list[data-group="${group}"]`);
       }
+
+      function getContentGroup(group) {
+        return section.querySelector(`.services-scroll-inner[data-group="${group}"]`);
+      }
+
+      /* =========================
+        SCROLL SYNC
+      ========================= */
+
+      function setupScrollSync(group) {
+        const navList = getNavList(group);
+        const content = getContentGroup(group);
+        if (!navList || !content) return;
+
+        const navItems = navList.querySelectorAll('li');
+        const serviceItems = content.querySelectorAll('.services-scroll-item');
+
+        // reset active state
+        navItems.forEach(li => li.classList.remove('active'));
+        if (navItems[0]) navItems[0].classList.add('active');
+
+        content.addEventListener('scroll', () => {
+          let activeIndex = 0;
+
+          serviceItems.forEach((item, index) => {
+            const rect = item.getBoundingClientRect();
+            const containerRect = content.getBoundingClientRect();
+
+            if (rect.top - containerRect.top < containerRect.height / 2) {
+              activeIndex = index;
+            }
+          });
+
+          navItems.forEach(li => li.classList.remove('active'));
+          if (navItems[activeIndex]) {
+            navItems[activeIndex].classList.add('active');
+          }
+        });
+
+        // click → scroll
+        navItems.forEach((li, index) => {
+          li.addEventListener('click', () => {
+            serviceItems[index].scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          });
+        });
+      }
+
+      /* =========================
+        GROUP SWITCH
+      ========================= */
+
+      function switchGroup(group) {
+        // toggle nav lists
+        navLists.forEach(list => {
+          list.classList.toggle('is-hidden', list.dataset.group !== group);
+        });
+
+        // toggle content panels
+        contentGroups.forEach(panel => {
+          panel.classList.toggle('is-hidden', panel.dataset.group !== group);
+          if (panel.dataset.group === group) {
+            panel.scrollTop = 0;
+          }
+        });
+
+        setupScrollSync(group);
+      }
+
+      /* =========================
+        MAIN BUTTON EVENTS
+      ========================= */
+
+      mainButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (btn.classList.contains('active')) return;
+
+          mainButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          switchGroup(btn.dataset.main);
+        });
+      });
+
+      /* =========================
+        INIT
+      ========================= */
+
+      const initialGroup = getActiveGroup() || 'brand-promotion';
+      switchGroup(initialGroup);
+
+    })();
+  
+    
+    // Popup form js
+
+    (function () {
+      const modal = document.getElementById('quoteModal');
+      const closeBtn = modal.querySelector('.quote-modal-close');
+      const overlay = modal;
+
+      const mainServiceEl = document.getElementById('quoteMainService');
+      const subServiceEl = document.getElementById('quoteSubService');
+
+      // open modal
+      document.addEventListener('click', function (e) {
+        const cta = e.target.closest('.services-scroll-cta');
+        if (!cta) return;
+
+        e.preventDefault();
+
+        // find context
+        const activeMain = document.querySelector('.services-main-btn.active')?.textContent;
+        const activeSub = document.querySelector('.services-scroll-list:not(.is-hidden) li.active')?.textContent;
+
+        mainServiceEl.textContent = activeMain || '—';
+        subServiceEl.textContent = activeSub || '—';
+
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      });
+
+      // close modal
+      function closeModal() {
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', e => {
+        if (e.target === overlay) closeModal();
+      });
+
+      })();
     }
 
-    /** Start Automatic Cycle Through Pills **/
-    function startAutoCycle() {
-      if (!autoCycling) return;
-      const allPills = Array.from(document.querySelectorAll(".pill"));
-      let currentIndex = 0;
+    
 
-      clearInterval(autoCycleInterval);
-      autoCycleInterval = setInterval(() => {
-        if (!autoCycling) return;
+    // form get js tbcom with namecheap php ...file
 
-        const pill = allPills[currentIndex];
-        const panel = pill.closest(".pill-panel");
-        const tabIndex = [...panels].indexOf(panel);
+    // const form = document.getElementById('quoteForm');
 
-        // Activate tab & pill — mark that this is auto
-        activateTab(tabIndex, true);
-        activatePill(pill);
+    // form.addEventListener('submit', async (e) => {
+    //   e.preventDefault();
 
-        // Move to next pill
-        currentIndex = (currentIndex + 1) % allPills.length;
-      }, 5000);
-    }
+    //   const data = new FormData(form);
 
-    /** Stop Auto Cycling **/
-    function stopAutoCycle() {
-      autoCycling = false;
-      clearInterval(autoCycleInterval);
-    }
+    //   try {
+    //     const response = await fetch('/api/send-quote.php', {
+    //       method: 'POST',
+    //       body: data
+    //     });
 
-    /** Event Listeners **/
-    tabs.forEach((tab, i) => {
-      tab.addEventListener("click", () => {
-        stopAutoCycle();
-        activateTab(i);
-      });
-    });
+    //     const result = await response.json();
 
-    pills.forEach(pill => {
-      pill.addEventListener("click", () => {
-        stopAutoCycle();
-        activatePill(pill);
-      });
-    });
-
-    /** Initial Setup **/
-    activateTab(0);
-    startAutoCycle();
-    handleDeepLink();
-
-    /** Pause Animation When Section is Not in View **/
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && autoCycling) startAutoCycle();
-        else clearInterval(autoCycleInterval);
-      });
-    }, { threshold: 0.1 });
-
-    observer.observe(document.querySelector(".sec1.services-showcase"));
-  }
+    //     if (result.success) {
+    //       form.innerHTML = `
+    //         <p><strong>Thank you!</strong></p>
+    //         <p>Your request has been sent.</p>
+    //       `;
+    //     } else {
+    //       alert('Something went wrong. Please try again.');
+    //     }
+    //   } catch (err) {
+    //     alert('Form not connected yet.');
+    //   }
+    // });
 
   
 
