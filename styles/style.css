@@ -1608,6 +1608,46 @@ h4 {
     opacity: 1;
   }
 
+   .cta-team {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent);
+    color: var(--text1);
+    font-weight: 700;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: var(--border);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    width: 140px;
+    max-width: 100%;
+    justify-self: center;
+    grid-column: 1 / -1;
+    transition: background-color 0.3s ease;
+    margin: 0px 0 0;
+  }
+
+  .cta-team:hover {
+    background-color: var(--accent);
+    color: var(--cta);
+  }
+
+  .cta-team svg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    transform: translateX(20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .cta-team:hover svg {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
 
   /* Sec10 starts here */
 
