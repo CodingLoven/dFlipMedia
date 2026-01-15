@@ -621,39 +621,60 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       })();
-    }
+  }
+
+
+  if (!document.body.classList.contains("contact-page")) {
+    console.log("Contacts page scripts running");
+
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isOpen = item.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('active');
+        });
+
+        if (!isOpen) {
+          item.classList.add('active');
+        }
+      });
+    })
+  }
+
 
     
 
-    // form get js tbcom with namecheap php ...file
+  // form get js tbcom with namecheap php ...file
 
-    // const form = document.getElementById('quoteForm');
+  // const form = document.getElementById('quoteForm');
 
-    // form.addEventListener('submit', async (e) => {
-    //   e.preventDefault();
+  // form.addEventListener('submit', async (e) => {
+  //   e.preventDefault();
 
-    //   const data = new FormData(form);
+  //   const data = new FormData(form);
 
-    //   try {
-    //     const response = await fetch('/api/send-quote.php', {
-    //       method: 'POST',
-    //       body: data
-    //     });
+  //   try {
+  //     const response = await fetch('/api/send-quote.php', {
+  //       method: 'POST',
+  //       body: data
+  //     });
 
-    //     const result = await response.json();
+  //     const result = await response.json();
 
-    //     if (result.success) {
-    //       form.innerHTML = `
-    //         <p><strong>Thank you!</strong></p>
-    //         <p>Your request has been sent.</p>
-    //       `;
-    //     } else {
-    //       alert('Something went wrong. Please try again.');
-    //     }
-    //   } catch (err) {
-    //     alert('Form not connected yet.');
-    //   }
-    // });
+  //     if (result.success) {
+  //       form.innerHTML = `
+  //         <p><strong>Thank you!</strong></p>
+  //         <p>Your request has been sent.</p>
+  //       `;
+  //     } else {
+  //       alert('Something went wrong. Please try again.');
+  //     }
+  //   } catch (err) {
+  //     alert('Form not connected yet.');
+  //   }
+  // });
 
   
 
@@ -702,4 +723,8 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   reveals.forEach(el => revealObserver.observe(el));
+
+
+  // Get Year script
+  document.getElementById("year").textContent = new Date().getFullYear();
 });
