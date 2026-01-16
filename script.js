@@ -621,34 +621,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })();
 
-    // services/challenges deep link scroll js
-    const hash = window.location.hash;
-      if (!hash) return;
 
-      const targetId = hash.replace("#", "");
-      const targetEl = document.getElementById(targetId);
-      if (!targetEl) return;
-
-      // Find which services group the target belongs to
-      const parentGroup = targetEl.closest(".services-scroll-inner");
-      if (!parentGroup) return;
-
-      const groupName = parentGroup.dataset.group;
-
-      const mainBtn = document.querySelector(
-        `.services-main-btn[data-main="${groupName}"]`
-      );
-
-      if (mainBtn && !mainBtn.classList.contains("active")) {
-        mainBtn.click();
-      }
-
-      setTimeout(() => {
-        targetEl.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }, 150);
+    
   }
 
 

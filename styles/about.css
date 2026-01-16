@@ -1013,7 +1013,7 @@ h4 {
     margin: 0;
     background: var(--background3);
     border-radius: 0;
-    padding: 32px 0 0 0;
+    padding: 32px 0 30px 0;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -1045,18 +1045,33 @@ h4 {
   }
 
   .menu-items {
-    position: relative;
     grid-column: 1 / -1;
     width: 100%;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 18px;
-    background: var(--surface);
+    background: var(--background3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 85%;
+    max-width: 700px;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    max-height: none;
+    overflow-y: auto;
+    z-index: 60;
+  }
+
+  #menu-toggle:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  body:has(#menu-toggle:checked) {
+    overflow: hidden;
   }
 
   .menu-items li {
@@ -1088,10 +1103,6 @@ h4 {
 
   #menu-toggle {
     display: none;
-  }
-
-  #menu-toggle:checked~.menu-items {
-    max-height: 400px;
   }
 
   .icon-menu,
@@ -2214,7 +2225,8 @@ h4 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 100%;
+    max-width: 390px;
+    margin-left: -5px;
   }
 
   .about-image img {
