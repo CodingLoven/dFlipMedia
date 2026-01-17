@@ -354,9 +354,11 @@ h4 {
     background: var(--background2);
     border-radius: 20px;
     padding: 100px 60px;
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.25),
         0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -384,6 +386,7 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 45%;
   }
 
   .next-steps {
@@ -401,6 +404,7 @@ h4 {
   .next-steps p {
     color: var(--text1);
     margin: 0 0 18px;
+    line-height: 1.4;
   }
 
   .steps {
@@ -462,6 +466,7 @@ h4 {
     align-items: flex-start;
     gap: 20px;
     padding-bottom: 10px;
+    width: 50%;
   }
 
   .contact-form {
@@ -1075,6 +1080,7 @@ h4 {
     color: var(--text1);
     margin: 0 0 18px;
     font-size: 16px;
+    line-height: 1.4;
   }
 
   .steps {
@@ -1440,6 +1446,7 @@ h4 {
 }
 
 
+
 @media (max-width: 767px) {
   /* Navigation starts here */
 
@@ -1763,6 +1770,7 @@ h4 {
     color: var(--text1);
     margin: 0 0 16px;
     font-size: 15px;
+    line-height: 1.5;
   }
 
   .steps {

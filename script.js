@@ -620,8 +620,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target === overlay) closeModal();
       });
     })();
-
-
     
   }
 
