@@ -530,15 +530,7 @@ h4 {
     background: var(--background3);
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
     display: block;
-  }
-
-  .clip {
-    width: 100%;
-    max-width: 1100px;
-    background: var(--accent);
-    padding: 180px;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
-    position: absolute;
+    margin-bottom: -1px;
   }
 
   .cont3 {

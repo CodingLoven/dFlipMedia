@@ -126,30 +126,32 @@
           </div>
 
           <div class="contact-right">
-            <form class="contact-form">
+            <form action="send.php" method="POST" class="contact-form">
+
+              <input type="hidden" name="form_name" value="Contact Page Form">
               <label>
                 Name
-                <input type="text" required />
+                <input type="text" name="name" required />
               </label>
 
               <label>
                 Email address
-                <input type="email" required placeholder="example@email.com" />
+                <input type="email" name="email" required placeholder="example@email.com" />
               </label>
 
               <label>
                 Phone
-                <input type="tel" required placeholder="+1 (702) 123-4567" />
+                <input type="tel" name="phone" required placeholder="+1 (702) 123-4567" />
               </label>
 
               <label>
                 Location
-                <input type="text" required />
+                <input type="text" name="location" required />
               </label>
 
               <label>
                 Type your message...
-                <textarea rows="4"></textarea>
+                <textarea rows="4" name="message"></textarea>
               </label>
 
               <button type="submit">SUBMIT MESSAGE</button>

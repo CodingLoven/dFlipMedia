@@ -412,8 +412,6 @@ h4 {
     flex: 0 0 calc(33.333% - 28px);
   }
 
-  
-
   .team-card {
     display: flex;
     flex-direction: column;
@@ -631,7 +629,7 @@ h4 {
 
   .management-card:hover .management-name,
   .management-card:hover .management-role {
-    color: var(--text1);
+    color: var(--text2);
   }
 
   .management-card:hover .management-image img {

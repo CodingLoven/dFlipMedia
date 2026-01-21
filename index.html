@@ -399,37 +399,37 @@
             <li class="card">
               <h3 class="card__title">Affordable Plans</h3>
               <p class="card__body">Smart solutions that fit your business size and goals.</p>
-              <a class="card__cta" href="#packages">Get Started</a>
+              <a class="card__cta" href="contact.html">Get Started</a>
             </li>
 
             <li class="card">
               <h3 class="card__title">Fresh Approach</h3>
               <p class="card__body">Modern PR tailored for today's fast-moving world.</p>
-              <a class="card__cta" href="#clients">Discover More</a>
+              <a class="card__cta" href="services.html">Discover More</a>
             </li>
 
             <li class="card">
               <h3 class="card__title">Dedicated Support</h3>
               <p class="card__body">We grow with you. step by step</p>
-              <a class="card__cta" href="#verticals">Work with Us</a>
+              <a class="card__cta" href="contact.html">Work with Us</a>
             </li>
 
             <li class="card">
               <h3 class="card__title">Creative Edge</h3>
               <p class="card__body">Stories and strategies that make you stand out</p>
-              <a class="card__cta" href="#team">See How</a>
+              <a class="card__cta" href="about.html">See How</a>
             </li>
 
             <li class="card">
               <h3 class="card__title">Scalable Growth</h3>
               <p class="card__body">PR built to expand as your business does</p>
-              <a class="card__cta" href="#team">Grow With US</a>
+              <a class="card__cta" href="contact.html">Grow With US</a>
             </li>
             
             <li class="card">
               <h3 class="card__title">Building Trust</h3>
               <p class="card__body">Helping you earn credibility with your audience</p>
-              <a class="card__cta" href="#team">Talk to Us</a>
+              <a class="card__cta" href="contact.html">Talk to Us</a>
             </li>
           </ul>
 
@@ -439,7 +439,7 @@
         </div>
       </section>
 
-      <section class="sec8 reveal" aria-label="Client testimonials">
+      <!-- <section class="sec8 reveal" aria-label="Client testimonials">
         <div class="sec8-wrap">
           <h2 class="sec8-heading-alt">Our Clients’ Feedback</h2>
           <div class="sec8-card">
@@ -555,7 +555,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="sec9 reveal" aria-label="Meet Our Team">
         <div class="sec9-wrap">
@@ -676,8 +676,10 @@
         <div class="newsletter">
           <h3>Subscribe to our Newsletter</h3>
           <p>Fuel your business growth with expert strategies and insider insights from dFlip Media.</p>
-          <form>
-            <input type="email" placeholder="Enter your email address" required>
+          <form action="send.php" method="POST">
+            <input type="hidden" name="form_name" value="Newsletter Subscription">
+            
+            <input type="email" name="email" placeholder="Enter your email address" required>
             <button type="submit">Subscribe</button>
           </form>
         </div>

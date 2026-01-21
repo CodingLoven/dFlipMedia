@@ -378,31 +378,33 @@
                 <strong id="quoteSubService">—</strong>
               </div>
 
-              <form class="quote-modal-fields">
+              <form action="send.php" method="POST" class="quote-modal-fields">
+
+                <input type="hidden" name="form_name" value="Service Quote Form">
 
                 <label>
                   <span>Name</span>
-                  <input type="text" required>
+                  <input type="text" name="name" required>
                 </label>
 
                 <label>
                   <span>Email address</span>
-                  <input type="email" required>
+                  <input type="email" name="email" required>
                 </label>
 
                 <label>
                   <span>Phone</span>
-                  <input type="tel">
+                  <input type="tel" name="phone" required>
                 </label>
 
                 <label>
                   <span>Location</span>
-                  <input type="text">
+                  <input type="text" name="location" required>
                 </label>
 
                 <label>
                   <span>Additional information</span>
-                  <textarea rows="3"></textarea>
+                  <textarea rows="3" name="message"></textarea>
                 </label>
 
                 <button type="submit" class="quote-modal-submit">
@@ -469,7 +471,7 @@
               <span class="cta-label">Contact Us</span>
               <h2 class="cta-heading">Ready To Flip Your <br> Brand?</h2>
             </div>
-            <a href="#contact" class="cta-button">
+            <a href="contact.html" class="cta-button">
               Let's Get Started
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4a148c" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
