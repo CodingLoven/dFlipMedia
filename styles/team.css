@@ -549,6 +549,7 @@ h4 {
     border-radius: 18px;
     overflow: hidden;
     display: flex;
+    flex: 1;
     flex-direction: column;
     position: relative;
     text-align: center;

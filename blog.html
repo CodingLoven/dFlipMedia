@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dFlip-blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="img/favicondflip.png">
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicondflip.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicondflip.png">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicondflip.png">
+
+    <link rel="stylesheet" href="styles/blog.css" />
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav-wrapper">
+
+          <a class="nav-logo" href="index.html">
+            <img src="./img/dflip.PNG" alt="dFlipmedia logo" />
+          </a>
+
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon menu-btn" aria-label="Toggle menu">
+            <svg class="icon-menu" width="140px" height="140px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier"      stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 3.32001H16C14.8954 3.32001 14 4.21544 14 5.32001V8.32001C14 9.42458 14.8954 10.32 16 10.32H19C20.1046 10.32 21 9.42458 21 8.32001V5.32001C21 4.21544 20.1046 3.32001 19 3.32001Z" stroke="#4a148c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M8 3.32001H5C3.89543 3.32001 3 4.21544 3 5.32001V8.32001C3 9.42458 3.89543 10.32 5 10.32H8C9.10457 10.32 10 9.42458 10 8.32001V5.32001C10 4.21544 9.10457 3.32001 8 3.32001Z" stroke="#4a148c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M19 14.32H16C14.8954 14.32 14 15.2154 14 16.32V19.32C14 20.4246 14.8954 21.32 16 21.32H19C20.1046 21.32 21 20.4246 21 19.32V16.32C21 15.2154 20.1046 14.32 19 14.32Z" stroke="#4a148c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M8 14.32H5C3.89543 14.32 3 15.2154 3 16.32V19.32C3 20.4246 3.89543 21.32 5 21.32H8C9.10457 21.32 10 20.4246 10 19.32V16.32C10 15.2154 9.10457 14.32 8 14.32Z" stroke="#4a148c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+            </svg>
+
+            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </label>
+
+          <ul class="menu-items">
+            <li>
+              <a href="/services">Our Services</a>
+            </li>
+
+            <li>
+              <a href="/about">About dFlip</a>
+            </li>
+
+            <li>
+              <a href="/team">Meet The Team</a>
+            </li>
+
+            <li>
+              <a href="/joinus">Join dFlip</a>
+            </li>
+
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-cta hide-mobile" href="/contact">
+            Get In Touch
+          </a>
+        </div>
+
+      </nav>
+    </header>
+
+    <section class="coming-soon-section">
+
+      <span class="float-ball accent-ball reveal"></span>
+      <span class="float-ball white-ball reveal"></span>
+
+      <div class="coming-soon-card reveal">
+        <h1>dFlip Blog Is Coming Soon</h1>
+        <p>
+          We're working on insightful stories, strategies, and ideas to help brands grow.
+          Stay tuned, something valuable is on the way.
+        </p>
+      </div>
+
+    </section>
+
+    <footer class="footer reveal">
+      <div class="footer-wrap">
+
+        <div class="newsletter">
+          <h3>Subscribe to our Newsletter</h3>
+          <p>Fuel your business growth with expert strategies and insider insights from dFlip Media.</p>
+          <form action="form-handler.php" method="POST">
+            <input type="hidden" name="form_name" value="Newsletter Subscription">
+
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="links-container">
+
+          <div class="footer-links">
+            <h4>Quicklinks</h4>
+            <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>+234 8097060188</li>
+              <li><a href="mailto:info@dflipmedia.co">info@dflipmedia.co</a></li>
+              <li>No. 8, Excellence & Friends<br>Street, Dawaki, Abuja (FCT) Nigeria</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/dflipmedia/" target="_blank">
+            <img class="LinkedIn_logo" src="img/linkedin icon.svg" alt="dFlip Media LinkedIn">
+          </a>
+          <a href="https://www.instagram.com/dflipmedia" target="_blank">
+            <img class="Facebook_logo" src="img/instagram icon.svg" alt="dFlip Media Instagram">
+          </a>
+        </div>
+
+        <p class="copyright">
+          © <span id="year"></span> · All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

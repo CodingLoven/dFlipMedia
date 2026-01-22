@@ -3938,7 +3938,7 @@ h4 {
   }
 
 
-  /* Navigation starts here */
+ /* Navigation starts here */
 
   header {
     width: 100%;
@@ -3992,9 +3992,7 @@ h4 {
   }
 
   .menu-items {
-    position: relative;
     grid-column: 1 / -1;
-    width: 100%;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -4003,7 +4001,26 @@ h4 {
     transition: max-height 0.5s ease;
     margin-top: 10px;
     border-radius: 18px;
-    background: var(--surface);
+    background: var(--background3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100%;
+    max-width: 320px;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    max-height: none;
+    overflow-y: auto;
+    z-index: 60;
+  }
+
+  #menu-toggle:checked~.menu-items {
+    transform: translateX(0);
+  }
+
+  body:has(#menu-toggle:checked) {
+    overflow: hidden;
   }
 
   .menu-items li {
@@ -4037,10 +4054,6 @@ h4 {
     display: none;
   }
 
-  #menu-toggle:checked~.menu-items {
-    max-height: 100%;
-  }
-
   .btn-cta {
     padding: 9px 16px;
     font-size: 0.95rem;
@@ -4068,16 +4081,16 @@ h4 {
     display: none;
   }
 
-  #menu-toggle:checked + label .icon-menu {
+  #menu-toggle:checked+label .icon-menu {
     display: none;
   }
 
-  #menu-toggle:checked + label .icon-close {
+  #menu-toggle:checked+label .icon-close {
     display: inline-block;
     margin-right: 0px
   }
 
-  #menu-toggle:checked ~ .menu-items {
+  #menu-toggle:checked~.menu-items {
     position: fixed;
     inset: 0;
     height: 120vh;
@@ -4105,6 +4118,8 @@ h4 {
   body:has(#menu-toggle:checked) {
     overflow: hidden;
   }
+
+  /* header ends here */
 
 
 
