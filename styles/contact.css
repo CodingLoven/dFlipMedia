@@ -1433,7 +1433,7 @@ h4 {
 
   .social-icons img:hover {
     transform: scale(1.1);
-    filter: brightness(1) invert(0) sepia(1) hue-rotate(320deg) saturate(8);
+    /* filter: brightness(1) invert(0) sepia(1) hue-rotate(320deg) saturate(8); */
   }
 
   .copyright {
