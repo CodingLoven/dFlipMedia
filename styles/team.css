@@ -556,7 +556,11 @@ h4 {
     border: 1px solid #eee;
     transition: all 0.35s ease;
     cursor: default;
-    padding: 20px 0;
+    padding: 20px 0;?
+  }
+
+  .pad-more {
+    padding: 30px 0;
   }
 
   .management-image {
@@ -724,6 +728,7 @@ h4 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-top: 15px;
   }
 
   .team-card__social {
